@@ -11,7 +11,6 @@ def generate_launch_description():
     show_lidar = LaunchConfiguration('show_lidar')
     use_trajectory_controllers = LaunchConfiguration('use_trajectory_controllers')
     robot_model = LaunchConfiguration('robot_model')
-    robot_name = 'locobot_1'
 
     return LaunchDescription(
         [

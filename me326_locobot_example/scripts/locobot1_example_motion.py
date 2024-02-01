@@ -13,6 +13,7 @@ read more about rospy publishers/subscribers here: http://wiki.ros.org/ROS/Tutor
 '''
 import rclpy
 from rclpy.node import Node
+from rclpy.qos import QoSProfile, QoSReliabilityPolicy, QoSHistoryPolicy
 
 import numpy as np
 import scipy as sp
@@ -36,7 +37,7 @@ class LocobotExample(Node):
     def __init__(self):
         super().__init__('locobot_back_and_forth')
 
-        self.current_target = "B" #points A and B, if A it is the origin, if B it is the second specified point. This sript
+        self.current_target = "B"  #points A and B, if A it is the origin, if B it is the second specified point. This sript
         self.target_pose_reached_bool = False
         self.target_pose = None
 
@@ -44,18 +45,27 @@ class LocobotExample(Node):
         self.target_pose_visual = self.create_publisher(Marker, "/locobot/mobile_base/target_pose_visual", 10)
 
         # Command Velocity Publisher
-        # self.mobile_base_vel_publisher = self.create_publisher(Twist, "/locobot/mobile_base/commands/velocity", 10) #this is the topic we will publish to in order to move the base
-        # self.mobile_base_vel_publisher = self.create_publisher(Odometry, "/locobot/odom", 10) #this is the topic we will publish to in order to move the base
-        self.mobile_base_vel_publisher = self.create_publisher(Twist, "/locobot/mobile_base/cmd_vel", 10) #this is the topic we will publish to in order to move the base
-        
-        # Base Odom Subscriber
-        self.create_subscription(Odometry, "/locobot/mobile_base/odom", self.mobile_base_callback, 10) #this says: listen to the odom message, of type odometry, and send that to the callback function specified
-        # self.create_subscription(Odometry, "/odom", self.mobile_base_callback, 10) #this says: listen to the odom message, of type odometry, and send that to the callback function specified
+        self.mobile_base_vel_publisher = self.create_publisher(Twist, "/locobot/diffdrive_controller/cmd_vel_unstamped", 10)
+        ## Original:
+        # self.mobile_base_vel_publisher = self.create_publisher(Twist, "/locobot/mobile_base/commands/velocity", 10)
+        ## For real robot: (?)
+        # self.mobile_base_vel_publisher = self.create_publisher(Twist, "/locobot/mobile_base/cmd_vel", 10)
+
+        # Base Odom Subscriber:
+        self.create_subscription(Odometry, "/odom", self.mobile_base_callback, 10) 
+        ## Original (for real robot?)
+        # self.create_subscription(Odometry, "/locobot/mobile_base/odom", self.mobile_base_callback, 10) 
+        ## Also works for sim but need to change qos profile:
+        # qos_profile = QoSProfile(
+        #     reliability=QoSReliabilityPolicy.RMW_QOS_POLICY_RELIABILITY_BEST_EFFORT,
+        #     history=QoSHistoryPolicy.RMW_QOS_POLICY_HISTORY_KEEP_LAST,
+        #     depth=10
+        # )
+        # self.create_subscription(Odometry, "/locobot/sim_ground_truth_pose", self.mobile_base_callback, qos_profile=qos_profile) 
+
 
         self.L = 0.1 #this is the distance of the point P (x,y) that will be controlled for position. The locobot base_link frame points forward in the positive x direction, the point P will be on the positive x-axis in the body-fixed frame of the robot mobile base
- 
-        #set targets for when a goal is reached: 
-        self.goal_reached_error = 0.005
+        self.goal_reached_error = 0.03  #set targets for when a goal is reached (originally 0.005)
  
 
 
@@ -136,7 +146,6 @@ class LocobotExample(Node):
         frequency we obtain the state information)
         """
 
-
         # Step 1: Calculate the point P location (distance L on the x-axis), and publish the marker so it can be seen in Rviz
         #first determine the relative angle of the mobile base in the world xy-plane, this angle is needed to determine where to put the point P
         #the rotation will be about the world/body z-axis, so we will only need the qw, and qz quaternion components. We can then use knoweldge of the 
@@ -208,17 +217,20 @@ class LocobotExample(Node):
         err_magnitude = np.linalg.norm(error_vect)
 
         #log pos err
-        self.get_logger().info(f'err_x: {err_x}')
+        # self.get_logger().info(f'err_x: {err_x}')
    
         #Step 4: Finally, once point B has been reached, then return back to point A and vice versa      
         if err_magnitude < self.goal_reached_error:
             # switch targets so the locobot goes back and forth between points A and B
             # print("reached TARGET! A current target:",self.current_target == 'A')
-            self.get_logger().info('reached TARGET!')
+            self.get_logger().info('Reached Target!')
+            
             if self.current_target == 'A':
                 self.current_target = 'B'
             else:
                 self.current_target = 'A'
+
+            self.get_logger().info(f'New Goal: {self.current_target}')
 
         if self.current_target == 'A':
             #if current target is A, then set it as the goal pose
