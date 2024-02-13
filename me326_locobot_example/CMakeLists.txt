@@ -10,9 +10,12 @@ install(PROGRAMS
     scripts/locobot_example_motion.py
     scripts/locobot_motion_example.py
     scripts/matching_ptcld.py
+    scripts/circle_motion_tracking.py
+    scripts/record_rosbag.py
+    scripts/locobot_moveitpy.py
     DESTINATION lib/${PROJECT_NAME}
 )
-install(DIRECTORY launch rviz
+install(DIRECTORY launch rviz model
         DESTINATION share/${PROJECT_NAME})
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
