@@ -30,12 +30,28 @@ def generate_launch_description():
             ),
 
             Node(
-                executable="locobot1_example_motion.py",
-                package="me326_locobot_example",
+                executable="go_to_point.py",
+                package="me326_project",
                 parameters=[
                     {"respawn": "true"},
                 ],
             ),
+
+            Node(
+                executable="RRTstar.py",
+                package="me326_project",
+                parameters=[
+                    {"respawn": "true"},
+                ],
+            ),
+
+            # Node(
+            #     executable="record_rosbag.py",
+            #     package="me326_locobot_example",
+            #     parameters=[
+            #         {"respawn": "true"},
+            #     ],
+            # ),
 
             # Node(
             #     package='rviz2',

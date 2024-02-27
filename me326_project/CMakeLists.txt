@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(me326_locobot_example)
+project(me326_project)
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
@@ -13,6 +13,8 @@ install(PROGRAMS
     scripts/circle_motion_tracking.py
     scripts/record_rosbag.py
     scripts/locobot_moveitpy.py
+    scripts/RRTstar.py
+    scripts/go_to_point.py
     DESTINATION lib/${PROJECT_NAME}
 )
 install(DIRECTORY launch rviz model
