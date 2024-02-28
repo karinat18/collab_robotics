@@ -5,6 +5,9 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+find_package(geometry_msgs REQUIRED)
+
 install(PROGRAMS
     scripts/locobot1_example_motion.py
     scripts/locobot_example_motion.py
@@ -15,10 +18,18 @@ install(PROGRAMS
     scripts/locobot_moveitpy.py
     scripts/RRTstar.py
     scripts/go_to_point.py
+    scripts/initial_point.py
+    scripts/move_locobot_base_action_server.py
+    scripts/move_base_client.py
     DESTINATION lib/${PROJECT_NAME}
 )
-install(DIRECTORY launch rviz model
+install(DIRECTORY launch rviz model action
         DESTINATION share/${PROJECT_NAME})
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "action/MoveBase.action"
+  DEPENDENCIES geometry_msgs
+ )
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights

@@ -27,7 +27,7 @@ class GoToPoint(Node):
     """
     """
     def __init__(self):
-        super().__init__('locobot_circle_tracking')
+        super().__init__('go_to_point')
 
         self.t_init = None
         self.L = 0.1 #this is the distance of the point P (x,y) that will be controlled for position. The locobot base_link frame points forward in the positive x direction, the point P will be on the positive x-axis in the body-fixed frame of the robot mobile base
@@ -55,7 +55,7 @@ class GoToPoint(Node):
         #     depth=10
         # )
         # self.create_subscription(Odometry, "/locobot/sim_ground_truth_pose", self.mobile_base_callback, qos_profile=qos_profile) 
-        self.create_subscription(Pose, "/rrt_star_path", self.go_to_pose, 10)
+        self.create_subscription(Pose, "/goal_pose", self.go_to_pose, 10)
 
     def mobile_base_callback(self, data):
         """
@@ -139,18 +139,17 @@ class GoToPoint(Node):
         err_magnitude = np.linalg.norm(error_vect)
 
 
-    def go_to_pose(self, path):
+    def go_to_pose(self, pose):
         """
         Input: path - ROS nav_msgs.msg.Path type
         To see what it looks like, put the following in the terminal: $ rosmsg show nav_msgs/Path
         """
-        for pose in path.poses:
-            # Iterate through each pose in the path
-            self.target_pose.position.x = pose.pose.position.x
-            self.target_pose.position.y = pose.pose.position.y
+        
             
-            # Call mobile_base_callback to move to the current pose
-            self.mobile_base_callback(pose.pose)
+        self.target_pose.position.x = pose.pose.position.x
+        self.target_pose.position.y = pose.pose.position.y
+            
+            
 
         
 

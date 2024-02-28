@@ -30,7 +30,7 @@ def generate_launch_description():
             ),
 
             Node(
-                executable="go_to_point.py",
+                executable="move_locobot_base_action_server.py",
                 package="me326_project",
                 parameters=[
                     {"respawn": "true"},
@@ -38,12 +38,14 @@ def generate_launch_description():
             ),
 
             Node(
-                executable="RRTstar.py",
+                executable="move_base_client.py",
                 package="me326_project",
                 parameters=[
                     {"respawn": "true"},
                 ],
             ),
+
+            
 
             # Node(
             #     executable="record_rosbag.py",

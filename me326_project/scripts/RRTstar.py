@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from geometry_msgs.msg import Point, PoseStamped
+from geometry_msgs.msg import Pose, Point, PoseStamped
 from nav_msgs.msg import Path
 from nav_msgs.msg import Odometry
 from std_msgs.msg import Float32
@@ -26,20 +26,23 @@ class RRTStarNode(Node):
         self.path = Path()
 
         self.odom_subscriber = self.create_subscription(Odometry, '/odom', self.odom_callback, 10)
-        self.goal_subscriber = self.create_subscription(Point, '/goal_point', self.goal_callback, 10)
+        self.goal_subscriber = self.create_subscription(PoseStamped, '/goal_point', self.goal_callback, 10)
         self.path_publisher = self.create_publisher(Path, 'rrt_star_path', 10)
         self.timer = self.create_timer(0.1, self.compute_path)
 
     def odom_callback(self, msg):
-        self.start = GraphNode(msg.pose.pose.position)
+        # self.start = GraphNode(msg.pose.pose.position)
+        self.start = msg.pose.pose.position
 
     def goal_callback(self, msg):
-        self.goal = GraphNode(msg)
-
+        # self.goal = GraphNode(msg)
+        self.goal = msg.pose.position
     def compute_path(self):
+        # self.get_logger().info(self.start)
+        # self.get_logger().info(self.goal)
         if not self.start or not self.goal:
             return
-
+        self.get_logger().info("Actually computing path (yay!)")
         self.tree = [self.start]
 
         for _ in range(self.max_iter):
