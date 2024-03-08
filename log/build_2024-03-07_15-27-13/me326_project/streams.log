@@ -1,0 +1,114 @@
+[0.366s] Invoking command in '/home/joshhlee/me326_ws/src/collaborative_robotics_course/build/me326_project': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/joshhlee/interbotix_ws/install/interbotix_xs_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_modules:/home/joshhlee/interbotix_ws/install/interbotix_common_modules:/opt/ros/galactic /usr/bin/cmake --build /home/joshhlee/me326_ws/src/collaborative_robotics_course/build/me326_project -- -j4 -l4
+[0.495s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.531s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.531s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.607s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[0.653s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.658s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.790s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.845s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[0.848s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[0.871s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.017s] -- Found rclpy: 1.9.3 (/opt/ros/galactic/share/rclpy/cmake)
+[1.018s] -- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)
+[1.051s] -- Found nav_msgs: 2.2.4 (/opt/ros/galactic/share/nav_msgs/cmake)
+[1.118s] -- Found visualization_msgs: 2.2.4 (/opt/ros/galactic/share/visualization_msgs/cmake)
+[1.188s] -- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[1.257s] -- Found rosidl_default_generators: 1.1.1 (/opt/ros/galactic/share/rosidl_default_generators/cmake)
+[1.269s] -- Found action_msgs: 1.0.3 (/opt/ros/galactic/share/action_msgs/cmake)
+[1.307s] -- Found tf2: 0.17.5 (/opt/ros/galactic/share/tf2/cmake)
+[1.316s] -- Found tf2_ros: 0.17.5 (/opt/ros/galactic/share/tf2_ros/cmake)
+[1.593s] -- Found tf2_eigen: 0.17.5 (/opt/ros/galactic/share/tf2_eigen/cmake)
+[1.598s] -- Found tf2_geometry_msgs: 0.17.5 (/opt/ros/galactic/share/tf2_geometry_msgs/cmake)
+[1.642s] -- Found pcl_ros: 2.3.2 (/opt/ros/galactic/share/pcl_ros/cmake)
+[1.933s] -- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+[2.029s] -- The imported target "vtkParseOGLExt" references the file
+[2.029s]    "/usr/bin/vtkParseOGLExt-7.1"
+[2.029s] but this file does not exist.  Possible reasons include:
+[2.030s] * The file was deleted, renamed, or moved to another location.
+[2.030s] * An install or uninstall procedure did not complete successfully.
+[2.030s] * The installation package was faulty and contained
+[2.030s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[2.030s] but not all the files it references.
+[2.030s] 
+[2.030s] -- The imported target "vtkRenderingPythonTkWidgets" references the file
+[2.031s]    "/usr/lib/aarch64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+[2.031s] but this file does not exist.  Possible reasons include:
+[2.031s] * The file was deleted, renamed, or moved to another location.
+[2.031s] * An install or uninstall procedure did not complete successfully.
+[2.031s] * The installation package was faulty and contained
+[2.031s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[2.031s] but not all the files it references.
+[2.031s] 
+[2.032s] -- The imported target "vtk" references the file
+[2.032s]    "/usr/bin/vtk"
+[2.032s] but this file does not exist.  Possible reasons include:
+[2.032s] * The file was deleted, renamed, or moved to another location.
+[2.032s] * An install or uninstall procedure did not complete successfully.
+[2.032s] * The installation package was faulty and contained
+[2.032s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[2.032s] but not all the files it references.
+[2.032s] 
+[2.032s] -- The imported target "pvtk" references the file
+[2.032s]    "/usr/bin/pvtk"
+[2.032s] but this file does not exist.  Possible reasons include:
+[2.032s] * The file was deleted, renamed, or moved to another location.
+[2.032s] * An install or uninstall procedure did not complete successfully.
+[2.033s] * The installation package was faulty and contained
+[2.033s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[2.033s] but not all the files it references.
+[2.033s] 
+[2.061s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[2.067s] -- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+[2.084s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[2.089s] -- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+[2.102s] -- QHULL found (include: /usr/include, lib: optimized;/usr/lib/aarch64-linux-gnu/libqhull.so;debug;/usr/lib/aarch64-linux-gnu/libqhull.so)
+[2.107s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[2.387s] -- Found image_geometry: 3.1.3 (/opt/ros/galactic/share/image_geometry/cmake)
+[2.391s] -- Found image_transport: 2.5.1 (/opt/ros/galactic/share/image_transport/cmake)
+[2.426s] -- Found cv_bridge: 3.1.3 (/opt/ros/galactic/share/cv_bridge/cmake)
+[2.442s] -- Found la_msgs: 0.0.0 (/home/joshhlee/MK3_ws/src/install/la_msgs/share/la_msgs/cmake)
+[2.687s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[2.846s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/galactic/share/ament_cmake_ros/cmake)
+[3.101s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.209s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.240s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[3.240s] -- Found python_cmake_module: 0.8.1 (/opt/ros/galactic/share/python_cmake_module/cmake)
+[3.266s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.266s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[3.267s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so
+[3.334s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[3.348s] -- Configuring done
+[3.462s] -- Generating done
+[3.466s] -- Build files have been written to: /home/joshhlee/me326_ws/src/collaborative_robotics_course/build/me326_project
+[3.513s] [  3%] Built target me326_project__cpp
+[3.523s] [ 12%] Built target me326_project__rosidl_generator_c
+[3.542s] [ 12%] Built target ament_cmake_python_copy_me326_project
+[3.550s] [ 21%] [32mBuilding CXX object CMakeFiles/visual_block_perception_srv.dir/src/visual_block_perception_srv.cpp.o[0m
+[3.550s] [ 24%] Built target me326_project__rosidl_typesupport_fastrtps_cpp
+[3.558s] [ 33%] Built target me326_project__rosidl_typesupport_cpp
+[3.570s] [ 42%] Built target me326_project__rosidl_typesupport_introspection_cpp
+[3.587s] [ 51%] Built target me326_project__rosidl_typesupport_introspection_c
+[3.593s] [ 60%] Built target me326_project__rosidl_typesupport_fastrtps_c
+[3.600s] [ 69%] Built target me326_project__rosidl_typesupport_c
+[3.624s] [ 69%] Built target me326_project
+[3.647s] [ 72%] Built target me326_project__py
+[3.679s] [ 78%] Built target me326_project__python
+[3.731s] [ 84%] Built target me326_project__rosidl_typesupport_introspection_c__pyext
+[3.736s] [ 90%] Built target me326_project__rosidl_typesupport_c__pyext
+[3.765s] [ 96%] Built target me326_project__rosidl_typesupport_fastrtps_c__pyext
+[3.834s] running egg_info
+[3.834s] writing me326_project.egg-info/PKG-INFO
+[3.834s] writing dependency_links to me326_project.egg-info/dependency_links.txt
+[3.835s] writing top-level names to me326_project.egg-info/top_level.txt
+[3.865s] reading manifest file 'me326_project.egg-info/SOURCES.txt'
+[3.866s] writing manifest file 'me326_project.egg-info/SOURCES.txt'
+[3.891s] [ 96%] Built target ament_cmake_python_build_me326_project_egg
+[7.788s] [01m[K/home/joshhlee/me326_ws/src/collaborative_robotics_course/me326_project/src/visual_block_perception_srv.cpp:[m[K In member function ‘[01m[Kvoid Matching_Pix_to_Ptcld::service_callback(std::shared_ptr<la_msgs::srv::Ptps_Request_<std::allocator<void> > >, std::shared_ptr<la_msgs::srv::Ptps_Response_<std::allocator<void> > >)[m[K’:
+[7.789s] [01m[K/home/joshhlee/me326_ws/src/collaborative_robotics_course/me326_project/src/visual_block_perception_srv.cpp:629:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct la_msgs::srv::Ptps_Request_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct la_msgs::srv::Ptps_Request_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdesired_frame[m[K’
+[7.789s]   629 |   desired_block_frame_ = req->[01;31m[Kdesired_frame[m[K;
+[7.789s]       |                               [01;31m[K^~~~~~~~~~~~~[m[K
+[11.814s] make[2]: *** [CMakeFiles/visual_block_perception_srv.dir/build.make:63: CMakeFiles/visual_block_perception_srv.dir/src/visual_block_perception_srv.cpp.o] Error 1
+[11.815s] make[1]: *** [CMakeFiles/Makefile2:239: CMakeFiles/visual_block_perception_srv.dir/all] Error 2
+[11.815s] make: *** [Makefile:141: all] Error 2
+[11.826s] Invoked command in '/home/joshhlee/me326_ws/src/collaborative_robotics_course/build/me326_project' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/joshhlee/interbotix_ws/install/interbotix_xs_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_modules:/home/joshhlee/interbotix_ws/install/interbotix_common_modules:/opt/ros/galactic /usr/bin/cmake --build /home/joshhlee/me326_ws/src/collaborative_robotics_course/build/me326_project -- -j4 -l4

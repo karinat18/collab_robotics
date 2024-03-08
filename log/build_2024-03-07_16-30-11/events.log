@@ -1,0 +1,453 @@
+[0.000000] (-) TimerEvent: {}
+[0.000402] (la_msgs) JobQueued: {'identifier': 'la_msgs', 'dependencies': OrderedDict()}
+[0.000442] (me326_project) JobQueued: {'identifier': 'me326_project', 'dependencies': OrderedDict()}
+[0.000928] (la_msgs) JobStarted: {'identifier': 'la_msgs'}
+[0.100932] (-) TimerEvent: {}
+[0.202399] (-) TimerEvent: {}
+[0.216042] (me326_project) JobStarted: {'identifier': 'me326_project'}
+[0.303123] (-) TimerEvent: {}
+[0.405386] (-) TimerEvent: {}
+[0.431492] (la_msgs) JobProgress: {'identifier': 'la_msgs', 'progress': 'cmake'}
+[0.433298] (la_msgs) JobProgress: {'identifier': 'la_msgs', 'progress': 'build'}
+[0.433342] (la_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/joshhlee/me326_ws/src/collaborative_robotics_course/build/la_msgs', '--', '-j4', '-l4'], 'cwd': '/home/joshhlee/me326_ws/src/collaborative_robotics_course/build/la_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/joshhlee'), ('USER', 'joshhlee'), ('SSH_AGENT_PID', '1309'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/joshhlee/interbotix_ws/install/moveit_visual_tools/lib:/home/joshhlee/interbotix_ws/install/interbotix_xs_rviz/lib:/home/joshhlee/interbotix_ws/install/interbotix_xs_ros_control/lib:/home/joshhlee/interbotix_ws/install/interbotix_xs_msgs/lib:/home/joshhlee/interbotix_ws/install/interbotix_tf_tools/lib:/home/joshhlee/interbotix_ws/install/interbotix_perception_msgs/lib:/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface_msgs/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/share/gazebo/../../lib/aarch64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/joshhlee'), ('OLDPWD', '/home/joshhlee/me326_ws'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1198'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/joshhlee/interbotix_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'joshhlee'), ('JOURNAL_STREAM', '9:33118'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/aarch64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/galactic/bin:/home/joshhlee/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin'), ('SESSION_MANAGER', 'local/joshhlee:@/tmp/.ICE-unix/1395,unix/joshhlee:/tmp/.ICE-unix/1395'), ('INVOCATION_ID', '8744863566114fd3b3b1e082033f4b82'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c461eaa8_8d07_42ef_a33b_3ba4b1eca743'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('INTERBOTIX_XSLOCOBOT_ROBOT_MODEL', 'locobot_wx250s'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'GNOME'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/home/joshhlee/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('INTERBOTIX_XSLOCOBOT_BASE_TYPE', 'create3'), ('GNOME_TERMINAL_SERVICE', ':1.1462'), ('INTERBOTIX_WS', '/home/joshhlee/interbotix_ws'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface:/home/joshhlee/interbotix_ws/install/moveit_visual_tools:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_ros_control:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_sim:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_nav:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_control:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_descriptions:/home/joshhlee/interbotix_ws/install/interbotix_xs_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_xs_rviz:/home/joshhlee/interbotix_ws/install/interbotix_xs_ros_control:/home/joshhlee/interbotix_ws/install/interbotix_xs_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_perception_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_pipelines:/home/joshhlee/interbotix_ws/install/interbotix_xs_msgs:/home/joshhlee/interbotix_ws/install/interbotix_tf_tools:/home/joshhlee/interbotix_ws/install/interbotix_perception_msgs:/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface_msgs:/home/joshhlee/interbotix_ws/install/interbotix_common_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_common_sim:/home/joshhlee/interbotix_ws/install/interbotix_common_modules:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/joshhlee/me326_ws/src/collaborative_robotics_course/build/la_msgs'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/aarch64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/joshhlee/interbotix_ws/build/interbotix_xs_modules:/home/joshhlee/interbotix_ws/install/interbotix_xs_modules/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/build/interbotix_perception_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_modules/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/install/interbotix_xs_msgs/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/install/interbotix_perception_msgs/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface_msgs/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/build/interbotix_common_modules:/home/joshhlee/interbotix_ws/install/interbotix_common_modules/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface:/home/joshhlee/interbotix_ws/install/moveit_visual_tools:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_ros_control:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_sim:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_nav:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_control:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_descriptions:/home/joshhlee/interbotix_ws/install/interbotix_xs_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_xs_rviz:/home/joshhlee/interbotix_ws/install/interbotix_xs_ros_control:/home/joshhlee/interbotix_ws/install/interbotix_perception_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_perception_pipelines:/home/joshhlee/interbotix_ws/install/interbotix_xs_msgs:/home/joshhlee/interbotix_ws/install/interbotix_tf_tools:/home/joshhlee/interbotix_ws/install/interbotix_perception_msgs:/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface_msgs:/home/joshhlee/interbotix_ws/install/interbotix_common_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_common_sim:/home/joshhlee/interbotix_ws/install/interbotix_xs_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_modules:/home/joshhlee/interbotix_ws/install/interbotix_common_modules:/opt/ros/galactic')]), 'shell': False}
+[0.441606] (me326_project) JobProgress: {'identifier': 'me326_project', 'progress': 'cmake'}
+[0.444276] (me326_project) JobProgress: {'identifier': 'me326_project', 'progress': 'build'}
+[0.444485] (me326_project) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/joshhlee/me326_ws/src/collaborative_robotics_course/build/me326_project', '--', '-j4', '-l4'], 'cwd': '/home/joshhlee/me326_ws/src/collaborative_robotics_course/build/me326_project', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/joshhlee'), ('USER', 'joshhlee'), ('SSH_AGENT_PID', '1309'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/joshhlee/interbotix_ws/install/moveit_visual_tools/lib:/home/joshhlee/interbotix_ws/install/interbotix_xs_rviz/lib:/home/joshhlee/interbotix_ws/install/interbotix_xs_ros_control/lib:/home/joshhlee/interbotix_ws/install/interbotix_xs_msgs/lib:/home/joshhlee/interbotix_ws/install/interbotix_tf_tools/lib:/home/joshhlee/interbotix_ws/install/interbotix_perception_msgs/lib:/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface_msgs/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/share/gazebo/../../lib/aarch64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/joshhlee'), ('OLDPWD', '/home/joshhlee/me326_ws'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1198'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/joshhlee/interbotix_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'joshhlee'), ('JOURNAL_STREAM', '9:33118'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/aarch64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/galactic/bin:/home/joshhlee/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin'), ('SESSION_MANAGER', 'local/joshhlee:@/tmp/.ICE-unix/1395,unix/joshhlee:/tmp/.ICE-unix/1395'), ('INVOCATION_ID', '8744863566114fd3b3b1e082033f4b82'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c461eaa8_8d07_42ef_a33b_3ba4b1eca743'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('INTERBOTIX_XSLOCOBOT_ROBOT_MODEL', 'locobot_wx250s'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'GNOME'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/home/joshhlee/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('INTERBOTIX_XSLOCOBOT_BASE_TYPE', 'create3'), ('GNOME_TERMINAL_SERVICE', ':1.1462'), ('INTERBOTIX_WS', '/home/joshhlee/interbotix_ws'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface:/home/joshhlee/interbotix_ws/install/moveit_visual_tools:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_ros_control:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_sim:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_nav:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_control:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_descriptions:/home/joshhlee/interbotix_ws/install/interbotix_xs_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_xs_rviz:/home/joshhlee/interbotix_ws/install/interbotix_xs_ros_control:/home/joshhlee/interbotix_ws/install/interbotix_xs_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_perception_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_pipelines:/home/joshhlee/interbotix_ws/install/interbotix_xs_msgs:/home/joshhlee/interbotix_ws/install/interbotix_tf_tools:/home/joshhlee/interbotix_ws/install/interbotix_perception_msgs:/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface_msgs:/home/joshhlee/interbotix_ws/install/interbotix_common_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_common_sim:/home/joshhlee/interbotix_ws/install/interbotix_common_modules:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/joshhlee/me326_ws/src/collaborative_robotics_course/build/me326_project'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/aarch64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/joshhlee/interbotix_ws/build/interbotix_xs_modules:/home/joshhlee/interbotix_ws/install/interbotix_xs_modules/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/build/interbotix_perception_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_modules/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/install/interbotix_xs_msgs/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/install/interbotix_perception_msgs/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface_msgs/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/build/interbotix_common_modules:/home/joshhlee/interbotix_ws/install/interbotix_common_modules/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface:/home/joshhlee/interbotix_ws/install/moveit_visual_tools:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_ros_control:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_sim:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_nav:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_control:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_descriptions:/home/joshhlee/interbotix_ws/install/interbotix_xs_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_xs_rviz:/home/joshhlee/interbotix_ws/install/interbotix_xs_ros_control:/home/joshhlee/interbotix_ws/install/interbotix_perception_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_perception_pipelines:/home/joshhlee/interbotix_ws/install/interbotix_xs_msgs:/home/joshhlee/interbotix_ws/install/interbotix_tf_tools:/home/joshhlee/interbotix_ws/install/interbotix_perception_msgs:/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface_msgs:/home/joshhlee/interbotix_ws/install/interbotix_common_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_common_sim:/home/joshhlee/interbotix_ws/install/interbotix_xs_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_modules:/home/joshhlee/interbotix_ws/install/interbotix_common_modules:/opt/ros/galactic')]), 'shell': False}
+[0.480462] (me326_project) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)\n'}
+[0.498395] (la_msgs) StdoutLine: {'line': b'[  2%] Built target la_msgs__cpp\n'}
+[0.502285] (me326_project) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.502403] (me326_project) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.505042] (la_msgs) StdoutLine: {'line': b'[ 12%] Built target la_msgs__rosidl_generator_c\n'}
+[0.505491] (-) TimerEvent: {}
+[0.529413] (la_msgs) StdoutLine: {'line': b'[ 23%] Built target la_msgs__rosidl_typesupport_cpp\n'}
+[0.536452] (la_msgs) StdoutLine: {'line': b'[ 33%] Built target la_msgs__rosidl_typesupport_c\n'}
+[0.541128] (la_msgs) StdoutLine: {'line': b'[ 43%] Built target la_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.545178] (la_msgs) StdoutLine: {'line': b'[ 53%] Built target la_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.553253] (me326_project) StdoutLine: {'line': b'-- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)\n'}
+[0.556674] (la_msgs) StdoutLine: {'line': b'[ 64%] Built target la_msgs__rosidl_typesupport_introspection_c\n'}
+[0.567337] (la_msgs) StdoutLine: {'line': b'[ 74%] Built target la_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.582186] (me326_project) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.582553] (la_msgs) StdoutLine: {'line': b'[ 74%] Built target la_msgs\n'}
+[0.584405] (me326_project) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)\n'}
+[0.597068] (la_msgs) StdoutLine: {'line': b'[ 76%] Built target la_msgs__py\n'}
+[0.605820] (-) TimerEvent: {}
+[0.619031] (la_msgs) StdoutLine: {'line': b'[ 84%] Built target la_msgs__python\n'}
+[0.643015] (la_msgs) StdoutLine: {'line': b'[ 89%] Built target la_msgs__rosidl_typesupport_c__pyext\n'}
+[0.646134] (la_msgs) StdoutLine: {'line': b'[ 94%] Built target la_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.652775] (la_msgs) StdoutLine: {'line': b'[100%] Built target la_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[0.661125] (la_msgs) CommandEnded: {'returncode': 0}
+[0.682404] (me326_project) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.705914] (-) TimerEvent: {}
+[0.711482] (la_msgs) JobProgress: {'identifier': 'la_msgs', 'progress': 'install'}
+[0.718656] (la_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/joshhlee/me326_ws/src/collaborative_robotics_course/build/la_msgs'], 'cwd': '/home/joshhlee/me326_ws/src/collaborative_robotics_course/build/la_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/joshhlee'), ('USER', 'joshhlee'), ('SSH_AGENT_PID', '1309'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/joshhlee/interbotix_ws/install/moveit_visual_tools/lib:/home/joshhlee/interbotix_ws/install/interbotix_xs_rviz/lib:/home/joshhlee/interbotix_ws/install/interbotix_xs_ros_control/lib:/home/joshhlee/interbotix_ws/install/interbotix_xs_msgs/lib:/home/joshhlee/interbotix_ws/install/interbotix_tf_tools/lib:/home/joshhlee/interbotix_ws/install/interbotix_perception_msgs/lib:/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface_msgs/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/share/gazebo/../../lib/aarch64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/joshhlee'), ('OLDPWD', '/home/joshhlee/me326_ws'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1198'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/joshhlee/interbotix_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'joshhlee'), ('JOURNAL_STREAM', '9:33118'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/aarch64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/galactic/bin:/home/joshhlee/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin'), ('SESSION_MANAGER', 'local/joshhlee:@/tmp/.ICE-unix/1395,unix/joshhlee:/tmp/.ICE-unix/1395'), ('INVOCATION_ID', '8744863566114fd3b3b1e082033f4b82'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c461eaa8_8d07_42ef_a33b_3ba4b1eca743'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('INTERBOTIX_XSLOCOBOT_ROBOT_MODEL', 'locobot_wx250s'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'GNOME'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/home/joshhlee/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('INTERBOTIX_XSLOCOBOT_BASE_TYPE', 'create3'), ('GNOME_TERMINAL_SERVICE', ':1.1462'), ('INTERBOTIX_WS', '/home/joshhlee/interbotix_ws'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface:/home/joshhlee/interbotix_ws/install/moveit_visual_tools:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_ros_control:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_sim:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_nav:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_control:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_descriptions:/home/joshhlee/interbotix_ws/install/interbotix_xs_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_xs_rviz:/home/joshhlee/interbotix_ws/install/interbotix_xs_ros_control:/home/joshhlee/interbotix_ws/install/interbotix_xs_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_perception_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_pipelines:/home/joshhlee/interbotix_ws/install/interbotix_xs_msgs:/home/joshhlee/interbotix_ws/install/interbotix_tf_tools:/home/joshhlee/interbotix_ws/install/interbotix_perception_msgs:/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface_msgs:/home/joshhlee/interbotix_ws/install/interbotix_common_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_common_sim:/home/joshhlee/interbotix_ws/install/interbotix_common_modules:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/joshhlee/me326_ws/src/collaborative_robotics_course/build/la_msgs'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/aarch64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/joshhlee/interbotix_ws/build/interbotix_xs_modules:/home/joshhlee/interbotix_ws/install/interbotix_xs_modules/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/build/interbotix_perception_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_modules/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/install/interbotix_xs_msgs/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/install/interbotix_perception_msgs/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface_msgs/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/build/interbotix_common_modules:/home/joshhlee/interbotix_ws/install/interbotix_common_modules/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface:/home/joshhlee/interbotix_ws/install/moveit_visual_tools:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_ros_control:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_sim:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_nav:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_control:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_descriptions:/home/joshhlee/interbotix_ws/install/interbotix_xs_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_xs_rviz:/home/joshhlee/interbotix_ws/install/interbotix_xs_ros_control:/home/joshhlee/interbotix_ws/install/interbotix_perception_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_perception_pipelines:/home/joshhlee/interbotix_ws/install/interbotix_xs_msgs:/home/joshhlee/interbotix_ws/install/interbotix_tf_tools:/home/joshhlee/interbotix_ws/install/interbotix_perception_msgs:/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface_msgs:/home/joshhlee/interbotix_ws/install/interbotix_common_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_common_sim:/home/joshhlee/interbotix_ws/install/interbotix_xs_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_modules:/home/joshhlee/interbotix_ws/install/interbotix_common_modules:/opt/ros/galactic')]), 'shell': False}
+[0.720106] (me326_project) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)\n'}
+[0.721585] (me326_project) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.725916] (la_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.726053] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/ament_index/resource_index/rosidl_interfaces/la_msgs\n'}
+[0.726218] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs\n'}
+[0.726290] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/msg\n'}
+[0.726326] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.726366] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/srv\n'}
+[0.726432] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/srv/detail\n'}
+[0.726461] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/srv/detail/ptps__struct.h\n'}
+[0.726493] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/srv/detail/ptps__functions.c\n'}
+[0.726522] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/srv/detail/ptps__type_support.h\n'}
+[0.726548] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/srv/detail/ptps__functions.h\n'}
+[0.726574] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/srv/ptps.h\n'}
+[0.726601] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/action\n'}
+[0.726628] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/action/detail\n'}
+[0.726682] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/action/detail/move_base__struct.h\n'}
+[0.726747] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/action/detail/move_base__functions.c\n'}
+[0.726831] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/action/detail/move_base__type_support.h\n'}
+[0.726925] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/action/detail/move_base__functions.h\n'}
+[0.726969] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/action/move_base.h\n'}
+[0.726996] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/environment/library_path.sh\n'}
+[0.727042] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/environment/library_path.dsv\n'}
+[0.727068] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/lib/libla_msgs__rosidl_generator_c.so\n'}
+[0.727132] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs\n'}
+[0.727161] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/msg\n'}
+[0.727189] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.727219] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/srv\n'}
+[0.727320] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/srv/detail\n'}
+[0.727435] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/srv/detail/ptps__rosidl_typesupport_fastrtps_c.h\n'}
+[0.727518] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/action\n'}
+[0.727583] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/action/detail\n'}
+[0.727625] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/action/detail/move_base__rosidl_typesupport_fastrtps_c.h\n'}
+[0.727655] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/lib/libla_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[0.727682] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs\n'}
+[0.727709] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/msg\n'}
+[0.727768] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.727795] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/srv\n'}
+[0.727821] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/srv/detail\n'}
+[0.727894] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/srv/detail/ptps__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.728010] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/srv/detail/dds_fastrtps\n'}
+[0.728116] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/action\n'}
+[0.728149] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/action/detail\n'}
+[0.728176] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/action/detail/dds_fastrtps\n'}
+[0.728203] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/action/detail/move_base__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.728229] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/lib/libla_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.728277] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs\n'}
+[0.728306] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/msg\n'}
+[0.728333] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.728360] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/srv\n'}
+[0.728386] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/srv/detail\n'}
+[0.728413] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/srv/detail/ptps__type_support.c\n'}
+[0.728440] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/srv/detail/ptps__rosidl_typesupport_introspection_c.h\n'}
+[0.728467] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/action\n'}
+[0.728494] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/action/detail\n'}
+[0.728549] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/action/detail/move_base__rosidl_typesupport_introspection_c.h\n'}
+[0.728597] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/action/detail/move_base__type_support.c\n'}
+[0.728625] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/lib/libla_msgs__rosidl_typesupport_introspection_c.so\n'}
+[0.728652] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/lib/libla_msgs__rosidl_typesupport_c.so\n'}
+[0.728787] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs\n'}
+[0.728916] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/srv\n'}
+[0.729014] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/srv/detail\n'}
+[0.729138] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/srv/detail/ptps__builder.hpp\n'}
+[0.729218] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/srv/detail/ptps__struct.hpp\n'}
+[0.729249] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/srv/detail/ptps__traits.hpp\n'}
+[0.729276] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/srv/ptps.hpp\n'}
+[0.729320] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/action\n'}
+[0.729363] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/action/detail\n'}
+[0.729408] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/action/detail/move_base__struct.hpp\n'}
+[0.729449] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/action/detail/move_base__builder.hpp\n'}
+[0.729477] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/action/detail/move_base__traits.hpp\n'}
+[0.729504] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/action/move_base.hpp\n'}
+[0.729531] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs\n'}
+[0.729558] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/srv\n'}
+[0.729586] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/srv/detail\n'}
+[0.729640] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/srv/detail/ptps__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.729706] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/srv/detail/ptps__type_support.cpp\n'}
+[0.729741] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/action\n'}
+[0.729768] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/action/detail\n'}
+[0.729808] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/action/detail/move_base__type_support.cpp\n'}
+[0.730029] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/include/la_msgs/action/detail/move_base__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.730181] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/lib/libla_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.730224] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/lib/libla_msgs__rosidl_typesupport_cpp.so\n'}
+[0.730326] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/environment/pythonpath.sh\n'}
+[0.730368] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/environment/pythonpath.dsv\n'}
+[0.730401] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/lib/python3.8/site-packages/la_msgs/__init__.py\n'}
+[0.736137] (me326_project) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.769963] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/lib/python3.8/site-packages/la_msgs/action\n'}
+[0.770216] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/lib/python3.8/site-packages/la_msgs/action/__init__.py\n'}
+[0.770259] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/lib/python3.8/site-packages/la_msgs/action/_move_base_s.c\n'}
+[0.770290] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/lib/python3.8/site-packages/la_msgs/action/_move_base.py\n'}
+[0.770351] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/lib/python3.8/site-packages/la_msgs/srv\n'}
+[0.770389] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/lib/python3.8/site-packages/la_msgs/srv/__init__.py\n'}
+[0.770421] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/lib/python3.8/site-packages/la_msgs/srv/_ptps_s.c\n'}
+[0.770450] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/lib/python3.8/site-packages/la_msgs/srv/_ptps.py\n'}
+[0.770477] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/lib/python3.8/site-packages/la_msgs/la_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[0.770876] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/lib/python3.8/site-packages/la_msgs/la_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[0.771252] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/lib/python3.8/site-packages/la_msgs/la_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[0.771556] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/lib/libla_msgs__python.so\n'}
+[0.771708] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/action/MoveBase.idl\n'}
+[0.771795] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/srv/Ptps.idl\n'}
+[0.771853] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/action/MoveBase.action\n'}
+[0.771908] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/srv/Ptps.srv\n'}
+[0.771962] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/srv/Ptps_Request.msg\n'}
+[0.772024] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/srv/Ptps_Response.msg\n'}
+[0.772113] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/ament_index/resource_index/package_run_dependencies/la_msgs\n'}
+[0.772196] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/ament_index/resource_index/parent_prefix_path/la_msgs\n'}
+[0.772271] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/environment/ament_prefix_path.sh\n'}
+[0.772302] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/environment/ament_prefix_path.dsv\n'}
+[0.772330] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/environment/path.sh\n'}
+[0.772357] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/environment/path.dsv\n'}
+[0.772395] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/local_setup.bash\n'}
+[0.772433] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/local_setup.sh\n'}
+[0.772460] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/local_setup.zsh\n'}
+[0.772499] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/local_setup.dsv\n'}
+[0.772547] (la_msgs) StdoutLine: {'line': b'-- Installing: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/package.dsv\n'}
+[0.772574] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/ament_index/resource_index/packages/la_msgs\n'}
+[0.772601] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/cmake/la_msgs__rosidl_generator_cExport.cmake\n'}
+[0.772631] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/cmake/la_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.772677] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/cmake/la_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.772739] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/cmake/la_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.773328] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/cmake/la_msgs__rosidl_typesupport_cExport.cmake\n'}
+[0.773412] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/cmake/la_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.773476] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/cmake/la_msgs__rosidl_generator_cppExport.cmake\n'}
+[0.773541] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/cmake/la_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.773659] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/cmake/la_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.773688] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/cmake/la_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[0.773715] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/cmake/la_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.773741] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[0.773767] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.773800] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.773830] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.773863] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.773891] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.773922] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.773950] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/cmake/la_msgsConfig.cmake\n'}
+[0.773980] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/cmake/la_msgsConfig-version.cmake\n'}
+[0.774007] (la_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/la_msgs/share/la_msgs/package.xml\n'}
+[0.775660] (la_msgs) CommandEnded: {'returncode': 0}
+[0.806379] (-) TimerEvent: {}
+[0.838367] (me326_project) StdoutLine: {'line': b'-- Found rclpy: 1.9.3 (/opt/ros/galactic/share/rclpy/cmake)\n'}
+[0.838799] (me326_project) StdoutLine: {'line': b'-- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)\n'}
+[0.862580] (me326_project) StdoutLine: {'line': b'-- Found nav_msgs: 2.2.4 (/opt/ros/galactic/share/nav_msgs/cmake)\n'}
+[0.914528] (-) TimerEvent: {}
+[0.914727] (me326_project) StdoutLine: {'line': b'-- Found visualization_msgs: 2.2.4 (/opt/ros/galactic/share/visualization_msgs/cmake)\n'}
+[0.969904] (me326_project) StdoutLine: {'line': b'-- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)\n'}
+[1.017371] (me326_project) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.1.1 (/opt/ros/galactic/share/rosidl_default_generators/cmake)\n'}
+[1.017483] (-) TimerEvent: {}
+[1.024331] (me326_project) StdoutLine: {'line': b'-- Found action_msgs: 1.0.3 (/opt/ros/galactic/share/action_msgs/cmake)\n'}
+[1.051608] (me326_project) StdoutLine: {'line': b'-- Found tf2: 0.17.5 (/opt/ros/galactic/share/tf2/cmake)\n'}
+[1.058330] (me326_project) StdoutLine: {'line': b'-- Found tf2_ros: 0.17.5 (/opt/ros/galactic/share/tf2_ros/cmake)\n'}
+[1.118518] (-) TimerEvent: {}
+[1.219051] (-) TimerEvent: {}
+[1.296337] (me326_project) StdoutLine: {'line': b'-- Found tf2_eigen: 0.17.5 (/opt/ros/galactic/share/tf2_eigen/cmake)\n'}
+[1.300577] (me326_project) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.17.5 (/opt/ros/galactic/share/tf2_geometry_msgs/cmake)\n'}
+[1.320039] (-) TimerEvent: {}
+[1.340194] (me326_project) StdoutLine: {'line': b'-- Found pcl_ros: 2.3.2 (/opt/ros/galactic/share/pcl_ros/cmake)\n'}
+[1.421431] (-) TimerEvent: {}
+[1.495051] (la_msgs) JobEnded: {'identifier': 'la_msgs', 'rc': 0}
+[1.522022] (-) TimerEvent: {}
+[1.612702] (me326_project) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.3.7)\n'}
+[1.622143] (-) TimerEvent: {}
+[1.690934] (me326_project) StdoutLine: {'line': b'-- The imported target "vtkParseOGLExt" references the file\n'}
+[1.691234] (me326_project) StdoutLine: {'line': b'   "/usr/bin/vtkParseOGLExt-7.1"\n'}
+[1.691353] (me326_project) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.691565] (me326_project) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.691600] (me326_project) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.691630] (me326_project) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.691658] (me326_project) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.691687] (me326_project) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.691715] (me326_project) StdoutLine: {'line': b'\n'}
+[1.694081] (me326_project) StdoutLine: {'line': b'-- The imported target "vtkRenderingPythonTkWidgets" references the file\n'}
+[1.694476] (me326_project) StdoutLine: {'line': b'   "/usr/lib/aarch64-linux-gnu/libvtkRenderingPythonTkWidgets.so"\n'}
+[1.694590] (me326_project) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.694633] (me326_project) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.694671] (me326_project) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.694720] (me326_project) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.694811] (me326_project) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.694856] (me326_project) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.694884] (me326_project) StdoutLine: {'line': b'\n'}
+[1.694912] (me326_project) StdoutLine: {'line': b'-- The imported target "vtk" references the file\n'}
+[1.694981] (me326_project) StdoutLine: {'line': b'   "/usr/bin/vtk"\n'}
+[1.695016] (me326_project) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.695047] (me326_project) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.695076] (me326_project) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.695104] (me326_project) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.695164] (me326_project) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.695221] (me326_project) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.695253] (me326_project) StdoutLine: {'line': b'\n'}
+[1.695319] (me326_project) StdoutLine: {'line': b'-- The imported target "pvtk" references the file\n'}
+[1.695350] (me326_project) StdoutLine: {'line': b'   "/usr/bin/pvtk"\n'}
+[1.695379] (me326_project) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[1.695412] (me326_project) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[1.695442] (me326_project) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[1.695493] (me326_project) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[1.695543] (me326_project) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[1.695573] (me326_project) StdoutLine: {'line': b'but not all the files it references.\n'}
+[1.695603] (me326_project) StdoutLine: {'line': b'\n'}
+[1.711967] (me326_project) StdoutLine: {'line': b'-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)\n'}
+[1.719149] (me326_project) StdoutLine: {'line': b'-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)\n'}
+[1.722412] (-) TimerEvent: {}
+[1.737585] (me326_project) StdoutLine: {'line': b'-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)\n'}
+[1.747020] (me326_project) StdoutLine: {'line': b'-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)\n'}
+[1.758758] (me326_project) StdoutLine: {'line': b'-- QHULL found (include: /usr/include, lib: optimized;/usr/lib/aarch64-linux-gnu/libqhull.so;debug;/usr/lib/aarch64-linux-gnu/libqhull.so)\n'}
+[1.765310] (me326_project) StdoutLine: {'line': b'-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)\n'}
+[1.824117] (-) TimerEvent: {}
+[1.924564] (-) TimerEvent: {}
+[1.982381] (me326_project) StdoutLine: {'line': b'-- Found image_geometry: 3.1.3 (/opt/ros/galactic/share/image_geometry/cmake)\n'}
+[1.984761] (me326_project) StdoutLine: {'line': b'-- Found image_transport: 2.5.1 (/opt/ros/galactic/share/image_transport/cmake)\n'}
+[2.010653] (me326_project) StdoutLine: {'line': b'-- Found cv_bridge: 3.1.3 (/opt/ros/galactic/share/cv_bridge/cmake)\n'}
+[2.022563] (me326_project) StdoutLine: {'line': b'-- Found la_msgs: 0.0.0 (/home/joshhlee/MK3_ws/src/install/la_msgs/share/la_msgs/cmake)\n'}
+[2.025038] (-) TimerEvent: {}
+[2.125403] (-) TimerEvent: {}
+[2.225830] (-) TimerEvent: {}
+[2.261816] (me326_project) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[2.326618] (-) TimerEvent: {}
+[2.399408] (me326_project) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/galactic/share/ament_cmake_ros/cmake)\n'}
+[2.427500] (-) TimerEvent: {}
+[2.527876] (-) TimerEvent: {}
+[2.596961] (me326_project) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.629955] (-) TimerEvent: {}
+[2.704774] (me326_project) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.730091] (-) TimerEvent: {}
+[2.740001] (me326_project) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[2.740230] (me326_project) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/galactic/share/python_cmake_module/cmake)\n'}
+[2.759458] (me326_project) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.759602] (me326_project) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[2.759635] (me326_project) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so\n'}
+[2.806762] (me326_project) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)\n'}
+[2.812880] (me326_project) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.830888] (-) TimerEvent: {}
+[2.879664] (me326_project) StdoutLine: {'line': b'-- Generating done\n'}
+[2.883236] (me326_project) StdoutLine: {'line': b'-- Build files have been written to: /home/joshhlee/me326_ws/src/collaborative_robotics_course/build/me326_project\n'}
+[2.922912] (me326_project) StdoutLine: {'line': b'[  3%] Built target me326_project__cpp\n'}
+[2.924170] (me326_project) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target visual_block_perception_srv\x1b[0m\n'}
+[2.928172] (me326_project) StdoutLine: {'line': b'[ 12%] Built target me326_project__rosidl_generator_c\n'}
+[2.934317] (-) TimerEvent: {}
+[2.940922] (me326_project) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_me326_project\n'}
+[2.950611] (me326_project) StdoutLine: {'line': b'[ 21%] Built target me326_project__rosidl_typesupport_fastrtps_cpp\n'}
+[2.956558] (me326_project) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/visual_block_perception_srv.dir/src/visual_block_perception_srv.cpp.o\x1b[0m\n'}
+[2.956980] (me326_project) StdoutLine: {'line': b'[ 33%] Built target me326_project__rosidl_typesupport_cpp\n'}
+[2.988691] (me326_project) StdoutLine: {'line': b'[ 42%] Built target me326_project__rosidl_typesupport_introspection_cpp\n'}
+[2.988934] (me326_project) StdoutLine: {'line': b'[ 51%] Built target me326_project__rosidl_typesupport_introspection_c\n'}
+[2.997344] (me326_project) StdoutLine: {'line': b'[ 60%] Built target me326_project__rosidl_typesupport_fastrtps_c\n'}
+[3.012396] (me326_project) StdoutLine: {'line': b'[ 69%] Built target me326_project__rosidl_typesupport_c\n'}
+[3.030318] (me326_project) StdoutLine: {'line': b'[ 69%] Built target me326_project\n'}
+[3.034404] (-) TimerEvent: {}
+[3.048408] (me326_project) StdoutLine: {'line': b'[ 72%] Built target me326_project__py\n'}
+[3.085342] (me326_project) StdoutLine: {'line': b'[ 78%] Built target me326_project__python\n'}
+[3.132575] (me326_project) StdoutLine: {'line': b'[ 84%] Built target me326_project__rosidl_typesupport_c__pyext\n'}
+[3.132778] (me326_project) StdoutLine: {'line': b'[ 90%] Built target me326_project__rosidl_typesupport_introspection_c__pyext\n'}
+[3.134528] (-) TimerEvent: {}
+[3.153218] (me326_project) StdoutLine: {'line': b'[ 96%] Built target me326_project__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.187699] (me326_project) StdoutLine: {'line': b'running egg_info\n'}
+[3.188067] (me326_project) StdoutLine: {'line': b'writing me326_project.egg-info/PKG-INFO\n'}
+[3.188306] (me326_project) StdoutLine: {'line': b'writing dependency_links to me326_project.egg-info/dependency_links.txt\n'}
+[3.188544] (me326_project) StdoutLine: {'line': b'writing top-level names to me326_project.egg-info/top_level.txt\n'}
+[3.211725] (me326_project) StdoutLine: {'line': b"reading manifest file 'me326_project.egg-info/SOURCES.txt'\n"}
+[3.212150] (me326_project) StdoutLine: {'line': b"writing manifest file 'me326_project.egg-info/SOURCES.txt'\n"}
+[3.229825] (me326_project) StdoutLine: {'line': b'[ 96%] Built target ament_cmake_python_build_me326_project_egg\n'}
+[3.235400] (-) TimerEvent: {}
+[3.335793] (-) TimerEvent: {}
+[3.436133] (-) TimerEvent: {}
+[3.536495] (-) TimerEvent: {}
+[3.639026] (-) TimerEvent: {}
+[3.740313] (-) TimerEvent: {}
+[3.841007] (-) TimerEvent: {}
+[3.941786] (-) TimerEvent: {}
+[4.042701] (-) TimerEvent: {}
+[4.143411] (-) TimerEvent: {}
+[4.244808] (-) TimerEvent: {}
+[4.345447] (-) TimerEvent: {}
+[4.447485] (-) TimerEvent: {}
+[4.548313] (-) TimerEvent: {}
+[4.648627] (-) TimerEvent: {}
+[4.749043] (-) TimerEvent: {}
+[4.849758] (-) TimerEvent: {}
+[4.950551] (-) TimerEvent: {}
+[5.051778] (-) TimerEvent: {}
+[5.152398] (-) TimerEvent: {}
+[5.253051] (-) TimerEvent: {}
+[5.353713] (-) TimerEvent: {}
+[5.454392] (-) TimerEvent: {}
+[5.554765] (-) TimerEvent: {}
+[5.655508] (-) TimerEvent: {}
+[5.756067] (-) TimerEvent: {}
+[5.857451] (-) TimerEvent: {}
+[5.957799] (-) TimerEvent: {}
+[6.058193] (-) TimerEvent: {}
+[6.158919] (-) TimerEvent: {}
+[6.259809] (-) TimerEvent: {}
+[6.360812] (-) TimerEvent: {}
+[6.461704] (-) TimerEvent: {}
+[6.562891] (-) TimerEvent: {}
+[6.663393] (-) TimerEvent: {}
+[6.764839] (-) TimerEvent: {}
+[6.865968] (-) TimerEvent: {}
+[6.967889] (-) TimerEvent: {}
+[7.070206] (-) TimerEvent: {}
+[7.172217] (-) TimerEvent: {}
+[7.274740] (-) TimerEvent: {}
+[7.378310] (-) TimerEvent: {}
+[7.478743] (-) TimerEvent: {}
+[7.579127] (-) TimerEvent: {}
+[7.680079] (-) TimerEvent: {}
+[7.780522] (-) TimerEvent: {}
+[7.881130] (-) TimerEvent: {}
+[7.982291] (-) TimerEvent: {}
+[8.083644] (-) TimerEvent: {}
+[8.185775] (-) TimerEvent: {}
+[8.286561] (-) TimerEvent: {}
+[8.389495] (-) TimerEvent: {}
+[8.492910] (-) TimerEvent: {}
+[8.594951] (-) TimerEvent: {}
+[8.696234] (-) TimerEvent: {}
+[8.796600] (-) TimerEvent: {}
+[8.897100] (-) TimerEvent: {}
+[8.997619] (-) TimerEvent: {}
+[9.098219] (-) TimerEvent: {}
+[9.199963] (-) TimerEvent: {}
+[9.300402] (-) TimerEvent: {}
+[9.402968] (-) TimerEvent: {}
+[9.504307] (-) TimerEvent: {}
+[9.604825] (-) TimerEvent: {}
+[9.705947] (-) TimerEvent: {}
+[9.807068] (-) TimerEvent: {}
+[9.907588] (-) TimerEvent: {}
+[10.011065] (-) TimerEvent: {}
+[10.111562] (-) TimerEvent: {}
+[10.211996] (-) TimerEvent: {}
+[10.313193] (-) TimerEvent: {}
+[10.413874] (-) TimerEvent: {}
+[10.514661] (-) TimerEvent: {}
+[10.615814] (-) TimerEvent: {}
+[10.717451] (-) TimerEvent: {}
+[10.817913] (-) TimerEvent: {}
+[10.918380] (-) TimerEvent: {}
+[11.020065] (-) TimerEvent: {}
+[11.122823] (-) TimerEvent: {}
+[11.225997] (-) TimerEvent: {}
+[11.326345] (-) TimerEvent: {}
+[11.430059] (-) TimerEvent: {}
+[11.531594] (-) TimerEvent: {}
+[11.633310] (-) TimerEvent: {}
+[11.734101] (-) TimerEvent: {}
+[11.835972] (-) TimerEvent: {}
+[11.937908] (-) TimerEvent: {}
+[12.040091] (-) TimerEvent: {}
+[12.140611] (-) TimerEvent: {}
+[12.243400] (-) TimerEvent: {}
+[12.344388] (-) TimerEvent: {}
+[12.445097] (-) TimerEvent: {}
+[12.545587] (-) TimerEvent: {}
+[12.646427] (-) TimerEvent: {}
+[12.746820] (-) TimerEvent: {}
+[12.849803] (-) TimerEvent: {}
+[12.951335] (-) TimerEvent: {}
+[13.051698] (-) TimerEvent: {}
+[13.152674] (-) TimerEvent: {}
+[13.212973] (me326_project) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable visual_block_perception_srv\x1b[0m\n'}
+[13.252811] (-) TimerEvent: {}
+[13.355388] (-) TimerEvent: {}
+[13.456972] (-) TimerEvent: {}
+[13.558353] (-) TimerEvent: {}
+[13.660728] (-) TimerEvent: {}
+[13.763349] (-) TimerEvent: {}
+[13.864148] (-) TimerEvent: {}
+[13.879380] (me326_project) StdoutLine: {'line': b'[100%] Built target visual_block_perception_srv\n'}
+[13.898621] (me326_project) CommandEnded: {'returncode': 0}
+[13.963111] (me326_project) JobProgress: {'identifier': 'me326_project', 'progress': 'install'}
+[13.963693] (me326_project) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/joshhlee/me326_ws/src/collaborative_robotics_course/build/me326_project'], 'cwd': '/home/joshhlee/me326_ws/src/collaborative_robotics_course/build/me326_project', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/joshhlee'), ('USER', 'joshhlee'), ('SSH_AGENT_PID', '1309'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/joshhlee/interbotix_ws/install/moveit_visual_tools/lib:/home/joshhlee/interbotix_ws/install/interbotix_xs_rviz/lib:/home/joshhlee/interbotix_ws/install/interbotix_xs_ros_control/lib:/home/joshhlee/interbotix_ws/install/interbotix_xs_msgs/lib:/home/joshhlee/interbotix_ws/install/interbotix_tf_tools/lib:/home/joshhlee/interbotix_ws/install/interbotix_perception_msgs/lib:/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface_msgs/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/share/gazebo/../../lib/aarch64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/joshhlee'), ('OLDPWD', '/home/joshhlee/me326_ws'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1198'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/joshhlee/interbotix_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'joshhlee'), ('JOURNAL_STREAM', '9:33118'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/aarch64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/galactic/bin:/home/joshhlee/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin'), ('SESSION_MANAGER', 'local/joshhlee:@/tmp/.ICE-unix/1395,unix/joshhlee:/tmp/.ICE-unix/1395'), ('INVOCATION_ID', '8744863566114fd3b3b1e082033f4b82'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c461eaa8_8d07_42ef_a33b_3ba4b1eca743'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('INTERBOTIX_XSLOCOBOT_ROBOT_MODEL', 'locobot_wx250s'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'GNOME'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/home/joshhlee/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('INTERBOTIX_XSLOCOBOT_BASE_TYPE', 'create3'), ('GNOME_TERMINAL_SERVICE', ':1.1462'), ('INTERBOTIX_WS', '/home/joshhlee/interbotix_ws'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface:/home/joshhlee/interbotix_ws/install/moveit_visual_tools:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_ros_control:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_sim:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_nav:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_control:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_descriptions:/home/joshhlee/interbotix_ws/install/interbotix_xs_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_xs_rviz:/home/joshhlee/interbotix_ws/install/interbotix_xs_ros_control:/home/joshhlee/interbotix_ws/install/interbotix_xs_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_perception_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_pipelines:/home/joshhlee/interbotix_ws/install/interbotix_xs_msgs:/home/joshhlee/interbotix_ws/install/interbotix_tf_tools:/home/joshhlee/interbotix_ws/install/interbotix_perception_msgs:/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface_msgs:/home/joshhlee/interbotix_ws/install/interbotix_common_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_common_sim:/home/joshhlee/interbotix_ws/install/interbotix_common_modules:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/joshhlee/me326_ws/src/collaborative_robotics_course/build/me326_project'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/aarch64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/joshhlee/interbotix_ws/build/interbotix_xs_modules:/home/joshhlee/interbotix_ws/install/interbotix_xs_modules/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/build/interbotix_perception_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_modules/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/install/interbotix_xs_msgs/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/install/interbotix_perception_msgs/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface_msgs/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/build/interbotix_common_modules:/home/joshhlee/interbotix_ws/install/interbotix_common_modules/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface:/home/joshhlee/interbotix_ws/install/moveit_visual_tools:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_ros_control:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_sim:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_nav:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_control:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_descriptions:/home/joshhlee/interbotix_ws/install/interbotix_xs_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_xs_rviz:/home/joshhlee/interbotix_ws/install/interbotix_xs_ros_control:/home/joshhlee/interbotix_ws/install/interbotix_perception_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_perception_pipelines:/home/joshhlee/interbotix_ws/install/interbotix_xs_msgs:/home/joshhlee/interbotix_ws/install/interbotix_tf_tools:/home/joshhlee/interbotix_ws/install/interbotix_perception_msgs:/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface_msgs:/home/joshhlee/interbotix_ws/install/interbotix_common_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_common_sim:/home/joshhlee/interbotix_ws/install/interbotix_xs_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_modules:/home/joshhlee/interbotix_ws/install/interbotix_common_modules:/opt/ros/galactic')]), 'shell': False}
+[13.966230] (-) TimerEvent: {}
+[13.973629] (me326_project) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.974261] (me326_project) StdoutLine: {'line': b'-- Installing: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/me326_project/visual_block_perception_srv\n'}
+[13.984400] (me326_project) StdoutLine: {'line': b'-- Set runtime path of "/home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/me326_project/visual_block_perception_srv" to ""\n'}
+[13.984674] (me326_project) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/environment/pythonpath.sh\n'}
+[13.984772] (me326_project) StdoutLine: {'line': b'-- Installing: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/environment/pythonpath.dsv\n'}
+[13.984841] (me326_project) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages//me326_project.egg-info\n'}
+[13.984917] (me326_project) StdoutLine: {'line': b'-- Installing: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages//me326_project.egg-info/dependency_links.txt\n'}
+[13.984996] (me326_project) StdoutLine: {'line': b'-- Installing: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages//me326_project.egg-info/PKG-INFO\n'}
+[13.985049] (me326_project) StdoutLine: {'line': b'-- Installing: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages//me326_project.egg-info/top_level.txt\n'}
+[13.985097] (me326_project) StdoutLine: {'line': b'-- Installing: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages//me326_project.egg-info/SOURCES.txt\n'}
+[13.985193] (me326_project) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project\n'}
+[13.985407] (me326_project) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/__init__.py\n'}
+[13.985550] (me326_project) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/initial_point.py\n'}
+[13.985645] (me326_project) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/RRTstar.py\n'}
+[13.985693] (me326_project) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/circle_motion_tracking.py\n'}
+[13.985739] (me326_project) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/record_rosbag.py\n'}
+[13.985795] (me326_project) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/locobot1_example_motion.py\n'}
+[13.985863] (me326_project) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/move_base_client.py\n'}
+[13.985925] (me326_project) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/move_locobot_base_action_server.py\n'}
+[13.985988] (me326_project) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/locobot_moveitpy.py\n'}
+[13.986043] (me326_project) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/go_to_point.py\n'}
+[13.986109] (me326_project) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/matching_ptcld.py\n'}
+[13.986178] (me326_project) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/read_rosbag.py\n'}
+[13.986208] (me326_project) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/locobot_example_motion.py\n'}
+[13.986236] (me326_project) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/vision_center.py\n'}
+[13.986289] (me326_project) StdoutLine: {'line': b'-- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/locobot_motion_example.py\n'}
+[14.016321] (me326_project) StdoutLine: {'line': b"Listing '/home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project'...\n"}
+[14.019672] (me326_project) StderrLine: {'line': b'CMake Error at cmake_install.cmake:85 (file):\n'}
+[14.019894] (me326_project) StderrLine: {'line': b'  file INSTALL cannot find\n'}
+[14.019968] (me326_project) StderrLine: {'line': b'  "/home/joshhlee/me326_ws/src/collaborative_robotics_course/me326_project/scripts/locobot1_example_motion.py":\n'}
+[14.020019] (me326_project) StderrLine: {'line': b'  No such file or directory.\n'}
+[14.020068] (me326_project) StderrLine: {'line': b'\n'}
+[14.020315] (me326_project) StderrLine: {'line': b'\n'}
+[14.021685] (me326_project) CommandEnded: {'returncode': 1}
+[14.068865] (-) TimerEvent: {}
+[14.171602] (-) TimerEvent: {}
+[14.275248] (-) TimerEvent: {}
+[14.312720] (me326_project) JobEnded: {'identifier': 'me326_project', 'rc': 1}
+[14.324562] (-) EventReactorShutdown: {}

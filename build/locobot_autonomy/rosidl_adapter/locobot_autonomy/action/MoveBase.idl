@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from locobot_autonomy/action/MoveBase.action
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Pose.idl"
+
+module locobot_autonomy {
+  module action {
+    struct MoveBase_Goal {
+      geometry_msgs::msg::Pose target_pose;
+    };
+    struct MoveBase_Result {
+      boolean done;
+    };
+    struct MoveBase_Feedback {
+      double distance;
+    };
+  };
+};

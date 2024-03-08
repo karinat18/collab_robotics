@@ -1,0 +1,365 @@
+[0.000000] (-) TimerEvent: {}
+[0.000881] (me326_project) JobQueued: {'identifier': 'me326_project', 'dependencies': OrderedDict()}
+[0.000918] (me326_project) JobStarted: {'identifier': 'me326_project'}
+[0.100702] (-) TimerEvent: {}
+[0.204509] (-) TimerEvent: {}
+[0.305815] (-) TimerEvent: {}
+[0.350040] (me326_project) JobProgress: {'identifier': 'me326_project', 'progress': 'cmake'}
+[0.350635] (me326_project) Command: {'cmd': ['/usr/bin/cmake', '/home/joshhlee/me326_ws/src/collaborative_robotics_course/me326_project', '-DCMAKE_INSTALL_PREFIX=/home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project'], 'cwd': '/home/joshhlee/me326_ws/src/collaborative_robotics_course/build/me326_project', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/joshhlee'), ('USER', 'joshhlee'), ('SSH_AGENT_PID', '1309'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/joshhlee/me326_ws/install/me326_project/lib:/home/joshhlee/MK3_ws/src/install/locobot_autonomy/lib:/home/joshhlee/MK3_ws/src/install/la_msgs/lib:/home/joshhlee/interbotix_ws/install/moveit_visual_tools/lib:/home/joshhlee/interbotix_ws/install/interbotix_xs_rviz/lib:/home/joshhlee/interbotix_ws/install/interbotix_xs_ros_control/lib:/home/joshhlee/interbotix_ws/install/interbotix_xs_msgs/lib:/home/joshhlee/interbotix_ws/install/interbotix_tf_tools/lib:/home/joshhlee/interbotix_ws/install/interbotix_perception_msgs/lib:/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface_msgs/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/share/gazebo/../../lib/aarch64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/joshhlee'), ('OLDPWD', '/home/joshhlee/me326_ws/src'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1198'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/joshhlee/me326_ws/install:/home/joshhlee/interbotix_ws/install:/home/joshhlee/MK3_ws/src/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'joshhlee'), ('JOURNAL_STREAM', '9:33118'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/aarch64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/galactic/bin:/home/joshhlee/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin'), ('SESSION_MANAGER', 'local/joshhlee:@/tmp/.ICE-unix/1395,unix/joshhlee:/tmp/.ICE-unix/1395'), ('INVOCATION_ID', '8744863566114fd3b3b1e082033f4b82'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7da8d907_1655_4dfb_860f_aefc846a1335'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('INTERBOTIX_XSLOCOBOT_ROBOT_MODEL', 'locobot_wx250s'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'GNOME'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/home/joshhlee/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('INTERBOTIX_XSLOCOBOT_BASE_TYPE', 'create3'), ('GNOME_TERMINAL_SERVICE', ':1.792'), ('INTERBOTIX_WS', '/home/joshhlee/interbotix_ws'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/joshhlee/me326_ws/install/me326_project:/home/joshhlee/me326_ws/install/me326_locobot_example:/home/joshhlee/MK3_ws/src/install/locobot_autonomy:/home/joshhlee/MK3_ws/src/install/la_msgs:/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface:/home/joshhlee/interbotix_ws/install/moveit_visual_tools:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_ros_control:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_sim:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_nav:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_control:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_descriptions:/home/joshhlee/interbotix_ws/install/interbotix_xs_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_xs_rviz:/home/joshhlee/interbotix_ws/install/interbotix_xs_ros_control:/home/joshhlee/interbotix_ws/install/interbotix_xs_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_perception_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_pipelines:/home/joshhlee/interbotix_ws/install/interbotix_xs_msgs:/home/joshhlee/interbotix_ws/install/interbotix_tf_tools:/home/joshhlee/interbotix_ws/install/interbotix_perception_msgs:/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface_msgs:/home/joshhlee/interbotix_ws/install/interbotix_common_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_common_sim:/home/joshhlee/interbotix_ws/install/interbotix_common_modules:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/joshhlee/me326_ws/src/collaborative_robotics_course/build/me326_project'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/aarch64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/joshhlee/me326_ws/install/me326_project/lib/python3.8/site-packages:/home/joshhlee/MK3_ws/src/install/locobot_autonomy/lib/python3.8/site-packages:/home/joshhlee/MK3_ws/src/install/la_msgs/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/build/interbotix_xs_modules:/home/joshhlee/interbotix_ws/install/interbotix_xs_modules/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/build/interbotix_perception_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_modules/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/install/interbotix_xs_msgs/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/install/interbotix_perception_msgs/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface_msgs/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/build/interbotix_common_modules:/home/joshhlee/interbotix_ws/install/interbotix_common_modules/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/joshhlee/me326_ws/install/me326_project:/home/joshhlee/me326_ws/install/me326_locobot_example:/home/joshhlee/MK3_ws/src/install/locobot_autonomy:/home/joshhlee/MK3_ws/src/install/la_msgs:/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface:/home/joshhlee/interbotix_ws/install/moveit_visual_tools:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_ros_control:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_sim:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_nav:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_control:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_descriptions:/home/joshhlee/interbotix_ws/install/interbotix_xs_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_xs_rviz:/home/joshhlee/interbotix_ws/install/interbotix_xs_ros_control:/home/joshhlee/interbotix_ws/install/interbotix_perception_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_perception_pipelines:/home/joshhlee/interbotix_ws/install/interbotix_xs_msgs:/home/joshhlee/interbotix_ws/install/interbotix_tf_tools:/home/joshhlee/interbotix_ws/install/interbotix_perception_msgs:/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface_msgs:/home/joshhlee/interbotix_ws/install/interbotix_common_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_common_sim:/home/joshhlee/interbotix_ws/install/interbotix_xs_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_modules:/home/joshhlee/interbotix_ws/install/interbotix_common_modules:/opt/ros/galactic')]), 'shell': False}
+[0.406400] (-) TimerEvent: {}
+[0.460793] (me326_project) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.507228] (-) TimerEvent: {}
+[0.528577] (me326_project) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.533794] (me326_project) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.598222] (me326_project) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.598943] (me326_project) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.607538] (-) TimerEvent: {}
+[0.653124] (me326_project) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.661956] (me326_project) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.662274] (me326_project) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.664341] (me326_project) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.707646] (-) TimerEvent: {}
+[0.725364] (me326_project) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.726253] (me326_project) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.789778] (me326_project) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.798886] (me326_project) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.799302] (me326_project) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.803336] (me326_project) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)\n'}
+[0.807771] (-) TimerEvent: {}
+[0.830663] (me326_project) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.830734] (me326_project) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.908345] (-) TimerEvent: {}
+[0.918524] (me326_project) StdoutLine: {'line': b'-- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)\n'}
+[0.996244] (me326_project) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.006654] (me326_project) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)\n'}
+[1.008841] (-) TimerEvent: {}
+[1.086134] (me326_project) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[1.109067] (-) TimerEvent: {}
+[1.116706] (me326_project) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/galactic/include  \n'}
+[1.198503] (me326_project) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.210607] (-) TimerEvent: {}
+[1.267037] (me326_project) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)\n'}
+[1.271800] (me326_project) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)\n'}
+[1.290960] (me326_project) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[1.291950] (me326_project) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.310727] (-) TimerEvent: {}
+[1.360399] (me326_project) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.360616] (me326_project) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.411491] (-) TimerEvent: {}
+[1.419517] (me326_project) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[1.419766] (me326_project) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[1.468106] (me326_project) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[1.468326] (me326_project) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[1.511606] (-) TimerEvent: {}
+[1.521997] (me326_project) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[1.523006] (me326_project) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.613068] (-) TimerEvent: {}
+[1.672928] (me326_project) StdoutLine: {'line': b'-- Found rclpy: 1.9.3 (/opt/ros/galactic/share/rclpy/cmake)\n'}
+[1.675578] (me326_project) StdoutLine: {'line': b'-- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)\n'}
+[1.708158] (me326_project) StdoutLine: {'line': b'-- Found nav_msgs: 2.2.4 (/opt/ros/galactic/share/nav_msgs/cmake)\n'}
+[1.714106] (-) TimerEvent: {}
+[1.775919] (me326_project) StdoutLine: {'line': b'-- Found visualization_msgs: 2.2.4 (/opt/ros/galactic/share/visualization_msgs/cmake)\n'}
+[1.817166] (-) TimerEvent: {}
+[1.843575] (me326_project) StdoutLine: {'line': b'-- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)\n'}
+[1.911873] (me326_project) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.1.1 (/opt/ros/galactic/share/rosidl_default_generators/cmake)\n'}
+[1.917332] (-) TimerEvent: {}
+[1.926955] (me326_project) StdoutLine: {'line': b'-- Found action_msgs: 1.0.3 (/opt/ros/galactic/share/action_msgs/cmake)\n'}
+[1.966997] (me326_project) StdoutLine: {'line': b'-- Found tf2: 0.17.5 (/opt/ros/galactic/share/tf2/cmake)\n'}
+[1.979482] (me326_project) StdoutLine: {'line': b'-- Found tf2_ros: 0.17.5 (/opt/ros/galactic/share/tf2_ros/cmake)\n'}
+[2.019413] (-) TimerEvent: {}
+[2.119964] (-) TimerEvent: {}
+[2.221069] (-) TimerEvent: {}
+[2.272168] (me326_project) StdoutLine: {'line': b'-- Found tf2_eigen: 0.17.5 (/opt/ros/galactic/share/tf2_eigen/cmake)\n'}
+[2.284435] (me326_project) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.17.5 (/opt/ros/galactic/share/tf2_geometry_msgs/cmake)\n'}
+[2.293258] (me326_project) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.3.7") \n'}
+[2.321276] (-) TimerEvent: {}
+[2.328639] (me326_project) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.2.0") \n'}
+[2.331616] (me326_project) StdoutLine: {'line': b'-- Found pcl_ros: 2.3.2 (/opt/ros/galactic/share/pcl_ros/cmake)\n'}
+[2.421736] (-) TimerEvent: {}
+[2.522979] (-) TimerEvent: {}
+[2.623385] (-) TimerEvent: {}
+[2.624593] (me326_project) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[2.636355] (me326_project) StdoutLine: {'line': b'--   Found eigen3, version 3.3.7\n'}
+[2.668927] (me326_project) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[2.669121] (me326_project) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.3.7)\n'}
+[2.724874] (-) TimerEvent: {}
+[2.759223] (me326_project) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[2.771650] (me326_project) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[2.801358] (me326_project) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/aarch64-linux-gnu/libflann_cpp.so  \n'}
+[2.825108] (-) TimerEvent: {}
+[2.854367] (me326_project) StdoutLine: {'line': b'-- The imported target "vtkParseOGLExt" references the file\n'}
+[2.854541] (me326_project) StdoutLine: {'line': b'   "/usr/bin/vtkParseOGLExt-7.1"\n'}
+[2.854586] (me326_project) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[2.854623] (me326_project) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[2.854658] (me326_project) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[2.854692] (me326_project) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[2.854727] (me326_project) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[2.854761] (me326_project) StdoutLine: {'line': b'but not all the files it references.\n'}
+[2.854804] (me326_project) StdoutLine: {'line': b'\n'}
+[2.855270] (me326_project) StdoutLine: {'line': b'-- The imported target "vtkRenderingPythonTkWidgets" references the file\n'}
+[2.855353] (me326_project) StdoutLine: {'line': b'   "/usr/lib/aarch64-linux-gnu/libvtkRenderingPythonTkWidgets.so"\n'}
+[2.855404] (me326_project) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[2.855469] (me326_project) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[2.855507] (me326_project) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[2.855542] (me326_project) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[2.855577] (me326_project) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[2.855612] (me326_project) StdoutLine: {'line': b'but not all the files it references.\n'}
+[2.855646] (me326_project) StdoutLine: {'line': b'\n'}
+[2.856186] (me326_project) StdoutLine: {'line': b'-- The imported target "vtk" references the file\n'}
+[2.856257] (me326_project) StdoutLine: {'line': b'   "/usr/bin/vtk"\n'}
+[2.856292] (me326_project) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[2.856326] (me326_project) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[2.856360] (me326_project) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[2.856393] (me326_project) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[2.856427] (me326_project) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[2.856472] (me326_project) StdoutLine: {'line': b'but not all the files it references.\n'}
+[2.856513] (me326_project) StdoutLine: {'line': b'\n'}
+[2.856617] (me326_project) StdoutLine: {'line': b'-- The imported target "pvtk" references the file\n'}
+[2.856667] (me326_project) StdoutLine: {'line': b'   "/usr/bin/pvtk"\n'}
+[2.856715] (me326_project) StdoutLine: {'line': b'but this file does not exist.  Possible reasons include:\n'}
+[2.856754] (me326_project) StdoutLine: {'line': b'* The file was deleted, renamed, or moved to another location.\n'}
+[2.856788] (me326_project) StdoutLine: {'line': b'* An install or uninstall procedure did not complete successfully.\n'}
+[2.856822] (me326_project) StdoutLine: {'line': b'* The installation package was faulty and contained\n'}
+[2.856855] (me326_project) StdoutLine: {'line': b'   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"\n'}
+[2.856888] (me326_project) StdoutLine: {'line': b'but not all the files it references.\n'}
+[2.856921] (me326_project) StdoutLine: {'line': b'\n'}
+[2.874415] (me326_project) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[2.886761] (me326_project) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.23\n'}
+[2.917212] (me326_project) StdoutLine: {'line': b'-- Found USB_10: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  \n'}
+[2.925626] (-) TimerEvent: {}
+[2.961399] (me326_project) StdoutLine: {'line': b'-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)\n'}
+[3.010662] (me326_project) StdoutLine: {'line': b'-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)\n'}
+[3.023839] (me326_project) StdoutLine: {'line': b'-- Found libusb-1.0: /usr/include  \n'}
+[3.026141] (-) TimerEvent: {}
+[3.028946] (me326_project) StdoutLine: {'line': b'-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)\n'}
+[3.033960] (me326_project) StdoutLine: {'line': b'-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)\n'}
+[3.063373] (me326_project) StdoutLine: {'line': b'-- Found Qhull: optimized;/usr/lib/aarch64-linux-gnu/libqhull.so;debug;/usr/lib/aarch64-linux-gnu/libqhull.so  \n'}
+[3.063514] (me326_project) StdoutLine: {'line': b'-- QHULL found (include: /usr/include, lib: optimized;/usr/lib/aarch64-linux-gnu/libqhull.so;debug;/usr/lib/aarch64-linux-gnu/libqhull.so)\n'}
+[3.068914] (me326_project) StdoutLine: {'line': b'-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)\n'}
+[3.081389] (me326_project) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  \n'}
+[3.082613] (me326_project) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  \n'}
+[3.084185] (me326_project) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  \n'}
+[3.085338] (me326_project) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  \n'}
+[3.086536] (me326_project) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[3.087754] (me326_project) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  \n'}
+[3.088261] (me326_project) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.10  \n'}
+[3.088699] (me326_project) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.10  \n'}
+[3.089834] (me326_project) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  \n'}
+[3.091035] (me326_project) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  \n'}
+[3.092322] (me326_project) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  \n'}
+[3.093687] (me326_project) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  \n'}
+[3.095090] (me326_project) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  \n'}
+[3.096443] (me326_project) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  \n'}
+[3.097700] (me326_project) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  \n'}
+[3.099043] (me326_project) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  \n'}
+[3.100376] (me326_project) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  \n'}
+[3.101650] (me326_project) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  \n'}
+[3.103204] (me326_project) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  \n'}
+[3.104777] (me326_project) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  \n'}
+[3.105833] (me326_project) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.10  \n'}
+[3.106519] (me326_project) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.10  \n'}
+[3.107801] (me326_project) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  \n'}
+[3.109201] (me326_project) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  \n'}
+[3.126671] (-) TimerEvent: {}
+[3.229012] (-) TimerEvent: {}
+[3.330741] (-) TimerEvent: {}
+[3.364837] (me326_project) StdoutLine: {'line': b'-- Found image_geometry: 3.1.3 (/opt/ros/galactic/share/image_geometry/cmake)\n'}
+[3.371181] (me326_project) StdoutLine: {'line': b'-- Found image_transport: 2.5.1 (/opt/ros/galactic/share/image_transport/cmake)\n'}
+[3.413220] (me326_project) StdoutLine: {'line': b'-- Found cv_bridge: 3.1.3 (/opt/ros/galactic/share/cv_bridge/cmake)\n'}
+[3.427946] (me326_project) StdoutLine: {'line': b'-- Found la_msgs: 0.0.0 (/home/joshhlee/MK3_ws/src/install/la_msgs/share/la_msgs/cmake)\n'}
+[3.430999] (-) TimerEvent: {}
+[3.533822] (-) TimerEvent: {}
+[3.634442] (-) TimerEvent: {}
+[3.680292] (me326_project) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[3.734607] (-) TimerEvent: {}
+[3.834943] (me326_project) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/galactic/share/ament_cmake_ros/cmake)\n'}
+[3.835108] (-) TimerEvent: {}
+[3.935577] (-) TimerEvent: {}
+[4.036208] (-) TimerEvent: {}
+[4.115610] (me326_project) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.137957] (-) TimerEvent: {}
+[4.225935] (me326_project) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.239074] (-) TimerEvent: {}
+[4.260709] (me326_project) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[4.263648] (me326_project) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/galactic/share/python_cmake_module/cmake)\n'}
+[4.295399] (me326_project) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[4.295610] (me326_project) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.295689] (me326_project) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[4.295729] (me326_project) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so\n'}
+[4.317177] (me326_project) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[4.340404] (-) TimerEvent: {}
+[4.388619] (me326_project) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)\n'}
+[4.398954] (me326_project) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.442170] (-) TimerEvent: {}
+[4.486652] (me326_project) StdoutLine: {'line': b'-- Generating done\n'}
+[4.490501] (me326_project) StdoutLine: {'line': b'-- Build files have been written to: /home/joshhlee/me326_ws/src/collaborative_robotics_course/build/me326_project\n'}
+[4.500870] (me326_project) CommandEnded: {'returncode': 0}
+[4.501910] (me326_project) JobProgress: {'identifier': 'me326_project', 'progress': 'build'}
+[4.504551] (me326_project) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/joshhlee/me326_ws/src/collaborative_robotics_course/build/me326_project', '--', '-j4', '-l4'], 'cwd': '/home/joshhlee/me326_ws/src/collaborative_robotics_course/build/me326_project', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('MAIL', '/var/mail/joshhlee'), ('USER', 'joshhlee'), ('SSH_AGENT_PID', '1309'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/joshhlee/me326_ws/install/me326_project/lib:/home/joshhlee/MK3_ws/src/install/locobot_autonomy/lib:/home/joshhlee/MK3_ws/src/install/la_msgs/lib:/home/joshhlee/interbotix_ws/install/moveit_visual_tools/lib:/home/joshhlee/interbotix_ws/install/interbotix_xs_rviz/lib:/home/joshhlee/interbotix_ws/install/interbotix_xs_ros_control/lib:/home/joshhlee/interbotix_ws/install/interbotix_xs_msgs/lib:/home/joshhlee/interbotix_ws/install/interbotix_tf_tools/lib:/home/joshhlee/interbotix_ws/install/interbotix_perception_msgs/lib:/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface_msgs/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/share/gazebo/../../lib/aarch64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/joshhlee'), ('OLDPWD', '/home/joshhlee/me326_ws/src'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1198'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/joshhlee/me326_ws/install:/home/joshhlee/interbotix_ws/install:/home/joshhlee/MK3_ws/src/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'joshhlee'), ('JOURNAL_STREAM', '9:33118'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/aarch64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/galactic/bin:/home/joshhlee/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin'), ('SESSION_MANAGER', 'local/joshhlee:@/tmp/.ICE-unix/1395,unix/joshhlee:/tmp/.ICE-unix/1395'), ('INVOCATION_ID', '8744863566114fd3b3b1e082033f4b82'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7da8d907_1655_4dfb_860f_aefc846a1335'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('INTERBOTIX_XSLOCOBOT_ROBOT_MODEL', 'locobot_wx250s'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'GNOME'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/home/joshhlee/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('INTERBOTIX_XSLOCOBOT_BASE_TYPE', 'create3'), ('GNOME_TERMINAL_SERVICE', ':1.792'), ('INTERBOTIX_WS', '/home/joshhlee/interbotix_ws'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/joshhlee/me326_ws/install/me326_project:/home/joshhlee/me326_ws/install/me326_locobot_example:/home/joshhlee/MK3_ws/src/install/locobot_autonomy:/home/joshhlee/MK3_ws/src/install/la_msgs:/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface:/home/joshhlee/interbotix_ws/install/moveit_visual_tools:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_ros_control:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_sim:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_nav:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_control:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_descriptions:/home/joshhlee/interbotix_ws/install/interbotix_xs_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_xs_rviz:/home/joshhlee/interbotix_ws/install/interbotix_xs_ros_control:/home/joshhlee/interbotix_ws/install/interbotix_xs_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_perception_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_pipelines:/home/joshhlee/interbotix_ws/install/interbotix_xs_msgs:/home/joshhlee/interbotix_ws/install/interbotix_tf_tools:/home/joshhlee/interbotix_ws/install/interbotix_perception_msgs:/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface_msgs:/home/joshhlee/interbotix_ws/install/interbotix_common_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_common_sim:/home/joshhlee/interbotix_ws/install/interbotix_common_modules:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/joshhlee/me326_ws/src/collaborative_robotics_course/build/me326_project'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/aarch64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/joshhlee/me326_ws/install/me326_project/lib/python3.8/site-packages:/home/joshhlee/MK3_ws/src/install/locobot_autonomy/lib/python3.8/site-packages:/home/joshhlee/MK3_ws/src/install/la_msgs/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/build/interbotix_xs_modules:/home/joshhlee/interbotix_ws/install/interbotix_xs_modules/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/build/interbotix_perception_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_modules/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/install/interbotix_xs_msgs/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/install/interbotix_perception_msgs/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface_msgs/lib/python3.8/site-packages:/home/joshhlee/interbotix_ws/build/interbotix_common_modules:/home/joshhlee/interbotix_ws/install/interbotix_common_modules/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/joshhlee/me326_ws/install/me326_project:/home/joshhlee/me326_ws/install/me326_locobot_example:/home/joshhlee/MK3_ws/src/install/locobot_autonomy:/home/joshhlee/MK3_ws/src/install/la_msgs:/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface:/home/joshhlee/interbotix_ws/install/moveit_visual_tools:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_ros_control:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_sim:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_nav:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_control:/home/joshhlee/interbotix_ws/install/interbotix_xslocobot_descriptions:/home/joshhlee/interbotix_ws/install/interbotix_xs_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_xs_rviz:/home/joshhlee/interbotix_ws/install/interbotix_xs_ros_control:/home/joshhlee/interbotix_ws/install/interbotix_perception_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_perception_pipelines:/home/joshhlee/interbotix_ws/install/interbotix_xs_msgs:/home/joshhlee/interbotix_ws/install/interbotix_tf_tools:/home/joshhlee/interbotix_ws/install/interbotix_perception_msgs:/home/joshhlee/interbotix_ws/install/interbotix_moveit_interface_msgs:/home/joshhlee/interbotix_ws/install/interbotix_common_toolbox:/home/joshhlee/interbotix_ws/install/interbotix_common_sim:/home/joshhlee/interbotix_ws/install/interbotix_xs_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_modules:/home/joshhlee/interbotix_ws/install/interbotix_common_modules:/opt/ros/galactic')]), 'shell': False}
+[4.542325] (me326_project) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ament_cmake_python_copy_me326_project\x1b[0m\n'}
+[4.542484] (-) TimerEvent: {}
+[4.543704] (me326_project) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target me326_project__cpp\x1b[0m\n'}
+[4.547501] (me326_project) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[4.549246] (me326_project) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target visual_block_perception_srv\x1b[0m\n'}
+[4.556106] (me326_project) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[4.574314] (me326_project) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_me326_project\n'}
+[4.586896] (me326_project) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target ament_cmake_python_build_me326_project_egg\x1b[0m\n'}
+[4.642599] (-) TimerEvent: {}
+[4.733823] (me326_project) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/visual_block_perception_srv.dir/src/visual_block_perception_srv.cpp.o\x1b[0m\n'}
+[4.742696] (-) TimerEvent: {}
+[4.795026] (me326_project) StdoutLine: {'line': b'running egg_info\n'}
+[4.795527] (me326_project) StdoutLine: {'line': b'creating me326_project.egg-info\n'}
+[4.795710] (me326_project) StdoutLine: {'line': b'writing me326_project.egg-info/PKG-INFO\n'}
+[4.795854] (me326_project) StdoutLine: {'line': b'writing dependency_links to me326_project.egg-info/dependency_links.txt\n'}
+[4.795996] (me326_project) StdoutLine: {'line': b'writing top-level names to me326_project.egg-info/top_level.txt\n'}
+[4.797110] (me326_project) StdoutLine: {'line': b"writing manifest file 'me326_project.egg-info/SOURCES.txt'\n"}
+[4.842822] (-) TimerEvent: {}
+[4.848697] (me326_project) StdoutLine: {'line': b"reading manifest file 'me326_project.egg-info/SOURCES.txt'\n"}
+[4.849130] (me326_project) StdoutLine: {'line': b"writing manifest file 'me326_project.egg-info/SOURCES.txt'\n"}
+[4.871280] (me326_project) StdoutLine: {'line': b'[  9%] Built target ament_cmake_python_build_me326_project_egg\n'}
+[4.905598] (me326_project) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target me326_project__rosidl_generator_c\x1b[0m\n'}
+[4.921441] (me326_project) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/me326_project__rosidl_generator_c.dir/rosidl_generator_c/me326_project/action/detail/move_base__functions.c.o\x1b[0m\n'}
+[4.942965] (-) TimerEvent: {}
+[4.954701] (me326_project) StdoutLine: {'line': b'[ 12%] Built target me326_project__cpp\n'}
+[4.969739] (me326_project) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[4.973397] (me326_project) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.043175] (-) TimerEvent: {}
+[5.090380] (me326_project) StdoutLine: {'line': b'[ 21%] \x1b[32m\x1b[1mLinking C shared library libme326_project__rosidl_generator_c.so\x1b[0m\n'}
+[5.141540] (me326_project) StdoutLine: {'line': b'[ 21%] Built target me326_project__rosidl_generator_c\n'}
+[5.143240] (-) TimerEvent: {}
+[5.150729] (me326_project) StdoutLine: {'line': b'[ 24%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[5.243348] (-) TimerEvent: {}
+[5.248369] (me326_project) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target me326_project__rosidl_typesupport_cpp\x1b[0m\n'}
+[5.274736] (me326_project) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/me326_project__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/me326_project/action/move_base__type_support.cpp.o\x1b[0m\n'}
+[5.308102] (me326_project) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target me326_project__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[5.330814] (me326_project) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/me326_project__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/me326_project/action/detail/dds_fastrtps/move_base__type_support.cpp.o\x1b[0m\n'}
+[5.343462] (-) TimerEvent: {}
+[5.409784] (me326_project) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target me326_project__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[5.433515] (me326_project) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/me326_project__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/me326_project/action/detail/move_base__type_support.cpp.o\x1b[0m\n'}
+[5.443542] (-) TimerEvent: {}
+[5.543837] (-) TimerEvent: {}
+[5.644146] (-) TimerEvent: {}
+[5.744732] (-) TimerEvent: {}
+[5.846195] (-) TimerEvent: {}
+[5.869667] (me326_project) StdoutLine: {'line': b'[ 36%] \x1b[32m\x1b[1mLinking CXX shared library libme326_project__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[5.918586] (me326_project) StdoutLine: {'line': b'[ 36%] Built target me326_project__rosidl_typesupport_cpp\n'}
+[5.928801] (me326_project) StdoutLine: {'line': b'[ 39%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[5.946257] (-) TimerEvent: {}
+[5.985059] (me326_project) StdoutLine: {'line': b'[ 42%] \x1b[32m\x1b[1mLinking CXX shared library libme326_project__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[6.025125] (me326_project) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library libme326_project__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[6.046371] (-) TimerEvent: {}
+[6.051383] (me326_project) StdoutLine: {'line': b'[ 45%] Built target me326_project__rosidl_typesupport_fastrtps_cpp\n'}
+[6.062458] (me326_project) StdoutLine: {'line': b'[ 48%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[6.080127] (me326_project) StdoutLine: {'line': b'[ 48%] Built target me326_project__rosidl_typesupport_introspection_cpp\n'}
+[6.089719] (me326_project) StdoutLine: {'line': b'[ 51%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.146468] (-) TimerEvent: {}
+[6.185408] (me326_project) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target me326_project__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[6.222260] (me326_project) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/me326_project__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/me326_project/action/detail/move_base__type_support.c.o\x1b[0m\n'}
+[6.246591] (-) TimerEvent: {}
+[6.257340] (me326_project) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target me326_project__rosidl_typesupport_c\x1b[0m\n'}
+[6.266170] (me326_project) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking C shared library libme326_project__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[6.278446] (me326_project) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/me326_project__rosidl_typesupport_c.dir/rosidl_typesupport_c/me326_project/action/move_base__type_support.cpp.o\x1b[0m\n'}
+[6.303910] (me326_project) StdoutLine: {'line': b'[ 60%] Built target me326_project__rosidl_typesupport_introspection_c\n'}
+[6.329103] (me326_project) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX shared library libme326_project__rosidl_typesupport_c.so\x1b[0m\n'}
+[6.347918] (-) TimerEvent: {}
+[6.361679] (me326_project) StdoutLine: {'line': b'[ 63%] Built target me326_project__rosidl_typesupport_c\n'}
+[6.361938] (me326_project) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target me326_project__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[6.386302] (me326_project) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/me326_project__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/me326_project/action/detail/move_base__type_support_c.cpp.o\x1b[0m\n'}
+[6.448772] (-) TimerEvent: {}
+[6.549474] (-) TimerEvent: {}
+[6.650390] (-) TimerEvent: {}
+[6.683050] (me326_project) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libme326_project__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[6.748086] (me326_project) StdoutLine: {'line': b'[ 69%] Built target me326_project__rosidl_typesupport_fastrtps_c\n'}
+[6.750486] (-) TimerEvent: {}
+[6.755878] (me326_project) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target me326_project\x1b[0m\n'}
+[6.765403] (me326_project) StdoutLine: {'line': b'[ 69%] Built target me326_project\n'}
+[6.773479] (me326_project) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target me326_project__py\x1b[0m\n'}
+[6.783107] (me326_project) StdoutLine: {'line': b'[ 72%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[6.850617] (-) TimerEvent: {}
+[6.953614] (-) TimerEvent: {}
+[7.054495] (-) TimerEvent: {}
+[7.155528] (-) TimerEvent: {}
+[7.256605] (-) TimerEvent: {}
+[7.356915] (-) TimerEvent: {}
+[7.377366] (me326_project) StdoutLine: {'line': b'[ 72%] Built target me326_project__py\n'}
+[7.386453] (me326_project) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target me326_project__python\x1b[0m\n'}
+[7.418491] (me326_project) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding C object CMakeFiles/me326_project__python.dir/rosidl_generator_py/me326_project/action/_move_base_s.c.o\x1b[0m\n'}
+[7.457188] (-) TimerEvent: {}
+[7.530158] (me326_project) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/me326_project/libme326_project__python.so\x1b[0m\n'}
+[7.557340] (-) TimerEvent: {}
+[7.574377] (me326_project) StdoutLine: {'line': b'[ 78%] Built target me326_project__python\n'}
+[7.585626] (me326_project) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target me326_project__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[7.586043] (me326_project) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target me326_project__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[7.586115] (me326_project) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target me326_project__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[7.605366] (me326_project) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding C object CMakeFiles/me326_project__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/me326_project/_me326_project_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[7.621847] (me326_project) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/me326_project__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/me326_project/_me326_project_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[7.639132] (me326_project) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/me326_project__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/me326_project/_me326_project_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[7.657452] (-) TimerEvent: {}
+[7.707306] (me326_project) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/me326_project/me326_project_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[7.744831] (me326_project) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/me326_project/me326_project_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[7.751909] (me326_project) StdoutLine: {'line': b'[ 93%] Built target me326_project__rosidl_typesupport_c__pyext\n'}
+[7.757727] (-) TimerEvent: {}
+[7.764605] (me326_project) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/me326_project/me326_project_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[7.801486] (me326_project) StdoutLine: {'line': b'[ 96%] Built target me326_project__rosidl_typesupport_introspection_c__pyext\n'}
+[7.807966] (me326_project) StdoutLine: {'line': b'[ 96%] Built target me326_project__rosidl_typesupport_fastrtps_c__pyext\n'}
+[7.859218] (-) TimerEvent: {}
+[7.961560] (-) TimerEvent: {}
+[8.062095] (-) TimerEvent: {}
+[8.164561] (-) TimerEvent: {}
+[8.265172] (-) TimerEvent: {}
+[8.368316] (-) TimerEvent: {}
+[8.426883] (me326_project) StderrLine: {'line': b'\x1b[01m\x1b[K/home/joshhlee/me326_ws/src/collaborative_robotics_course/me326_project/src/visual_block_perception_srv.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Matching_Pix_to_Ptcld::service_callback(std::shared_ptr<la_msgs::srv::Ptps_Request_<std::allocator<void> > >, std::shared_ptr<la_msgs::srv::Ptps_Response_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.427169] (me326_project) StderrLine: {'line': b'\x1b[01m\x1b[K/home/joshhlee/me326_ws/src/collaborative_robotics_course/me326_project/src/visual_block_perception_srv.cpp:629:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = struct la_msgs::srv::Ptps_Request_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct la_msgs::srv::Ptps_Request_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kdesired_frame\x1b[m\x1b[K\xe2\x80\x99\n'}
+[8.427242] (me326_project) StderrLine: {'line': b'  629 |   desired_block_frame_ = req->\x1b[01;31m\x1b[Kdesired_frame\x1b[m\x1b[K;\n'}
+[8.427298] (me326_project) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.468736] (-) TimerEvent: {}
+[8.569360] (-) TimerEvent: {}
+[8.669905] (-) TimerEvent: {}
+[8.770374] (-) TimerEvent: {}
+[8.871192] (-) TimerEvent: {}
+[8.972384] (-) TimerEvent: {}
+[9.074314] (-) TimerEvent: {}
+[9.176207] (-) TimerEvent: {}
+[9.277862] (-) TimerEvent: {}
+[9.380361] (-) TimerEvent: {}
+[9.481742] (-) TimerEvent: {}
+[9.584860] (-) TimerEvent: {}
+[9.685489] (-) TimerEvent: {}
+[9.785908] (-) TimerEvent: {}
+[9.886768] (-) TimerEvent: {}
+[9.987903] (-) TimerEvent: {}
+[10.089108] (-) TimerEvent: {}
+[10.190594] (-) TimerEvent: {}
+[10.291251] (-) TimerEvent: {}
+[10.392346] (-) TimerEvent: {}
+[10.492822] (-) TimerEvent: {}
+[10.594701] (-) TimerEvent: {}
+[10.696726] (-) TimerEvent: {}
+[10.799711] (-) TimerEvent: {}
+[10.900154] (-) TimerEvent: {}
+[11.002831] (-) TimerEvent: {}
+[11.103816] (-) TimerEvent: {}
+[11.204156] (-) TimerEvent: {}
+[11.304570] (-) TimerEvent: {}
+[11.405470] (-) TimerEvent: {}
+[11.507028] (-) TimerEvent: {}
+[11.609164] (-) TimerEvent: {}
+[11.709597] (-) TimerEvent: {}
+[11.810087] (-) TimerEvent: {}
+[11.912218] (-) TimerEvent: {}
+[12.013374] (-) TimerEvent: {}
+[12.116214] (-) TimerEvent: {}
+[12.216578] (-) TimerEvent: {}
+[12.318265] (-) TimerEvent: {}
+[12.418667] (-) TimerEvent: {}
+[12.519632] (-) TimerEvent: {}
+[12.597482] (me326_project) StderrLine: {'line': b'make[2]: *** [CMakeFiles/visual_block_perception_srv.dir/build.make:63: CMakeFiles/visual_block_perception_srv.dir/src/visual_block_perception_srv.cpp.o] Error 1\n'}
+[12.598760] (me326_project) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:239: CMakeFiles/visual_block_perception_srv.dir/all] Error 2\n'}
+[12.599758] (me326_project) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[12.612000] (me326_project) CommandEnded: {'returncode': 2}
+[12.619887] (-) TimerEvent: {}
+[12.720710] (-) TimerEvent: {}
+[12.821188] (-) TimerEvent: {}
+[12.914060] (me326_project) JobEnded: {'identifier': 'me326_project', 'rc': 2}
+[12.921594] (-) TimerEvent: {}
+[12.924926] (-) EventReactorShutdown: {}

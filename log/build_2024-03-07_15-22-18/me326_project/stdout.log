@@ -1,0 +1,219 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+-- Found FastRTPS: /opt/ros/galactic/include  
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found rclpy: 1.9.3 (/opt/ros/galactic/share/rclpy/cmake)
+-- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)
+-- Found nav_msgs: 2.2.4 (/opt/ros/galactic/share/nav_msgs/cmake)
+-- Found visualization_msgs: 2.2.4 (/opt/ros/galactic/share/visualization_msgs/cmake)
+-- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+-- Found rosidl_default_generators: 1.1.1 (/opt/ros/galactic/share/rosidl_default_generators/cmake)
+-- Found action_msgs: 1.0.3 (/opt/ros/galactic/share/action_msgs/cmake)
+-- Found tf2: 0.17.5 (/opt/ros/galactic/share/tf2/cmake)
+-- Found tf2_ros: 0.17.5 (/opt/ros/galactic/share/tf2_ros/cmake)
+-- Found tf2_eigen: 0.17.5 (/opt/ros/galactic/share/tf2_eigen/cmake)
+-- Found tf2_geometry_msgs: 0.17.5 (/opt/ros/galactic/share/tf2_geometry_msgs/cmake)
+-- Found Eigen3: TRUE (found version "3.3.7") 
+-- Found OpenCV: /usr (found version "4.2.0") 
+-- Found pcl_ros: 2.3.2 (/opt/ros/galactic/share/pcl_ros/cmake)
+-- Checking for module 'eigen3'
+--   Found eigen3, version 3.3.7
+-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+-- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+-- Checking for module 'flann'
+--   Found flann, version 1.9.1
+-- Found FLANN: /usr/lib/aarch64-linux-gnu/libflann_cpp.so  
+-- The imported target "vtkParseOGLExt" references the file
+   "/usr/bin/vtkParseOGLExt-7.1"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "vtkRenderingPythonTkWidgets" references the file
+   "/usr/lib/aarch64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "vtk" references the file
+   "/usr/bin/vtk"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- The imported target "pvtk" references the file
+   "/usr/bin/pvtk"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+but not all the files it references.
+
+-- Checking for module 'libusb-1.0'
+--   Found libusb-1.0, version 1.0.23
+-- Found USB_10: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  
+-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+-- Found libusb-1.0: /usr/include  
+-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+-- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+-- Found Qhull: optimized;/usr/lib/aarch64-linux-gnu/libqhull.so;debug;/usr/lib/aarch64-linux-gnu/libqhull.so  
+-- QHULL found (include: /usr/include, lib: optimized;/usr/lib/aarch64-linux-gnu/libqhull.so;debug;/usr/lib/aarch64-linux-gnu/libqhull.so)
+-- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+-- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  
+-- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  
+-- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  
+-- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  
+-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  
+-- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  
+-- Found PCL_2D: /usr/include/pcl-1.10  
+-- Found PCL_GEOMETRY: /usr/include/pcl-1.10  
+-- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  
+-- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  
+-- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  
+-- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  
+-- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  
+-- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  
+-- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  
+-- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  
+-- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  
+-- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  
+-- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  
+-- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  
+-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.10  
+-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.10  
+-- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  
+-- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  
+-- Found image_geometry: 3.1.3 (/opt/ros/galactic/share/image_geometry/cmake)
+-- Found image_transport: 2.5.1 (/opt/ros/galactic/share/image_transport/cmake)
+-- Found cv_bridge: 3.1.3 (/opt/ros/galactic/share/cv_bridge/cmake)
+-- Found la_msgs: 0.0.0 (/home/joshhlee/MK3_ws/src/install/la_msgs/share/la_msgs/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Found ament_cmake_ros: 0.9.2 (/opt/ros/galactic/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+-- Found python_cmake_module: 0.8.1 (/opt/ros/galactic/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so
+-- Found PythonExtra: .so  
+-- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/joshhlee/me326_ws/src/collaborative_robotics_course/build/me326_project
+[35m[1mScanning dependencies of target ament_cmake_python_copy_me326_project[0m
+[35m[1mScanning dependencies of target me326_project__cpp[0m
+[  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[35m[1mScanning dependencies of target visual_block_perception_srv[0m
+[  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  6%] Built target ament_cmake_python_copy_me326_project
+[35m[1mScanning dependencies of target ament_cmake_python_build_me326_project_egg[0m
+[  9%] [32mBuilding CXX object CMakeFiles/visual_block_perception_srv.dir/src/visual_block_perception_srv.cpp.o[0m
+running egg_info
+creating me326_project.egg-info
+writing me326_project.egg-info/PKG-INFO
+writing dependency_links to me326_project.egg-info/dependency_links.txt
+writing top-level names to me326_project.egg-info/top_level.txt
+writing manifest file 'me326_project.egg-info/SOURCES.txt'
+reading manifest file 'me326_project.egg-info/SOURCES.txt'
+writing manifest file 'me326_project.egg-info/SOURCES.txt'
+[  9%] Built target ament_cmake_python_build_me326_project_egg
+[35m[1mScanning dependencies of target me326_project__rosidl_generator_c[0m
+[ 12%] [32mBuilding C object CMakeFiles/me326_project__rosidl_generator_c.dir/rosidl_generator_c/me326_project/action/detail/move_base__functions.c.o[0m
+[ 12%] Built target me326_project__cpp
+[ 15%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 18%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 21%] [32m[1mLinking C shared library libme326_project__rosidl_generator_c.so[0m
+[ 21%] Built target me326_project__rosidl_generator_c
+[ 24%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[35m[1mScanning dependencies of target me326_project__rosidl_typesupport_cpp[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/me326_project__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/me326_project/action/move_base__type_support.cpp.o[0m
+[35m[1mScanning dependencies of target me326_project__rosidl_typesupport_fastrtps_cpp[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/me326_project__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/me326_project/action/detail/dds_fastrtps/move_base__type_support.cpp.o[0m
+[35m[1mScanning dependencies of target me326_project__rosidl_typesupport_introspection_cpp[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/me326_project__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/me326_project/action/detail/move_base__type_support.cpp.o[0m
+[ 36%] [32m[1mLinking CXX shared library libme326_project__rosidl_typesupport_cpp.so[0m
+[ 36%] Built target me326_project__rosidl_typesupport_cpp
+[ 39%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 42%] [32m[1mLinking CXX shared library libme326_project__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 45%] [32m[1mLinking CXX shared library libme326_project__rosidl_typesupport_introspection_cpp.so[0m
+[ 45%] Built target me326_project__rosidl_typesupport_fastrtps_cpp
+[ 48%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 48%] Built target me326_project__rosidl_typesupport_introspection_cpp
+[ 51%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[35m[1mScanning dependencies of target me326_project__rosidl_typesupport_introspection_c[0m
+[ 54%] [32mBuilding C object CMakeFiles/me326_project__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/me326_project/action/detail/move_base__type_support.c.o[0m
+[35m[1mScanning dependencies of target me326_project__rosidl_typesupport_c[0m
+[ 57%] [32m[1mLinking C shared library libme326_project__rosidl_typesupport_introspection_c.so[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/me326_project__rosidl_typesupport_c.dir/rosidl_typesupport_c/me326_project/action/move_base__type_support.cpp.o[0m
+[ 60%] Built target me326_project__rosidl_typesupport_introspection_c
+[ 63%] [32m[1mLinking CXX shared library libme326_project__rosidl_typesupport_c.so[0m
+[ 63%] Built target me326_project__rosidl_typesupport_c
+[35m[1mScanning dependencies of target me326_project__rosidl_typesupport_fastrtps_c[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/me326_project__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/me326_project/action/detail/move_base__type_support_c.cpp.o[0m
+[ 69%] [32m[1mLinking CXX shared library libme326_project__rosidl_typesupport_fastrtps_c.so[0m
+[ 69%] Built target me326_project__rosidl_typesupport_fastrtps_c
+[35m[1mScanning dependencies of target me326_project[0m
+[ 69%] Built target me326_project
+[35m[1mScanning dependencies of target me326_project__py[0m
+[ 72%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 72%] Built target me326_project__py
+[35m[1mScanning dependencies of target me326_project__python[0m
+[ 75%] [32mBuilding C object CMakeFiles/me326_project__python.dir/rosidl_generator_py/me326_project/action/_move_base_s.c.o[0m
+[ 78%] [32m[1mLinking C shared library rosidl_generator_py/me326_project/libme326_project__python.so[0m
+[ 78%] Built target me326_project__python
+[35m[1mScanning dependencies of target me326_project__rosidl_typesupport_introspection_c__pyext[0m
+[35m[1mScanning dependencies of target me326_project__rosidl_typesupport_c__pyext[0m
+[35m[1mScanning dependencies of target me326_project__rosidl_typesupport_fastrtps_c__pyext[0m
+[ 81%] [32mBuilding C object CMakeFiles/me326_project__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/me326_project/_me326_project_s.ep.rosidl_typesupport_c.c.o[0m
+[ 84%] [32mBuilding C object CMakeFiles/me326_project__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/me326_project/_me326_project_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/me326_project__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/me326_project/_me326_project_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 90%] [32m[1mLinking C shared library rosidl_generator_py/me326_project/me326_project_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so[0m
+[ 93%] [32m[1mLinking CXX shared library rosidl_generator_py/me326_project/me326_project_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so[0m
+[ 93%] Built target me326_project__rosidl_typesupport_c__pyext
+[ 96%] [32m[1mLinking C shared library rosidl_generator_py/me326_project/me326_project_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so[0m
+[ 96%] Built target me326_project__rosidl_typesupport_introspection_c__pyext
+[ 96%] Built target me326_project__rosidl_typesupport_fastrtps_c__pyext

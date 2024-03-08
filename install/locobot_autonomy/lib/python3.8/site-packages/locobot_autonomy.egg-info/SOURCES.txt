@@ -1,0 +1,8 @@
+setup.py
+locobot_autonomy/__init__.py
+locobot_autonomy/move_A_to_B_py.py
+locobot_autonomy/move_locobot_base_action_server.py
+locobot_autonomy.egg-info/PKG-INFO
+locobot_autonomy.egg-info/SOURCES.txt
+locobot_autonomy.egg-info/dependency_links.txt
+locobot_autonomy.egg-info/top_level.txt

@@ -1,0 +1,7 @@
+{
+  "package_name": "la_msgs",
+  "non_idl_tuples": [
+    "/home/joshhlee/me326_ws/src/collaborative_robotics_course/la_msgs:action/MoveBase.action",
+    "/home/joshhlee/me326_ws/src/collaborative_robotics_course/la_msgs:srv/Ptps.srv"
+  ]
+}

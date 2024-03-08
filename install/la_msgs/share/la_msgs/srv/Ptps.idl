@@ -1,0 +1,30 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from la_msgs/srv/Ptps.srv
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/PointStamped.idl"
+
+module la_msgs {
+  module srv {
+    struct Ptps_Request {
+      string desired_frame;
+    };
+    struct Ptps_Response {
+      boolean red_present;
+
+      boolean blue_present;
+
+      boolean yellow_present;
+
+      boolean green_present;
+
+      sequence<geometry_msgs::msg::PointStamped> red_points;
+
+      sequence<geometry_msgs::msg::PointStamped> blue_points;
+
+      sequence<geometry_msgs::msg::PointStamped> yellow_points;
+
+      sequence<geometry_msgs::msg::PointStamped> green_points;
+    };
+  };
+};

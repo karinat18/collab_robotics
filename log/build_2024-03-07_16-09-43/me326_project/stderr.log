@@ -1,0 +1,6 @@
+CMake Error at cmake_install.cmake:85 (file):
+  file INSTALL cannot find
+  "/home/joshhlee/me326_ws/src/collaborative_robotics_course/me326_project/locobot_autonomy/move_A_to_B_py.py":
+  No such file or directory.
+
+

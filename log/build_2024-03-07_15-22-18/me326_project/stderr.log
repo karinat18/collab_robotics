@@ -1,0 +1,7 @@
+[01m[K/home/joshhlee/me326_ws/src/collaborative_robotics_course/me326_project/src/visual_block_perception_srv.cpp:[m[K In member function ‘[01m[Kvoid Matching_Pix_to_Ptcld::service_callback(std::shared_ptr<la_msgs::srv::Ptps_Request_<std::allocator<void> > >, std::shared_ptr<la_msgs::srv::Ptps_Response_<std::allocator<void> > >)[m[K’:
+[01m[K/home/joshhlee/me326_ws/src/collaborative_robotics_course/me326_project/src/visual_block_perception_srv.cpp:629:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct la_msgs::srv::Ptps_Request_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct la_msgs::srv::Ptps_Request_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kdesired_frame[m[K’
+  629 |   desired_block_frame_ = req->[01;31m[Kdesired_frame[m[K;
+      |                               [01;31m[K^~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/visual_block_perception_srv.dir/build.make:63: CMakeFiles/visual_block_perception_srv.dir/src/visual_block_perception_srv.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:239: CMakeFiles/visual_block_perception_srv.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

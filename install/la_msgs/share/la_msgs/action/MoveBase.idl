@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from la_msgs/action/MoveBase.action
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Pose.idl"
+
+module la_msgs {
+  module action {
+    struct MoveBase_Goal {
+      geometry_msgs::msg::Pose target_pose;
+    };
+    struct MoveBase_Result {
+      boolean done;
+    };
+    struct MoveBase_Feedback {
+      double distance;
+    };
+  };
+};
