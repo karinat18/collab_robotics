@@ -21,6 +21,7 @@ install(PROGRAMS
     scripts/initial_point.py
     scripts/move_locobot_base_action_server.py
     scripts/move_base_client.py
+    scripts/camera_frame_broadcaster.py
     DESTINATION lib/${PROJECT_NAME}
 )
 install(DIRECTORY launch rviz model action
