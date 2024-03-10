@@ -73,6 +73,52 @@ def generate_launch_description():
                 '-Y', '0.0'],
             output='screen'
             ),
+
+            Node(
+            package='gazebo_ros',
+            executable='spawn_entity.py',
+            arguments=[
+                '-entity', 'apriltag_1', 
+                '-file', f'{models_path}/Apriltag36_11_00001/model.sdf',
+                '-x', '-1.0', 
+                '-y', '0.1', 
+                '-z', '0.0',
+                '-R', '0.0',
+                '-P', '0.0',
+                '-Y', '0.0'],
+            output='screen'
+            ),
+
+            Node(
+            package='gazebo_ros',
+            executable='spawn_entity.py',
+            arguments=[
+                '-entity', 'apriltag_2', 
+                '-file', f'{models_path}/Apriltag36_11_00002/model.sdf',
+                '-x', '0.5', 
+                '-y', '1.0', 
+                '-z', '0.0',
+                '-R', '0.0',
+                '-P', '0.0',
+                '-Y', '0.0'],
+            output='screen'
+            ),
+
+            Node(
+            package='gazebo_ros',
+            executable='spawn_entity.py',
+            arguments=[
+                '-entity', 'apriltag_3', 
+                '-file', f'{models_path}/Apriltag36_11_00003/model.sdf',
+                '-x', '-0.5', 
+                '-y', '1.0', 
+                '-z', '0.0',
+                '-R', '0.0',
+                '-P', '0.0',
+                '-Y', '0.0'],
+            output='screen'
+            ),
+
             Node(
             package='apriltag_ros',  # Name of the package where the node is implemented
             executable='apriltag_node',  # Corrected name of the executable to run
