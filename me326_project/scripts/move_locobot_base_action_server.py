@@ -12,7 +12,7 @@ import rclpy
 from rclpy.action import ActionServer
 from rclpy.node import Node
 
-from me326_project.action import MoveBase
+from locobot_interfaces.action import MoveBase
 
 import geometry_msgs
 from geometry_msgs.msg import Pose
