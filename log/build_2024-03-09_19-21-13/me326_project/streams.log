@@ -1,0 +1,179 @@
+[0.297s] Invoking command in '/home/joshhlee/me326_ws/src/collaborative_robotics_course/build/me326_project': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/joshhlee/interbotix_ws/install/interbotix_xs_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_modules:/home/joshhlee/interbotix_ws/install/interbotix_common_modules:/opt/ros/galactic /usr/bin/cmake --build /home/joshhlee/me326_ws/src/collaborative_robotics_course/build/me326_project -- -j4 -l4
+[0.415s] [  3%] Built target me326_project__cpp
+[0.464s] [  3%] Built target ament_cmake_python_copy_me326_project
+[0.505s] [ 12%] Built target me326_project__rosidl_typesupport_fastrtps_cpp
+[0.533s] [ 21%] Built target me326_project__rosidl_typesupport_cpp
+[0.558s] [ 30%] Built target me326_project__rosidl_typesupport_introspection_cpp
+[0.721s] running egg_info
+[0.722s] writing me326_project.egg-info/PKG-INFO
+[0.722s] writing dependency_links to me326_project.egg-info/dependency_links.txt
+[0.722s] writing top-level names to me326_project.egg-info/top_level.txt
+[0.752s] reading manifest file 'me326_project.egg-info/SOURCES.txt'
+[0.755s] writing manifest file 'me326_project.egg-info/SOURCES.txt'
+[0.769s] [ 30%] Built target ament_cmake_python_build_me326_project_egg
+[0.830s] [ 36%] Built target visual_block_perception_srv
+[0.866s] [ 45%] Built target me326_project__rosidl_generator_c
+[0.898s] [ 54%] Built target me326_project__rosidl_typesupport_introspection_c
+[0.923s] [ 63%] Built target me326_project__rosidl_typesupport_c
+[0.950s] [ 72%] Built target me326_project__rosidl_typesupport_fastrtps_c
+[0.967s] [ 72%] Built target me326_project
+[0.987s] [ 75%] Built target me326_project__py
+[1.013s] [ 81%] Built target me326_project__python
+[1.040s] [ 87%] Built target me326_project__rosidl_typesupport_introspection_c__pyext
+[1.087s] [ 93%] Built target me326_project__rosidl_typesupport_fastrtps_c__pyext
+[1.125s] [100%] Built target me326_project__rosidl_typesupport_c__pyext
+[1.452s] Invoked command in '/home/joshhlee/me326_ws/src/collaborative_robotics_course/build/me326_project' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/joshhlee/interbotix_ws/install/interbotix_xs_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_modules:/home/joshhlee/interbotix_ws/install/interbotix_common_modules:/opt/ros/galactic /usr/bin/cmake --build /home/joshhlee/me326_ws/src/collaborative_robotics_course/build/me326_project -- -j4 -l4
+[1.535s] Invoking command in '/home/joshhlee/me326_ws/src/collaborative_robotics_course/build/me326_project': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/joshhlee/interbotix_ws/install/interbotix_xs_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_modules:/home/joshhlee/interbotix_ws/install/interbotix_common_modules:/opt/ros/galactic /usr/bin/cmake --install /home/joshhlee/me326_ws/src/collaborative_robotics_course/build/me326_project
+[1.545s] -- Install configuration: ""
+[1.546s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/me326_project/visual_block_perception_srv
+[1.546s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/environment/pythonpath.sh
+[1.546s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/environment/pythonpath.dsv
+[1.546s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages//me326_project.egg-info
+[1.546s] -- Installing: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages//me326_project.egg-info/dependency_links.txt
+[1.546s] -- Installing: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages//me326_project.egg-info/PKG-INFO
+[1.546s] -- Installing: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages//me326_project.egg-info/top_level.txt
+[1.546s] -- Installing: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages//me326_project.egg-info/SOURCES.txt
+[1.547s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project
+[1.547s] -- Installing: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/__init__.py
+[1.547s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/initial_point.py
+[1.547s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/RRTstar.py
+[1.547s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/circle_motion_tracking.py
+[1.547s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/record_rosbag.py
+[1.547s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/locobot1_example_motion.py
+[1.547s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/move_base_client.py
+[1.547s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/move_locobot_base_action_server.py
+[1.547s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/locobot_moveitpy.py
+[1.547s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/go_to_point.py
+[1.547s] -- Installing: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/vision_client.py
+[1.548s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/matching_ptcld.py
+[1.548s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/read_rosbag.py
+[1.549s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/vision_action_server.py
+[1.549s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/search_node.py
+[1.549s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/locobot_example_motion.py
+[1.549s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/locobot_motion_example.py
+[1.588s] Listing '/home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project'...
+[1.588s] Compiling '/home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/__init__.py'...
+[1.588s] Listing '/home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/action'...
+[1.588s] Compiling '/home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/vision_client.py'...
+[1.591s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/me326_project/locobot1_example_motion.py
+[1.591s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/me326_project/locobot_example_motion.py
+[1.591s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/me326_project/locobot_motion_example.py
+[1.591s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/me326_project/matching_ptcld.py
+[1.591s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/me326_project/circle_motion_tracking.py
+[1.591s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/me326_project/record_rosbag.py
+[1.591s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/me326_project/locobot_moveitpy.py
+[1.591s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/me326_project/RRTstar.py
+[1.591s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/me326_project/go_to_point.py
+[1.592s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/me326_project/initial_point.py
+[1.592s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/me326_project/move_locobot_base_action_server.py
+[1.592s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/me326_project/move_base_client.py
+[1.592s] -- Installing: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/me326_project/vision_client.py
+[1.595s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project//launch
+[1.595s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project//launch/locobot_moveitpy.launch.py
+[1.595s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project//launch/navigation_test.launch.py
+[1.603s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project//launch/locobot_circle_traj.launch.py
+[1.603s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project//launch/spawn_cube.launch.py
+[1.603s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project//launch/example.launch.xml
+[1.603s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/ament_index/resource_index/rosidl_interfaces/me326_project
+[1.603s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project
+[1.603s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/msg
+[1.603s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/msg/rosidl_generator_c__visibility_control.h
+[1.603s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/action
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/action/detail
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/action/detail/move_base__struct.h
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/action/detail/move_base__functions.c
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/action/detail/move_base__type_support.h
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/action/detail/move_base__functions.h
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/action/move_base.h
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/environment/library_path.sh
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/environment/library_path.dsv
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/libme326_project__rosidl_generator_c.so
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/msg
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/action
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/action/detail
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/action/detail/move_base__rosidl_typesupport_fastrtps_c.h
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/libme326_project__rosidl_typesupport_fastrtps_c.so
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/msg
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/action
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/action/detail
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/action/detail/dds_fastrtps
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/action/detail/move_base__rosidl_typesupport_fastrtps_cpp.hpp
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/libme326_project__rosidl_typesupport_fastrtps_cpp.so
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/msg
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/action
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/action/detail
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/action/detail/move_base__rosidl_typesupport_introspection_c.h
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/action/detail/move_base__type_support.c
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/libme326_project__rosidl_typesupport_introspection_c.so
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/libme326_project__rosidl_typesupport_c.so
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project
+[1.604s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/action
+[1.605s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/action/detail
+[1.605s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/action/detail/move_base__struct.hpp
+[1.605s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/action/detail/move_base__builder.hpp
+[1.605s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/action/detail/move_base__traits.hpp
+[1.605s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/action/move_base.hpp
+[1.605s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project
+[1.605s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/action
+[1.605s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/action/detail
+[1.605s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/action/detail/move_base__type_support.cpp
+[1.605s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/include/me326_project/action/detail/move_base__rosidl_typesupport_introspection_cpp.hpp
+[1.605s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/libme326_project__rosidl_typesupport_introspection_cpp.so
+[1.605s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/libme326_project__rosidl_typesupport_cpp.so
+[1.605s] -- Installing: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/__init__.py
+[1.621s] Compiling '/home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/__init__.py'...
+[1.624s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/action
+[1.624s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/action/__init__.py
+[1.624s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/action/_move_base_s.c
+[1.624s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/action/_move_base.py
+[1.624s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/me326_project_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[1.625s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/me326_project_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[1.626s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/me326_project_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[1.626s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/libme326_project__python.so
+[1.626s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/action/MoveBase.idl
+[1.626s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/action/MoveBase.action
+[1.626s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/model
+[1.626s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/model/yellow_cube.urdf
+[1.626s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/model/green_cube.urdf
+[1.626s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/model/red_cube.urdf
+[1.626s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/model/blue_cube.urdf
+[1.626s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/ament_index/resource_index/package_run_dependencies/me326_project
+[1.626s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/ament_index/resource_index/parent_prefix_path/me326_project
+[1.626s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/environment/ament_prefix_path.sh
+[1.626s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/environment/ament_prefix_path.dsv
+[1.626s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/environment/path.sh
+[1.626s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/environment/path.dsv
+[1.627s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/local_setup.bash
+[1.627s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/local_setup.sh
+[1.627s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/local_setup.zsh
+[1.627s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/local_setup.dsv
+[1.627s] -- Installing: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/package.dsv
+[1.627s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/ament_index/resource_index/packages/me326_project
+[1.627s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/cmake/me326_project__rosidl_generator_cExport.cmake
+[1.627s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/cmake/me326_project__rosidl_generator_cExport-noconfig.cmake
+[1.628s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/cmake/me326_project__rosidl_typesupport_introspection_cExport.cmake
+[1.628s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/cmake/me326_project__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.628s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/cmake/me326_project__rosidl_typesupport_cExport.cmake
+[1.628s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/cmake/me326_project__rosidl_typesupport_cExport-noconfig.cmake
+[1.628s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/cmake/me326_project__rosidl_generator_cppExport.cmake
+[1.628s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/cmake/me326_project__rosidl_typesupport_introspection_cppExport.cmake
+[1.628s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/cmake/me326_project__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.629s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/cmake/me326_project__rosidl_typesupport_cppExport.cmake
+[1.629s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/cmake/me326_project__rosidl_typesupport_cppExport-noconfig.cmake
+[1.629s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/cmake/rosidl_cmake-extras.cmake
+[1.629s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.629s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/cmake/ament_cmake_export_libraries-extras.cmake
+[1.629s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/cmake/ament_cmake_export_targets-extras.cmake
+[1.629s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.629s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.629s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.629s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/cmake/me326_projectConfig.cmake
+[1.630s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/cmake/me326_projectConfig-version.cmake
+[1.630s] -- Up-to-date: /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/share/me326_project/package.xml
+[1.938s] Invoked command in '/home/joshhlee/me326_ws/src/collaborative_robotics_course/build/me326_project' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/joshhlee/interbotix_ws/install/interbotix_xs_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_modules:/home/joshhlee/interbotix_ws/install/interbotix_common_modules:/opt/ros/galactic /usr/bin/cmake --install /home/joshhlee/me326_ws/src/collaborative_robotics_course/build/me326_project

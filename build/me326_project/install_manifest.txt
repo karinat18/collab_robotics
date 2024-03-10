@@ -19,6 +19,7 @@
 /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/matching_ptcld.py
 /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/read_rosbag.py
 /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/vision_action_server.py
+/home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/search_node.py
 /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/locobot_example_motion.py
 /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/python3.8/site-packages/me326_project/locobot_motion_example.py
 /home/joshhlee/me326_ws/src/collaborative_robotics_course/install/me326_project/lib/me326_project/locobot1_example_motion.py

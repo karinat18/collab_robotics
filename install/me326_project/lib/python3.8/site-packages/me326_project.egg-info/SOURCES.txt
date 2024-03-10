@@ -13,6 +13,7 @@ me326_project/move_base_client.py
 me326_project/move_locobot_base_action_server.py
 me326_project/read_rosbag.py
 me326_project/record_rosbag.py
+me326_project/search_node.py
 me326_project/vision_action_server.py
 me326_project/vision_center.py
 me326_project/vision_client.py
