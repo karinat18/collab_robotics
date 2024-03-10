@@ -2,7 +2,7 @@
 
 import rclpy
 from rclpy.node import Node
-from me326_project.action import MoveBase
+from locobot_interfaces.action import MoveBase
 from geometry_msgs.msg import PoseStamped
 from rclpy.action import ActionClient
 import tf2_ros
