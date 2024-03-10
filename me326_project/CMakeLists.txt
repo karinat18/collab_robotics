@@ -3,10 +3,21 @@ project(me326_project)
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
+
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(ament_cmake_python REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(rclcpp_action REQUIRED)
+find_package(rclcpp_components REQUIRED)
+find_package(rclpy REQUIRED)
+find_package(moveit_ros_planning_interface REQUIRED)
+find_package(locobot_interfaces REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
+find_package(tf2 REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(action_msgs REQUIRED)
 
 install(PROGRAMS
     scripts/locobot1_example_motion.py
@@ -26,13 +37,32 @@ install(PROGRAMS
     scripts/locobot_state_machine.py
     DESTINATION lib/${PROJECT_NAME}
 )
-install(DIRECTORY launch rviz model action
+
+add_executable(move_arm_action_server src/move_arm_action_server.cpp)
+target_include_directories(move_arm_action_server PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>)
+target_compile_features(move_arm_action_server PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
+ament_target_dependencies(
+  move_arm_action_server
+  "locobot_interfaces"
+  "moveit_ros_planning_interface"
+  "rclcpp"
+  "rclcpp_action"
+  "rclcpp_components"
+  "tf2_geometry_msgs"
+  "tf2"
+)
+
+install(TARGETS
+  move_arm_action_server
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(DIRECTORY launch rviz model
         DESTINATION share/${PROJECT_NAME})
 
-rosidl_generate_interfaces(${PROJECT_NAME}
-  "action/MoveBase.action"
-  DEPENDENCIES geometry_msgs
- )
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
