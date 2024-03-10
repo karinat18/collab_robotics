@@ -22,6 +22,15 @@ find_package(nav_msgs REQUIRED)
 find_package(visualization_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 
+find_package(ament_cmake_python REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(rclcpp_action REQUIRED)
+find_package(rclcpp_components REQUIRED)
+find_package(rclpy REQUIRED)
+find_package(moveit_ros_planning_interface REQUIRED)
+find_package(locobot_interfaces REQUIRED)
+find_package(tf2_geometry_msgs REQUIRED)
+find_package(tf2 REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(action_msgs REQUIRED)
 
@@ -29,6 +38,7 @@ find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(tf2_eigen REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
+find_package(action_msgs REQUIRED)
 
 
 find_package(OpenCV REQUIRED)
@@ -72,9 +82,36 @@ install(PROGRAMS
     me326_project/initial_point.py
     me326_project/move_locobot_base_action_server.py
     me326_project/move_base_client.py
+    scripts/camera_frame_broadcaster.py
+    scripts/move_gripper_action_server.py
+    scripts/locobot_state_machine.py
     me326_project/vision_client.py
     DESTINATION lib/${PROJECT_NAME}
 )
+
+add_executable(move_arm_action_server src/move_arm_action_server.cpp)
+target_include_directories(move_arm_action_server PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>)
+target_compile_features(move_arm_action_server PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
+ament_target_dependencies(
+  move_arm_action_server
+  "locobot_interfaces"
+  "moveit_ros_planning_interface"
+  "rclcpp"
+  "rclcpp_action"
+  "rclcpp_components"
+  "tf2_geometry_msgs"
+  "tf2"
+)
+
+install(TARGETS
+  move_arm_action_server
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(DIRECTORY launch rviz model
+        DESTINATION share/${PROJECT_NAME})
 
 
 # Install launch files.
@@ -93,6 +130,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 install(DIRECTORY model
   DESTINATION share/${PROJECT_NAME}
 )
+
 
 
 if(BUILD_TESTING)
