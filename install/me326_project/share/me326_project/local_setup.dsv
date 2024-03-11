@@ -1,4 +1,0 @@
-source;share/me326_project/environment/ament_prefix_path.sh
-source;share/me326_project/environment/library_path.sh
-source;share/me326_project/environment/path.sh
-source;share/me326_project/environment/pythonpath.sh
