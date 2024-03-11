@@ -30,6 +30,7 @@ from yasmin_viewer import YasminViewerPub
 
 import numpy as np
 
+EMPTY = "empty"
 
 class OpeningGripper(ActionState):
     def __init__(self, node: Node) -> None:
@@ -212,6 +213,24 @@ class MovingBaseToPile(ActionState):
         blackboard.base_to_pile = response.done
         return SUCCEED
 
+def get_resource_list(blackboard: Blackboard) -> str:
+    blackboard.resource_list = ['R', 'G', 'B', 'Y']
+    print("Resources to collect: ", blackboard.resource_list)
+    return SUCCEED
+
+def get_curr_block(blackboard: Blackboard) -> str:
+    if not blackboard.resource_list:  #resource list is empty --> done!
+        print("No more resources to collect")
+        return EMPTY
+        
+    blackboard.curr_block = blackboard.resource_list[0]  #[x, y, theta in deg]
+    print("Current color of interest: ", blackboard.curr_block)
+    return SUCCEED
+
+def update_resource_list(blackboard: Blackboard) -> str:
+    blackboard.resource_list.pop(0)
+    return SUCCEED
+
 # dummy function for now-- will be replaced by service call to get block position from vision
 def get_base_target(blackboard: Blackboard) -> str:
     blackboard.base_target = [1.0, 0.5, 0.0]  #[x, y, theta in deg]
@@ -234,8 +253,17 @@ class LocobotFSMNode(Node):
 
         # create state machine
         sm = StateMachine(outcomes=["CANCELLED", "ABORTED", "DONE"])
+
+        # Get resources list
+        sm.add_state("GETTING_RESOURCE_LIST", CbState([SUCCEED], get_resource_list),  #get target position of block to move base to
+                     transitions={SUCCEED: "GETTING_CURR_BLOCK"})
+
+        # Get current block color of interest
+        sm.add_state("GETTING_CURR_BLOCK", CbState([SUCCEED, EMPTY], get_curr_block),  #get target position of block to move base to
+                     transitions={SUCCEED: "GETTING_BASE_TARGET",
+                                  EMPTY: "DONE"})
         
-        # MOVE BASE TO BLOCK
+        # Move base to block
         sm.add_state("GETTING_BASE_TARGET", CbState([SUCCEED], get_base_target),  #get target position of block to move base to
                      transitions={SUCCEED: "MOVING_BASE_TO_TARGET"})
         sm.add_state("MOVING_BASE_TO_TARGET", MovingBaseToTarget(self),
@@ -243,7 +271,7 @@ class LocobotFSMNode(Node):
                                   CANCEL: "CANCELLED",
                                   ABORT: "ABORTED"})
 
-        # PICK UP BLOCK
+        # Pick up block
         sm.add_state("GETTING_ARM_TARGET", CbState([SUCCEED], get_arm_target),  #get target position of block to move arm to
                      transitions={SUCCEED: "OPENING_GRIPPER_PICK"})
         sm.add_state("OPENING_GRIPPER_PICK", OpeningGripper(self),
@@ -259,7 +287,7 @@ class LocobotFSMNode(Node):
                                   CANCEL: "CANCELLED",
                                   ABORT: "ABORTED"})
 
-        # CHECK IF BLOCK WAS PICKED UP
+        # Check if block was piccked up
         sm.add_state("MOVING_ARM_TO_CHECK", MovingArmToCheck(self),  #move arm to checking position (gripper in front of camera)
                      transitions={SUCCEED: "VERIFY_BLOCK",
                                   CANCEL: "CANCELLED",
@@ -271,13 +299,13 @@ class LocobotFSMNode(Node):
         #                           CANCEL: "CANCELLED",
         #                           ABORT: "ABORTED"})
 
-        # MOVE BASE TO PERSONAL PILE
+        # Move base to personal pile
         sm.add_state("MOVING_BASE_TO_PILE", MovingBaseToPile(self),
                      transitions={SUCCEED: "MOVING_ARM_TO_PLACE",  #open gripper
                                   CANCEL: "CANCELLED",
                                   ABORT: "ABORTED"})
 
-        # PLACE BLOCK IN PERSONAL PILE
+        # Place block in personal pile
         sm.add_state("MOVING_ARM_TO_PLACE", MovingArmToPlace(self),  #move arm to target position
                      transitions={SUCCEED: "OPENING_GRIPPER_PLACE",
                                   CANCEL: "CANCELLED",
@@ -287,9 +315,13 @@ class LocobotFSMNode(Node):
                                   CANCEL: "CANCELLED",
                                   ABORT: "ABORTED"})
         sm.add_state("MOVING_ARM_HOME", MovingArmHome(self),  #move arm to home position
-                     transitions={SUCCEED: "DONE",
+                     transitions={SUCCEED: "UPDATING_RESOURCE_LIST",
                                   CANCEL: "CANCELLED",
                                   ABORT: "ABORTED"})
+
+        # Update resources list
+        sm.add_state("UPDATING_RESOURCE_LIST", CbState([SUCCEED], update_resource_list),  #get target position of block to move base to
+                     transitions={SUCCEED: "GETTING_CURR_BLOCK"})
 
 
         # pub
