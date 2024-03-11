@@ -51,6 +51,7 @@ install(PROGRAMS
     scripts/move_gripper_action_server.py
     scripts/locobot_state_machine.py
     scripts/vision_client.py
+    scripts/apriltag_global_frame.py
     DESTINATION lib/${PROJECT_NAME}
 )
 

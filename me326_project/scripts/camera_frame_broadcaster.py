@@ -13,7 +13,7 @@ class FixedFrameBroadcaster(Node):
    def __init__(self):
         super().__init__('fixed_frame_tf2_broadcaster')
         self.tf_broadcaster = TransformBroadcaster(self,10)
-        self.timer = self.create_timer(0.1, self.broadcast_timer_callback)
+        self.timer = self.create_timer(0.01, self.broadcast_timer_callback)
         # self.get_logger().info("Init finished")
 
    def broadcast_timer_callback(self):

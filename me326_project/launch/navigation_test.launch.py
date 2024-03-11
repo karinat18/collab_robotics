@@ -60,6 +60,15 @@ def generate_launch_description():
             ),
 
             Node(
+                executable="apriltag_global_frame.py",
+                package="me326_project",
+                parameters=[
+                    {"respawn": "true"},
+                    {"use_sim_time": True}
+                ],
+            ),
+
+            Node(
             package='gazebo_ros',
             executable='spawn_entity.py',
             arguments=[
