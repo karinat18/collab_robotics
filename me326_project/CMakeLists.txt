@@ -17,7 +17,22 @@ find_package(tf2_geometry_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(visualization_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
+
 find_package(action_msgs REQUIRED)
+
+find_package(Eigen3 REQUIRED)
+find_package(pcl_ros REQUIRED)
+find_package(pcl_conversions REQUIRED)
+find_package(image_geometry REQUIRED)
+find_package(image_transport REQUIRED)
+find_package(cv_bridge REQUIRED)
+
+find_package(la_msgs REQUIRED)
+
 
 install(PROGRAMS
     scripts/locobot1_example_motion.py
@@ -35,10 +50,14 @@ install(PROGRAMS
     scripts/camera_frame_broadcaster.py
     scripts/move_gripper_action_server.py
     scripts/locobot_state_machine.py
+    scripts/vision_client.py
     DESTINATION lib/${PROJECT_NAME}
 )
 
 add_executable(move_arm_action_server src/move_arm_action_server.cpp)
+add_executable(visual_block_perception_srv src/visual_block_perception_srv.cpp)
+ament_target_dependencies(visual_block_perception_srv rclcpp Eigen geometry_msgs tf2_eigen tf2_ros tf2 tf2_geometry_msgs OpenCV image_transport cv_bridge image_geometry visualization_msgs std_msgs la_msgs)
+
 target_include_directories(move_arm_action_server PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)
@@ -56,6 +75,7 @@ ament_target_dependencies(
 
 install(TARGETS
   move_arm_action_server
+  visual_block_perception_srv
   DESTINATION lib/${PROJECT_NAME}
 )
 
