@@ -17,18 +17,18 @@ from launch.substitutions import LaunchConfiguration, Command, FindExecutable, P
 def generate_launch_description():
 
     # Define model file paths using substitution
-    blue_cube_model_path_1 = PathJoinSubstitution([get_package_share_directory('me326_locobot_example'),'model','blue_cube.urdf'])
-    blue_cube_model_path_2 = PathJoinSubstitution([get_package_share_directory('me326_locobot_example'),'model','blue_cube.urdf'])
-    blue_cube_model_path_3 = PathJoinSubstitution([get_package_share_directory('me326_locobot_example'),'model','blue_cube.urdf'])
+    blue_cube_model_path_1 = PathJoinSubstitution([get_package_share_directory('me326_project'),'model','blue_cube.urdf'])
+    blue_cube_model_path_2 = PathJoinSubstitution([get_package_share_directory('me326_project'),'model','blue_cube.urdf'])
+    blue_cube_model_path_3 = PathJoinSubstitution([get_package_share_directory('me326_project'),'model','blue_cube.urdf'])
 
-    red_cube_model_path_1 = PathJoinSubstitution([get_package_share_directory('me326_locobot_example'),'model','red_cube.urdf'])
-    red_cube_model_path_2 = PathJoinSubstitution([get_package_share_directory('me326_locobot_example'),'model','red_cube.urdf'])
+    red_cube_model_path_1 = PathJoinSubstitution([get_package_share_directory('me326_project'),'model','red_cube.urdf'])
+    red_cube_model_path_2 = PathJoinSubstitution([get_package_share_directory('me326_project'),'model','red_cube.urdf'])
    
-    green_cube_model_path_1 = PathJoinSubstitution([get_package_share_directory('me326_locobot_example'),'model','green_cube.urdf'])
-    green_cube_model_path_2 = PathJoinSubstitution([get_package_share_directory('me326_locobot_example'),'model','green_cube.urdf'])
+    green_cube_model_path_1 = PathJoinSubstitution([get_package_share_directory('me326_project'),'model','green_cube.urdf'])
+    green_cube_model_path_2 = PathJoinSubstitution([get_package_share_directory('me326_project'),'model','green_cube.urdf'])
    
-    yellow_cube_model_path_1 = PathJoinSubstitution([get_package_share_directory('me326_locobot_example'),'model','yellow_cube.urdf'])
-    yellow_cube_model_path_2 = PathJoinSubstitution([get_package_share_directory('me326_locobot_example'),'model','yellow_cube.urdf'])
+    yellow_cube_model_path_1 = PathJoinSubstitution([get_package_share_directory('me326_project'),'model','yellow_cube.urdf'])
+    yellow_cube_model_path_2 = PathJoinSubstitution([get_package_share_directory('me326_project'),'model','yellow_cube.urdf'])
 
     return LaunchDescription([
         # Declare launch arguments - positions of blocks
