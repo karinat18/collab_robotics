@@ -65,6 +65,7 @@ class LocobotGrip(Node):
         point.positions = positions
         point.velocities = [0.0, 0.0]
         point.accelerations = [0.0, 0.0]
+        point.time_from_start = Duration(seconds=(self.get_clock().now().seconds - self.start_time.seconds + 3.0), nanoseconds=(self.get_clock().now().nanoseconds - self.start_time.nanoseconds))
         # duration = Duration()
         # duration.seconds = 3.0
         # duration.nanoseconds = 0.0
