@@ -201,7 +201,7 @@ class LocobotExample(Node):
 
         self.integrated_error_angle = 0
         self.max_velocity = 0.5 #m/s
-        self.Ki_angle = 0.4 # 0.08 #WAS 0.05 #integral gain for angular error
+        self.Ki_angle = 0.1 # 0.08 #WAS 0.05 #integral gain for angular error
 
         self.integrated_error_list = []
         self.integrated_error_angle_list = []
@@ -298,7 +298,7 @@ class LocobotExample(Node):
             # self.get_logger().info('/* log */ angle_error: {0}'.format(angle_error))
             
             SharedData.angle_error_global = angle_error
-            Kp_angle_err = 1 #gain for angular error (here a scalar because we are only rotating about the z-axis)
+            Kp_angle_err = 0.5 #gain for angular error (here a scalar because we are only rotating about the z-axis)
 
             '''
             We do not do perform derivative control here because we are doing velocity control, 

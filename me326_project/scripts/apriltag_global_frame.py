@@ -7,6 +7,8 @@ from geometry_msgs.msg import TransformStamped
 import tf2_ros
 import tf2_geometry_msgs
 from tf2_msgs.msg import TFMessage
+import tf_transformations
+import numpy as np
 
 class AprilTagStaticTransformPublisher(Node):
     def __init__(self):
@@ -40,6 +42,49 @@ class AprilTagStaticTransformPublisher(Node):
                     # Set the translation and rotation from the transformed pose
                     transform_stamped_msg.transform.translation = trans_base_link.transform.translation
                     transform_stamped_msg.transform.rotation = trans_base_link.transform.rotation
+
+                    # Rotation by -90 degrees about z-axis
+                    quaternion_rotate = tf_transformations.quaternion_from_euler(0, 0, np.pi / 2)
+
+                    # Current rotation quaternion
+                    quaternion_current = [
+                        transform_stamped_msg.transform.rotation.x,
+                        transform_stamped_msg.transform.rotation.y,
+                        transform_stamped_msg.transform.rotation.z,
+                        transform_stamped_msg.transform.rotation.w
+                    ]
+
+                    # Combine the rotations
+                    quaternion_new = tf_transformations.quaternion_multiply(quaternion_rotate, quaternion_current)
+
+                    # Assign the new rotation back to the transform
+                    # transform_stamped_msg.transform.rotation.x = quaternion_new[0]
+                    # transform_stamped_msg.transform.rotation.y = quaternion_new[1]
+                    # transform_stamped_msg.transform.rotation.z = quaternion_new[2]
+                    # transform_stamped_msg.transform.rotation.w = quaternion_new[3]
+                    transform_stamped_msg.transform.rotation.x = 0.0
+                    transform_stamped_msg.transform.rotation.y = 0.0
+                    transform_stamped_msg.transform.rotation.z = 0.0
+                    transform_stamped_msg.transform.rotation.w = 1.0
+
+
+                    translation_current = [
+                        transform_stamped_msg.transform.translation.x,
+                        transform_stamped_msg.transform.translation.y,
+                        transform_stamped_msg.transform.translation.z
+                    ]
+
+                    # Convert quaternion_rotate to a rotation matrix
+                    rotation_matrix = tf_transformations.quaternion_matrix(quaternion_rotate)
+
+                    # Apply the rotation matrix to the translation
+                    translation_new = np.dot(rotation_matrix[:3, :3], translation_current)
+
+                    # Update the translation
+                    transform_stamped_msg.transform.translation.x = translation_new[0]
+                    transform_stamped_msg.transform.translation.y = translation_new[1]
+                    transform_stamped_msg.transform.translation.z = translation_new[2]
+
                     self.get_logger().info('TransformStamped Created!')
 
                     # Broadcast the static transform
