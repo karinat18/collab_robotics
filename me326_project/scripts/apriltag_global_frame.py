@@ -34,7 +34,7 @@ class AprilTagStaticTransformPublisher(Node):
                     transform_stamped_msg = TransformStamped()
                     transform_stamped_msg.header.stamp = self.get_clock().now().to_msg()
                     transform_stamped_msg.header.frame_id = 'locobot/base_link'
-                    transform_stamped_msg.child_frame_id = trans.child_frame_id
+                    transform_stamped_msg.child_frame_id = trans.child_frame_id + '_global'
                     
                     
                     # Set the translation and rotation from the transformed pose
@@ -56,7 +56,7 @@ class AprilTagStaticTransformPublisher(Node):
             # Ensure the transform is available
             # self.get_logger().info({transform})
             trans = self.tf_buffer.lookup_transform(transform.child_frame_id, 'locobot/base_link', rclpy.time.Time(),  # get the latest available
-                rclpy.duration.Duration(seconds=1.0) )
+                rclpy.duration.Duration(seconds=0.10) )
             self.get_logger().info('Transform Successful!')
             
             return trans
