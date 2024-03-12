@@ -14,6 +14,8 @@ from visualization_msgs import msg
 from geometry_msgs.msg import PoseStamped
 from geometry_msgs.msg import PointStamped
 import time
+import tf2_geometry_msgs
+import tf2_ros
 
 
 class MatchingPixToPtcld(Node):
@@ -53,7 +55,6 @@ class MatchingPixToPtcld(Node):
             self.get_logger().warn("Received empty or None data for camera tilt angle")
 
 
-
     def call_pix_to_point_service(self):
         self.future = self.vision_client.call_async(self.req_pos)
         while rclpy.ok():
@@ -66,8 +67,9 @@ class MatchingPixToPtcld(Node):
                 else:
                     for i in range(3):
                         self.get_logger().info('Service call successful!')
-                        # Handle your response here
-                        self.get_logger().info(f'Response: {response}')
+                        response = self.future.result()
+                        
+                        # self.get_logger().info(f'Response: {response}')
                         if self.search_object == None:
                             self.get_logger().info(f'There is no object to look for, give an object to /goal_object')
                             break
@@ -81,24 +83,26 @@ class MatchingPixToPtcld(Node):
                             points = response.blue_points
                         if len(points) == 0:
                             self.get_logger().info(f'No points of the given color are found, trying to tilt camera')
-                            self.camera_tilt(i)
+                            points_pub = False
+                            response = self.camera_tilt(i)
                         else:
+                            # time.sleep(2)
                             for p in points:
                                 pose = PoseStamped()
-                                pose.header = p.header  
-                                pose.pose.position.x = p.point.x
-                                pose.pose.position.y = p.point.y
-                                pose.pose.position.z = p.point.z
+                                pose.header = p.header
+                                pose.pose.position.x = p.point.z
+                                pose.pose.position.y = -p.point.x
+                                pose.pose.position.z = -p.point.y
                                 pose.pose.orientation.x = 0.0
                                 pose.pose.orientation.y = 0.0
                                 pose.pose.orientation.z = 0.0
                                 pose.pose.orientation.w = 1.0
-                                self.goal_pose.publish(pose) 
+                                self.goal_pose.publish(pose)
                             points_pub = True
-                            break
-                        if not points_pub:
-                            self.get_logger().info(f'could not find a block of the given color after 3 attempts. reposition please')
-                        break
+                            
+                    if not points_pub:
+                        self.get_logger().info(f'could not find a block of the given color after 3 attempts. reposition please')
+                    break
                 break
 
     def camera_tilt(self, i):
@@ -112,7 +116,24 @@ class MatchingPixToPtcld(Node):
             msg.data = [0.0,(ang[i]*0.25)]
             self.tilt_cam_publisher.publish(msg)
 
-            time.sleep(3)
+            future = self.vision_client.call_async(self.req_pos)
+                
+            while rclpy.ok():
+                rclpy.spin_once(self)
+                if future.done():
+                    try:
+                        response = future.result()
+                    except Exception as e:
+                        self.get_logger().error(f'Service call failed: {str(e)}')
+                        return None  # Or handle the error accordingly
+                    else:
+                        # Do something with the response if needed
+                        # self.get_logger().info(f'Response from tilt_camera: {response}')
+                        return response  # Return the response to the caller
+                    
+                time.sleep(2)
+
+            time.sleep(1)
 
 
 def main(args=None):
