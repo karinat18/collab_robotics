@@ -11,23 +11,38 @@ import tf2_geometry_msgs
 from geometry_msgs.msg import Quaternion
 import math
 
+from locobot_interfaces.srv import SetPose
+
 class MoveBaseClient(Node):
-#Need to turn subscriber into service
+
     def __init__(self):
         super().__init__('movebase_client')
         self._action_client = ActionClient(self, MoveBase, 'movebase')
-        self._goal_pose_subscription = self.create_subscription(
-            PoseStamped,
-            '/goal_pose',
-            self.goal_pose_callback,
-            10
+        # self._goal_pose_subscription = self.create_subscription(
+        #     PoseStamped,
+        #     '/goal_pose',
+        #     self.goal_pose_callback,
+        #     10
+        # )
+
+        self._set_pose_service = self.create_service(
+            SetPose,
+            'set_goal_pose',
+            self.set_goal_pose_callback
         )
+
         self.tf_buffer = tf2_ros.Buffer()
         self.tf_listener = tf2_ros.TransformListener(self.tf_buffer, self)
 
     
+    def set_goal_pose_callback(self, request, response):
+        # Process the incoming request as you would have processed the message in the subscription callback
+        self.process_goal_pose(request.pose)
+        response.success = True  # Assuming your service response has a success field
+        return response
 
-    def goal_pose_callback(self, msg):
+
+    def process_goal_pose(self, msg):
 
         def quaternion_to_euler(q):
             """
