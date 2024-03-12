@@ -12,7 +12,7 @@ from geometry_msgs.msg import Quaternion
 import math
 
 class MoveBaseClient(Node):
-
+#Need to turn subscriber into service
     def __init__(self):
         super().__init__('movebase_client')
         self._action_client = ActionClient(self, MoveBase, 'movebase')
