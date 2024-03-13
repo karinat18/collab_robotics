@@ -14,8 +14,8 @@ class LocobotGrip(Node):
         self.gripper_state = "unknown"
 
         # Gripper open and close positions
-        self.open_positions = [1.0, -1.0]
-        self.close_positions =  [0.0, 0.0]
+        self.open_positions = [0.10, -0.10]
+        self.close_positions =  [1.0e-3, -1.0e-3]
 
         self.get_logger().info("Gripper Action Server started")
 
@@ -39,11 +39,11 @@ class LocobotGrip(Node):
      
         if goal.command.lower() == "open":
             self.get_logger().info("Opening...")
-            self.publish_gripper_action(self.open_positions)
+            self.publish_gripper_action(self.open_positions, goal.duration)
             self.gripper_state = "open"
         elif goal.command.lower() == "close":
             self.get_logger().info("Closing...")
-            self.publish_gripper_action(self.close_positions)
+            self.publish_gripper_action(self.close_positions, goal.duration)
             self.gripper_state = "close"
         else:
             self.get_logger().info(f"Invalid command: {goal.command}")
@@ -56,23 +56,16 @@ class LocobotGrip(Node):
         goal_handle.succeed()        
         return MoveGripper.Result(success=True)
 
-    def publish_gripper_action(self, positions):
+    def publish_gripper_action(self, positions, dur):
         gripAction = JointTrajectory()
         gripAction.header.frame_id = ''
         gripAction.joint_names = ['left_finger', 'right_finger']
         
         point = JointTrajectoryPoint()
         point.positions = positions
-        point.velocities = [0.0, 0.0]
-        point.accelerations = [0.0, 0.0]
-        point.time_from_start = Duration(seconds=(self.get_clock().now().seconds - self.start_time.seconds + 3.0), nanoseconds=(self.get_clock().now().nanoseconds - self.start_time.nanoseconds))
-        # duration = Duration()
-        # duration.seconds = 3.0
-        # duration.nanoseconds = 0.0
-        # point.time_from_start = duration
-        #duration_msg.nanoseconds = 0
-        #point.time_from_start = duration_msg 
-        #Duration(seconds=(self.get_clock().now() - self.start_time))
+        # point.velocities = [0.0, 0.0]
+        # point.accelerations = [0.0, 0.0]
+        point.time_from_start = Duration(seconds=dur).to_msg()
         
         gripAction.points = [point]
         self.grip_publisher.publish(gripAction)
