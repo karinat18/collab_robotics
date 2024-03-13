@@ -1,3 +1,0 @@
-make[2]: *** [CMakeFiles/move_arm_action_server.dir/build.make:63: CMakeFiles/move_arm_action_server.dir/src/move_arm_action_server.cpp.o] Interrupt
-make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/move_arm_action_server.dir/all] Interrupt
-make: *** [Makefile:141: all] Interrupt
