@@ -52,6 +52,7 @@ install(PROGRAMS
     scripts/locobot_state_machine.py
     scripts/vision_client.py
     scripts/apriltag_global_frame.py
+    scripts/block_attach_detach.py
     DESTINATION lib/${PROJECT_NAME}
 )
 
