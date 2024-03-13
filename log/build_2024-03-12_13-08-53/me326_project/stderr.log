@@ -1,0 +1,4 @@
+[01m[K/home/joshhlee/me326_ws/src/collab_robotics/me326_project/src/move_arm_action_server.cpp:[m[K In member function ‘[01m[Krclcpp_action::GoalResponse MoveArmActionServer::handle_goal(const GoalUUID&, std::shared_ptr<const locobot_interfaces::action::MoveArm_Goal_<std::allocator<void> > >)[m[K’:
+[01m[K/home/joshhlee/me326_ws/src/collab_robotics/me326_project/src/move_arm_action_server.cpp:45:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgoal[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   45 |       [01;35m[Kstd::shared_ptr<const ActionMoveArm::Goal> goal[m[K)
+      |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~[m[K

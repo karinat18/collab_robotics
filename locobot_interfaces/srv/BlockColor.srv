@@ -1,0 +1,5 @@
+# Request
+std_msgs/String color
+---
+# Response
+geometry_msgs/PoseStamped pose
