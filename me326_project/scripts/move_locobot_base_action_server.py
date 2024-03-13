@@ -48,7 +48,7 @@ class SharedData:
 
     angular_goal_reached_error = 2*np.pi/180 #2 degrees
 
-    action_server_loop_duration = 10 #execute the command for up to 10 seconds or until the goal is reached
+    action_server_loop_duration = 20 #execute the command for up to 10 seconds or until the goal is reached
 
 
 class MoveBaseActionServer(Node):

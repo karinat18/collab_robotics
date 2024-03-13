@@ -19,7 +19,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/SetPose.srv"
   "srv/GetBasePose.srv"
   "srv/BlockColor.srv"
-  "srv/MoveGripper.srv"
+  "srv/AttachDetach.srv"
   DEPENDENCIES geometry_msgs
 )
 
