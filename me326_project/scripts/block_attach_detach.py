@@ -32,12 +32,15 @@ class NearestBlockGrabber(Node):
         self.create_service(MoveGripper, 'attach_detach_service', self.attach_detach_callback)
         self.attach = self.create_client(Attach, '/attach')
         self.detach = self.create_client(Attach, '/detach')
+        self.attached_block = None
 
     def model_states_callback(self, msg):
         self.model_states = msg
+        # self.get_logger().info('Model States received')
 
     def link_states_callback(self, msg):
         self.link_states = msg
+        # self.get_logger().info('Link States Received')
 
     def calculate_distance(self, pose1: Pose, pose2: Pose) -> float:
         return np.sqrt((pose1.position.x - pose2.position.x) ** 2 +
@@ -45,40 +48,53 @@ class NearestBlockGrabber(Node):
                        (pose1.position.z - pose2.position.z) ** 2)
     
     def attach_detach_callback(self, request, response):
+        self.get_logger().info('Starting Attach/Detach Callback')
         for name, pose in zip(self.link_states.name, self.link_states.pose):
             if name == 'robot_description::locobot/right_finger_link':
                 gripper_pose = pose
+        self.get_logger().info('Finished finding gripper pose!')
         min_distance = float('inf')
         nearest_model_name = ""
 
         for name, pose in zip(self.model_states.name, self.model_states.pose):
-            if name != 'robot_description' and name != 'ground_plane':  # Replace 'gripper_model_name' with your gripper's model name
+            if name != 'robot_description' and name != 'ground_plane' and name != 'TrossenRoboticsOfficeBuilding' and not 'apriltag' in name:  # Replace 'gripper_model_name' with your gripper's model name
                 distance = self.calculate_distance(gripper_pose, pose)
                 if distance < min_distance:
                     min_distance = distance
                     nearest_model_name = name
-
+        self.get_logger().info('Nearest model: ' + nearest_model_name)
         req = Attach.Request()
         req.model_name_1 = "robot_description"
         req.link_name_1 = 'robot_description::locobot/right_finger_link'
         req.model_name_2 = nearest_model_name
-        req.link_name_2 = "link"  # Make sure this is the correct link name for the model
+        req.link_name_2 = "my_box"  # Make sure this is the correct link name for the model
 
         if request.command == 'open':
+            req.model_name_2 = self.attached_block
             future = self.detach.call_async(req)
-        elif request.command == 'closed':
+            self.get_logger().info('Sent Detach!')
+            self.attached_block = None
+        elif request.command == 'close':
             future = self.attach.call_async(req)
+            self.get_logger().info('Sent Attach')
+            self.attached_block = req.model_name_2
         else:
+            self.get_logger().info('Incorrect command sent')
             response.success = False
             return response
 
         # Wait for the service to complete
-        rclpy.spin_until_future_complete(self, future)
-        service_response = future.result()
-        response.success = service_response.success
+        future.add_done_callback(self.handle_service_response)
+        response.success = True
 
         return response
-
+    def handle_service_response(self, future):
+        
+        service_response = future.result()
+        resp = service_response
+        print(resp)
+        
+        
 def main(args=None):
     rclpy.init(args=args)
     gripper = NearestBlockGrabber()
