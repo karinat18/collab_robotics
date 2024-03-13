@@ -80,8 +80,8 @@ def generate_launch_description():
                 arguments=[
                     '-entity', 'apriltag_0', 
                     '-file', f'{models_path}/Apriltag36_11_00000/model.sdf',
-                    '-x', '0.0', 
-                    '-y', '1.0', 
+                    '-x', '-1.0', 
+                    '-y', '-1.0', 
                     '-z', '0.0',
                     '-R', '0.0',
                     '-P', '0.0',
@@ -95,8 +95,8 @@ def generate_launch_description():
                 arguments=[
                     '-entity', 'apriltag_1', 
                     '-file', f'{models_path}/Apriltag36_11_00001/model.sdf',
-                    '-x', '0.0', 
-                    '-y', '-1.0', 
+                    '-x', '-1.0', 
+                    '-y', '1.0', 
                     '-z', '0.0',
                     '-R', '0.0',
                     '-P', '0.0',
@@ -111,7 +111,7 @@ def generate_launch_description():
                     '-entity', 'apriltag_2', 
                     '-file', f'{models_path}/Apriltag36_11_00002/model.sdf',
                     '-x', '1.0', 
-                    '-y', '1.0', 
+                    '-y', '-1.0', 
                     '-z', '0.0',
                     '-R', '0.0',
                     '-P', '0.0',
@@ -126,7 +126,7 @@ def generate_launch_description():
                     '-entity', 'apriltag_3', 
                     '-file', f'{models_path}/Apriltag36_11_00003/model.sdf',
                     '-x', '1.0', 
-                    '-y', '-1.0', 
+                    '-y', '1.0', 
                     '-z', '0.0',
                     '-R', '0.0',
                     '-P', '0.0',
@@ -183,6 +183,30 @@ def generate_launch_description():
 
             Node(
                 executable="get_base_pose.py",
+                package="me326_project",
+                parameters=[
+                    {"respawn": "true"},
+                ],
+            ),
+
+            Node(
+                executable="visual_block_perception_srv",
+                package="me326_project",
+                parameters=[
+                    {"respawn": "true"},
+                ],
+            ),
+
+            Node(
+                executable="vision_client.py",
+                package="me326_project",
+                parameters=[
+                    {"respawn": "true"},
+                ],
+            ),
+
+            Node(
+                executable="block_attach_detach.py",
                 package="me326_project",
                 parameters=[
                     {"respawn": "true"},

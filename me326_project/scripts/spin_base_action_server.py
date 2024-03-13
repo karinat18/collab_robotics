@@ -31,7 +31,7 @@ class LocobotSpinBase(Node):
         while True:
             self.base_vel_publisher.publish(spin_msg)
             elapsed_time = (self.get_clock().now().nanoseconds - start_time.nanoseconds)*1e-9
-            if elapsed_time > 2.5*goal.theta*(3.14159/180)/(3.14159/3):
+            if elapsed_time > 2*goal.theta*(3.14159/180)/(3.14159/3):
                 self.get_logger().info("Elapsed Time: {0}".format(elapsed_time))
                 self.base_vel_publisher.publish(Twist())
                 goal_handle.succeed()

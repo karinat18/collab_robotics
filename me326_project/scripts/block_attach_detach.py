@@ -3,7 +3,7 @@
 import sys
 import rclpy
 from gazebo_ros_link_attacher.srv import Attach
-from locobot_interfaces.srv import MoveGripper
+from locobot_interfaces.srv import AttachDetach
 import numpy as np
 from gazebo_msgs.msg import ModelStates
 from gazebo_msgs.msg import LinkStates
@@ -29,7 +29,7 @@ class NearestBlockGrabber(Node):
         self.model_states_client = self.create_client(GetModelList, '/get_model_list')
         self.model_states = ModelStates()
         self.link_states = LinkStates()
-        self.create_service(MoveGripper, 'attach_detach_service', self.attach_detach_callback)
+        self.create_service(AttachDetach, 'attach_detach_service', self.attach_detach_callback)
         self.attach = self.create_client(Attach, '/attach')
         self.detach = self.create_client(Attach, '/detach')
         self.attached_block = None

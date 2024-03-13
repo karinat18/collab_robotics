@@ -30,7 +30,7 @@ class AprilTagStaticTransformPublisher(Node):
             if trans.header.frame_id == 'camera_fixed':
                 try:
                     # Attempt to transform to the 'locobot/base_link' frame
-                    self.get_logger().info('Starting try')
+                    # self.get_logger().info('Starting try')
                     trans_base_link = self.transform_to_base_link(trans)
                     
                     transform_stamped_msg = TransformStamped()
@@ -85,11 +85,11 @@ class AprilTagStaticTransformPublisher(Node):
                     transform_stamped_msg.transform.translation.y = translation_new[1]
                     transform_stamped_msg.transform.translation.z = translation_new[2]
 
-                    self.get_logger().info('TransformStamped Created!')
+                    # self.get_logger().info('TransformStamped Created!')
 
                     # Broadcast the static transform
                     self._broadcaster.sendTransform(transform_stamped_msg)
-                    self.get_logger().info('Broadcast Transform!')
+                    # self.get_logger().info('Broadcast Transform!')
                     
                 except Exception as e:
                     self.get_logger().error(f'Failed to process transform: {e}')
@@ -102,7 +102,7 @@ class AprilTagStaticTransformPublisher(Node):
             # self.get_logger().info({transform})
             trans = self.tf_buffer.lookup_transform(transform.child_frame_id, 'locobot/base_link', rclpy.time.Time(),  # get the latest available
                 rclpy.duration.Duration(seconds=0.10) )
-            self.get_logger().info('Transform Successful!')
+            # self.get_logger().info('Transform Successful!')
             
             return trans
 

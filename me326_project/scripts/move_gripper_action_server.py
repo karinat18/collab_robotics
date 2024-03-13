@@ -7,6 +7,8 @@ from rclpy.duration import Duration
 from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
 from std_msgs.msg import String
 from locobot_interfaces.action import MoveGripper 
+from locobot_interfaces.srv import AttachDetach
+
 
 class LocobotGrip(Node):
     def __init__(self):
@@ -30,6 +32,7 @@ class LocobotGrip(Node):
             'movegripper',
             self.execute_callback
         )
+        
 
     def execute_callback(self, goal_handle):
         goal = goal_handle.request

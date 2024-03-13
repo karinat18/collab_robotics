@@ -20,7 +20,7 @@ import rclpy
 from simple_node import Node
 from geometry_msgs.msg import Pose, PoseStamped
 from locobot_interfaces.action import MoveArm, MoveGripper, MoveBase, TiltCamera, SpinBase
-from locobot_interfaces.srv import SetPose, GetBasePose
+from locobot_interfaces.srv import SetPose, GetBasePose, AttachDetach
 
 from yasmin import CbState
 from yasmin import Blackboard
@@ -68,7 +68,7 @@ class SpinningBase(ActionState):
     def create_goal_handler(self, blackboard: Blackboard) -> SpinBase.Goal:
         print("Spinning")
         goal = SpinBase.Goal()
-        goal.theta = 360.0
+        goal.theta = 365.0
         return goal
 
     def response_handler(self, blackboard: Blackboard, response: SpinBase.Result) -> str:
@@ -91,7 +91,8 @@ class GettingPersonalPileTarget(ServiceState):
         pose_req = GetBasePose.Request()
         pose_req.pose.header.frame_id = 'origin_global'
         # pose_req.pose.header.stamp = self.node.get_clock().now().to_msg()
-        pose_req.pose.pose.orientation.w = 1.0
+        pose_req.pose.pose.orientation.z = -0.707
+        pose_req.pose.pose.orientation.w = 0.707
         return pose_req
 
     def response_handler(self, blackboard: Blackboard, response: GetBasePose.Response) -> str:
@@ -101,7 +102,6 @@ class GettingPersonalPileTarget(ServiceState):
 
         blackboard.personal_pile_pose = base_goal
         blackboard.base_to_mid = response.success
-
         return SUCCEED
 
 class GettingMiddleTarget(ServiceState):
@@ -175,6 +175,48 @@ class ClosingGripper(ActionState):
 
     def response_handler(self, blackboard: Blackboard, response: MoveGripper.Result) -> str:
         blackboard.close_grip_res = response.success
+        return SUCCEED
+
+class AttachingBlock(ServiceState):
+    def __init__(self, node: Node) -> None:
+        super().__init__(
+            node,  # node
+            AttachDetach,  # action type
+            "attach_detach_service",  # action name
+            self.create_goal_handler,  # cb to create the goal
+            None,  # outcomes. Includes (SUCCEED, ABORT)
+            self.response_handler  # cb to process the response
+        )
+
+    def create_goal_handler(self, blackboard: Blackboard) -> AttachDetach.Request:
+        print("Attaching Block")
+        goal = AttachDetach.Request()
+        goal.command = 'close'
+        return goal
+
+    def response_handler(self, blackboard: Blackboard, response: AttachDetach.Response) -> str:
+        blackboard.attach_res = response.success
+        return SUCCEED
+
+class DetachingBlock(ServiceState):
+    def __init__(self, node: Node) -> None:
+        super().__init__(
+            node,  # node
+            AttachDetach,  # action type
+            "attach_detach_service",  # action name
+            self.create_goal_handler,  # cb to create the goal
+            None,  # outcomes. Includes (SUCCEED, ABORT)
+            self.response_handler  # cb to process the response
+        )
+
+    def create_goal_handler(self, blackboard: Blackboard) -> AttachDetach.Request:
+        print("Detaching Block")
+        goal = AttachDetach.Request()
+        goal.command = 'open'
+        return goal
+
+    def response_handler(self, blackboard: Blackboard, response: AttachDetach.Response) -> str:
+        blackboard.detach_res = response.success
         return SUCCEED
 
 class MovingArmToBlock(ActionState):
@@ -434,9 +476,13 @@ class LocobotFSMNode(Node):
                                   CANCEL: "CANCELLED",
                                   ABORT: "ABORTED"})
         sm.add_state("CLOSING_GRIPPER", ClosingGripper(self),  #close gripper to pick up block
-                     transitions={SUCCEED: "MOVING_ARM_TO_CHECK",
+                     transitions={SUCCEED: "ATTACHING_BLOCK",
                                   CANCEL: "CANCELLED",
                                   ABORT: "ABORTED"})
+        sm.add_state("ATTACHING_BLOCK", AttachingBlock(self),  #get target position of block to move base to
+                     transitions={SUCCEED: "MOVING_ARM_TO_CHECK",
+                                  ABORT: "ABORTED"})
+
 
         # Check if block was picked up
         sm.add_state("MOVING_ARM_TO_CHECK", MovingArmToCheck(self),  #move arm to checking position (gripper in front of camera)
@@ -458,8 +504,11 @@ class LocobotFSMNode(Node):
 
         # Place block in personal pile
         sm.add_state("MOVING_ARM_TO_PLACE", MovingArmToPlace(self),  #move arm to target position
-                     transitions={SUCCEED: "OPENING_GRIPPER_PLACE",
+                     transitions={SUCCEED: "DETACHING_BLOCK",
                                   CANCEL: "CANCELLED",
+                                  ABORT: "ABORTED"})
+        sm.add_state("DETACHING_BLOCK", DetachingBlock(self),  #get target position of block to move base to
+                     transitions={SUCCEED: "OPENING_GRIPPER_PLACE",
                                   ABORT: "ABORTED"})
         sm.add_state("OPENING_GRIPPER_PLACE", OpeningGripper(self),  #open gripper to place block
                      transitions={SUCCEED: "MOVING_ARM_HOME",
