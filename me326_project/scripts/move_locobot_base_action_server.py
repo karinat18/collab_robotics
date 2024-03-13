@@ -107,7 +107,7 @@ class MoveBaseActionServer(Node):
         while (distance_to_goal > self.goal_reached_error) and (SharedData.angular_error_focused  == False):# and (time_duration<self.loop_duration):
             distance_to_goal = SharedData.distance_to_goal_global
             feedback_msg.distance = distance_to_goal
-            self.get_logger().info('Position Feedback: {0}'.format(feedback_msg.distance))
+            # self.get_logger().info('Position Feedback: {0}'.format(feedback_msg.distance))
             goal_handle.publish_feedback(feedback_msg)        	
             #optional code if you want ot have a timout:
             time_duration  = time.time() - start_time
@@ -133,7 +133,7 @@ class MoveBaseActionServer(Node):
         while SharedData.control_base_angle_bool_global and (angular_distance_to_goal > self.angular_goal_reached_error):
             angular_distance_to_goal = np.abs(SharedData.angle_error_global)
             feedback_msg.angular_distance = angular_distance_to_goal
-            self.get_logger().info('Angular Feedback: {0}'.format(feedback_msg.angular_distance))
+            # self.get_logger().info('Angular Feedback: {0}'.format(feedback_msg.angular_distance))
             goal_handle.publish_feedback(feedback_msg)
             time_duration  = time.time() - start_time
             if time_duration > self.loop_duration:
@@ -350,7 +350,7 @@ class LocobotExample(Node):
 
             if point_p_error_signal_magnitude > self.max_velocity:
                 point_p_adjusted_norm = self.max_velocity
-                self.get_logger().info('/* log */ velocity magnitude capped:: {0}'.format(point_p_error_signal_magnitude))
+                # self.get_logger().info('/* log */ velocity magnitude capped:: {0}'.format(point_p_error_signal_magnitude))
                 point_p_error_signal = point_p_error_signal/point_p_error_signal_magnitude*point_p_adjusted_norm
             #The following relates the desired motion of the point P and the commanded forward and angular velocity of the mobile base [v,w]
             non_holonomic_mat = np.matrix([[np.cos(current_angle), -self.L*np.sin(current_angle)],[np.sin(current_angle),self.L*np.cos(current_angle)]])

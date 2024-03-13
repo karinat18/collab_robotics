@@ -14,7 +14,11 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "action/MoveArm.action"
   "action/MoveGripper.action"
   "action/MoveBase.action"
+  "action/TiltCamera.action"
+  "action/SpinBase.action"
   "srv/SetPose.srv"
+  "srv/GetBasePose.srv"
+  "srv/BlockColor.srv"
   "srv/MoveGripper.srv"
   DEPENDENCIES geometry_msgs
 )
