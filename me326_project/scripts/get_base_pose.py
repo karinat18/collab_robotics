@@ -3,46 +3,38 @@
 import rclpy
 from rclpy.node import Node
 from locobot_interfaces.action import MoveBase
-from geometry_msgs.msg import PoseStamped
-from rclpy.action import ActionClient
+from geometry_msgs.msg import Pose, PoseStamped
 import tf2_ros
 import tf2_geometry_msgs
 
 from geometry_msgs.msg import Quaternion
 import math
 
-from locobot_interfaces.srv import SetPose
+from locobot_interfaces.srv import GetBasePose
 
-class MoveBaseClient(Node):
+class BasePose(Node):
 
     def __init__(self):
-        super().__init__('movebase_client')
-        self._action_client = ActionClient(self, MoveBase, 'movebase')
-        self._goal_pose_subscription = self.create_subscription(
-            PoseStamped,
-            '/goal_pose',
-            self.process_goal_pose,
-            10
-        )
+        super().__init__('get_base_pose_service')
 
         self._set_pose_service = self.create_service(
-            SetPose,
-            'set_goal_pose',
+            GetBasePose,
+            'get_base_pose',
             self.set_goal_pose_callback
         )
-
         self.tf_buffer = tf2_ros.Buffer()
         self.tf_listener = tf2_ros.TransformListener(self.tf_buffer, self)
 
     
     def set_goal_pose_callback(self, request, response):
         # Process the incoming request as you would have processed the message in the subscription callback
-        self.process_goal_pose(request.pose)
-        response.success = True  # Assuming your service response has a success field
+        response.base_pose = self.process_goal_pose(request.pose)
+        response.angle_bool = True
+        response.success = True
         return response
 
 
-    def process_goal_pose(self, msg):
+    def process_goal_pose(self, msg) -> Pose:
 
         def quaternion_to_euler(q):
             """
@@ -55,7 +47,6 @@ class MoveBaseClient(Node):
             t3 = +2.0 * (q.w * q.z + q.x * q.y)
             t4 = +1.0 - 2.0 * (q.y * q.y + q.z * q.z)
             yaw = math.atan2(t3, t4)
-            
             return  yaw
 
         def adjust_pose(pose, distance):
@@ -88,26 +79,19 @@ class MoveBaseClient(Node):
             )
             transformed_pose = tf2_geometry_msgs.do_transform_pose(msg.pose, trans)
 
-            adjusted_pose = adjust_pose(transformed_pose, 0.1)
+            adjusted_pose = adjust_pose(transformed_pose, 0.3)
 
             # Set the transformed pose as the goal
-            goal_msg = MoveBase.Goal()
-            goal_msg.target_pose = adjusted_pose
-            goal_msg.control_base_angle_bool = True
-            self.send_goal(goal_msg)
+            return adjusted_pose
+
         except (tf2_ros.LookupException, tf2_ros.ConnectivityException, tf2_ros.ExtrapolationException) as e:
             self.get_logger().error('Failed to transform pose: {0}'.format(str(e)))
 
-    def send_goal(self, goal_msg):
-        self.get_logger().info('Sending goal...')
-        self._action_client.wait_for_server()
-        self._action_client.send_goal_async(goal_msg)
-        self.get_logger().info('Goal Sent!')
 
 def main(args=None):
     rclpy.init(args=args)
-    movebase_client = MoveBaseClient()
-    rclpy.spin(movebase_client)
+    base_pose_node = BasePose()
+    rclpy.spin(base_pose_node)
     rclpy.shutdown()
 
 if __name__ == '__main__':

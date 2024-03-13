@@ -1,0 +1,7 @@
+# Request
+geometry_msgs/PoseStamped pose
+---
+# Response
+geometry_msgs/Pose base_pose
+bool angle_bool
+bool success
