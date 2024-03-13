@@ -1,0 +1,272 @@
+[1.035s] Invoking command in '/home/joshhlee/me326_ws/src/collab_robotics/build/la_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/joshhlee/me326_ws/install/opencv_tests:/home/joshhlee/interbotix_ws/install/interbotix_xs_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_modules:/home/joshhlee/interbotix_ws/install/interbotix_common_modules:/opt/ros/galactic /usr/bin/cmake /home/joshhlee/me326_ws/src/collab_robotics/la_msgs -DCMAKE_INSTALL_PREFIX=/home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs
+[1.161s] -- The C compiler identification is GNU 9.4.0
+[1.253s] -- The CXX compiler identification is GNU 9.4.0
+[1.262s] -- Check for working C compiler: /usr/bin/cc
+[1.323s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.325s] -- Detecting C compiler ABI info
+[1.405s] -- Detecting C compiler ABI info - done
+[1.414s] -- Detecting C compile features
+[1.414s] -- Detecting C compile features - done
+[1.417s] -- Check for working CXX compiler: /usr/bin/c++
+[1.514s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.515s] -- Detecting CXX compiler ABI info
+[1.601s] -- Detecting CXX compiler ABI info - done
+[1.613s] -- Detecting CXX compile features
+[1.614s] -- Detecting CXX compile features - done
+[1.618s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[1.648s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.648s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.765s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[1.848s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.859s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[1.956s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.987s] -- Found FastRTPS: /opt/ros/galactic/include  
+[2.070s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.149s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[2.155s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[2.178s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.180s] -- Looking for pthread.h
+[2.265s] -- Looking for pthread.h - found
+[2.265s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.328s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[2.329s] -- Looking for pthread_create in pthreads
+[2.398s] -- Looking for pthread_create in pthreads - not found
+[2.398s] -- Looking for pthread_create in pthread
+[2.468s] -- Looking for pthread_create in pthread - found
+[2.468s] -- Found Threads: TRUE  
+[2.627s] -- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)
+[2.663s] -- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[2.734s] -- Found rosidl_default_generators: 1.1.1 (/opt/ros/galactic/share/rosidl_default_generators/cmake)
+[2.772s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[2.992s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/galactic/share/ament_cmake_ros/cmake)
+[3.258s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.372s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.405s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[3.408s] -- Found python_cmake_module: 0.8.1 (/opt/ros/galactic/share/python_cmake_module/cmake)
+[3.438s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[3.438s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.438s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[3.438s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so
+[3.462s] -- Found PythonExtra: .so  
+[3.567s] -- Configuring done
+[3.619s] -- Generating done
+[3.621s] -- Build files have been written to: /home/joshhlee/me326_ws/src/collab_robotics/build/la_msgs
+[3.629s] Invoked command in '/home/joshhlee/me326_ws/src/collab_robotics/build/la_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/joshhlee/me326_ws/install/opencv_tests:/home/joshhlee/interbotix_ws/install/interbotix_xs_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_modules:/home/joshhlee/interbotix_ws/install/interbotix_common_modules:/opt/ros/galactic /usr/bin/cmake /home/joshhlee/me326_ws/src/collab_robotics/la_msgs -DCMAKE_INSTALL_PREFIX=/home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs
+[3.629s] Invoking command in '/home/joshhlee/me326_ws/src/collab_robotics/build/la_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/joshhlee/me326_ws/install/opencv_tests:/home/joshhlee/interbotix_ws/install/interbotix_xs_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_modules:/home/joshhlee/interbotix_ws/install/interbotix_common_modules:/opt/ros/galactic /usr/bin/cmake --build /home/joshhlee/me326_ws/src/collab_robotics/build/la_msgs -- -j4 -l4
+[3.673s] [35m[1mScanning dependencies of target la_msgs__cpp[0m
+[3.683s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[4.067s] [  2%] Built target la_msgs__cpp
+[4.076s] [  5%] [34m[1mGenerating C code for ROS interfaces[0m
+[4.475s] [35m[1mScanning dependencies of target la_msgs__rosidl_generator_c[0m
+[4.497s] [  7%] [32mBuilding C object CMakeFiles/la_msgs__rosidl_generator_c.dir/rosidl_generator_c/la_msgs/action/detail/move_base__functions.c.o[0m
+[4.582s] [ 10%] [32mBuilding C object CMakeFiles/la_msgs__rosidl_generator_c.dir/rosidl_generator_c/la_msgs/srv/detail/ptps__functions.c.o[0m
+[4.624s] [ 12%] [32m[1mLinking C shared library libla_msgs__rosidl_generator_c.so[0m
+[4.655s] [ 12%] Built target la_msgs__rosidl_generator_c
+[4.664s] [ 15%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[4.979s] [35m[1mScanning dependencies of target la_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[5.027s] [ 17%] [32mBuilding CXX object CMakeFiles/la_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/la_msgs/action/detail/dds_fastrtps/move_base__type_support.cpp.o[0m
+[5.428s] [ 20%] [32mBuilding CXX object CMakeFiles/la_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/la_msgs/srv/detail/dds_fastrtps/ptps__type_support.cpp.o[0m
+[5.738s] [ 23%] [32m[1mLinking CXX shared library libla_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[5.804s] [ 23%] Built target la_msgs__rosidl_typesupport_fastrtps_cpp
+[5.817s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[6.034s] [35m[1mScanning dependencies of target la_msgs__rosidl_typesupport_c[0m
+[6.059s] [ 28%] [32mBuilding CXX object CMakeFiles/la_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/la_msgs/action/move_base__type_support.cpp.o[0m
+[6.096s] [ 30%] [32mBuilding CXX object CMakeFiles/la_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/la_msgs/srv/ptps__type_support.cpp.o[0m
+[6.122s] [ 33%] [32m[1mLinking CXX shared library libla_msgs__rosidl_typesupport_c.so[0m
+[6.153s] [ 33%] Built target la_msgs__rosidl_typesupport_c
+[6.162s] [ 35%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[6.452s] [35m[1mScanning dependencies of target la_msgs__rosidl_typesupport_introspection_c[0m
+[6.480s] [ 38%] [32mBuilding C object CMakeFiles/la_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/la_msgs/action/detail/move_base__type_support.c.o[0m
+[6.514s] [ 41%] [32mBuilding C object CMakeFiles/la_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/la_msgs/srv/detail/ptps__type_support.c.o[0m
+[6.545s] [ 43%] [32m[1mLinking C shared library libla_msgs__rosidl_typesupport_introspection_c.so[0m
+[6.570s] [ 43%] Built target la_msgs__rosidl_typesupport_introspection_c
+[6.579s] [ 46%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[6.891s] [35m[1mScanning dependencies of target la_msgs__rosidl_typesupport_fastrtps_c[0m
+[6.933s] [ 48%] [32mBuilding CXX object CMakeFiles/la_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/la_msgs/action/detail/move_base__type_support_c.cpp.o[0m
+[7.174s] [ 51%] [32mBuilding CXX object CMakeFiles/la_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/la_msgs/srv/detail/ptps__type_support_c.cpp.o[0m
+[7.410s] [ 53%] [32m[1mLinking CXX shared library libla_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[7.470s] [ 53%] Built target la_msgs__rosidl_typesupport_fastrtps_c
+[7.479s] [ 56%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[7.741s] [35m[1mScanning dependencies of target la_msgs__rosidl_typesupport_introspection_cpp[0m
+[7.765s] [ 58%] [32mBuilding CXX object CMakeFiles/la_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/la_msgs/action/detail/move_base__type_support.cpp.o[0m
+[8.072s] [ 61%] [32mBuilding CXX object CMakeFiles/la_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/la_msgs/srv/detail/ptps__type_support.cpp.o[0m
+[8.285s] [ 64%] [32m[1mLinking CXX shared library libla_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[8.336s] [ 64%] Built target la_msgs__rosidl_typesupport_introspection_cpp
+[8.345s] [ 66%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[8.563s] [35m[1mScanning dependencies of target la_msgs__rosidl_typesupport_cpp[0m
+[8.587s] [ 69%] [32mBuilding CXX object CMakeFiles/la_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/la_msgs/action/move_base__type_support.cpp.o[0m
+[8.885s] [ 71%] [32mBuilding CXX object CMakeFiles/la_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/la_msgs/srv/ptps__type_support.cpp.o[0m
+[9.076s] [ 74%] [32m[1mLinking CXX shared library libla_msgs__rosidl_typesupport_cpp.so[0m
+[9.112s] [ 74%] Built target la_msgs__rosidl_typesupport_cpp
+[9.121s] [35m[1mScanning dependencies of target la_msgs[0m
+[9.130s] [ 74%] Built target la_msgs
+[9.143s] [35m[1mScanning dependencies of target la_msgs__py[0m
+[9.153s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[9.917s] [ 76%] Built target la_msgs__py
+[9.932s] [35m[1mScanning dependencies of target la_msgs__python[0m
+[9.976s] [ 79%] [32mBuilding C object CMakeFiles/la_msgs__python.dir/rosidl_generator_py/la_msgs/action/_move_base_s.c.o[0m
+[10.078s] [ 82%] [32mBuilding C object CMakeFiles/la_msgs__python.dir/rosidl_generator_py/la_msgs/srv/_ptps_s.c.o[0m
+[10.159s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/la_msgs/libla_msgs__python.so[0m
+[10.197s] [ 84%] Built target la_msgs__python
+[10.211s] [35m[1mScanning dependencies of target la_msgs__rosidl_typesupport_c__pyext[0m
+[10.243s] [ 87%] [32mBuilding C object CMakeFiles/la_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/la_msgs/_la_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[10.319s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/la_msgs/la_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so[0m
+[10.349s] [ 89%] Built target la_msgs__rosidl_typesupport_c__pyext
+[10.358s] [35m[1mScanning dependencies of target la_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[10.387s] [ 92%] [32mBuilding C object CMakeFiles/la_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/la_msgs/_la_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[10.465s] [ 94%] [32m[1mLinking CXX shared library rosidl_generator_py/la_msgs/la_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so[0m
+[10.516s] [ 94%] Built target la_msgs__rosidl_typesupport_fastrtps_c__pyext
+[10.525s] [35m[1mScanning dependencies of target la_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[10.548s] [ 97%] [32mBuilding C object CMakeFiles/la_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/la_msgs/_la_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[10.627s] [100%] [32m[1mLinking C shared library rosidl_generator_py/la_msgs/la_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so[0m
+[10.667s] [100%] Built target la_msgs__rosidl_typesupport_introspection_c__pyext
+[10.678s] Invoked command in '/home/joshhlee/me326_ws/src/collab_robotics/build/la_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/joshhlee/me326_ws/install/opencv_tests:/home/joshhlee/interbotix_ws/install/interbotix_xs_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_modules:/home/joshhlee/interbotix_ws/install/interbotix_common_modules:/opt/ros/galactic /usr/bin/cmake --build /home/joshhlee/me326_ws/src/collab_robotics/build/la_msgs -- -j4 -l4
+[10.761s] Invoking command in '/home/joshhlee/me326_ws/src/collab_robotics/build/la_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/joshhlee/me326_ws/install/opencv_tests:/home/joshhlee/interbotix_ws/install/interbotix_xs_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_modules:/home/joshhlee/interbotix_ws/install/interbotix_common_modules:/opt/ros/galactic /usr/bin/cmake --install /home/joshhlee/me326_ws/src/collab_robotics/build/la_msgs
+[10.769s] -- Install configuration: ""
+[10.769s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/ament_index/resource_index/rosidl_interfaces/la_msgs
+[10.769s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs
+[10.769s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/msg
+[10.770s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/msg/rosidl_generator_c__visibility_control.h
+[10.770s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/srv
+[10.771s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/srv/detail
+[10.771s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/srv/detail/ptps__struct.h
+[10.774s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/srv/detail/ptps__functions.c
+[10.774s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/srv/detail/ptps__type_support.h
+[10.774s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/srv/detail/ptps__functions.h
+[10.774s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/srv/ptps.h
+[10.774s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/action
+[10.774s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/action/detail
+[10.774s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/action/detail/move_base__struct.h
+[10.774s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/action/detail/move_base__functions.c
+[10.774s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/action/detail/move_base__type_support.h
+[10.774s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/action/detail/move_base__functions.h
+[10.774s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/action/move_base.h
+[10.774s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/environment/library_path.sh
+[10.774s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/environment/library_path.dsv
+[10.774s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/libla_msgs__rosidl_generator_c.so
+[10.774s] -- Set runtime path of "/home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/libla_msgs__rosidl_generator_c.so" to ""
+[10.775s] -- Up-to-date: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs
+[10.775s] -- Up-to-date: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/msg
+[10.775s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[10.775s] -- Up-to-date: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/srv
+[10.775s] -- Up-to-date: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/srv/detail
+[10.775s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/srv/detail/ptps__rosidl_typesupport_fastrtps_c.h
+[10.776s] -- Up-to-date: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/action
+[10.776s] -- Up-to-date: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/action/detail
+[10.776s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/action/detail/move_base__rosidl_typesupport_fastrtps_c.h
+[10.776s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/libla_msgs__rosidl_typesupport_fastrtps_c.so
+[10.777s] -- Set runtime path of "/home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/libla_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[10.777s] -- Up-to-date: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs
+[10.777s] -- Up-to-date: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/msg
+[10.777s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[10.777s] -- Up-to-date: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/srv
+[10.777s] -- Up-to-date: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/srv/detail
+[10.777s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/srv/detail/ptps__rosidl_typesupport_fastrtps_cpp.hpp
+[10.777s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/srv/detail/dds_fastrtps
+[10.777s] -- Up-to-date: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/action
+[10.777s] -- Up-to-date: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/action/detail
+[10.777s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/action/detail/dds_fastrtps
+[10.778s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/action/detail/move_base__rosidl_typesupport_fastrtps_cpp.hpp
+[10.778s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/libla_msgs__rosidl_typesupport_fastrtps_cpp.so
+[10.778s] -- Set runtime path of "/home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/libla_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[10.778s] -- Up-to-date: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs
+[10.778s] -- Up-to-date: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/msg
+[10.778s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[10.778s] -- Up-to-date: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/srv
+[10.778s] -- Up-to-date: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/srv/detail
+[10.778s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/srv/detail/ptps__type_support.c
+[10.778s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/srv/detail/ptps__rosidl_typesupport_introspection_c.h
+[10.778s] -- Up-to-date: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/action
+[10.779s] -- Up-to-date: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/action/detail
+[10.779s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/action/detail/move_base__rosidl_typesupport_introspection_c.h
+[10.779s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/action/detail/move_base__type_support.c
+[10.779s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/libla_msgs__rosidl_typesupport_introspection_c.so
+[10.779s] -- Set runtime path of "/home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/libla_msgs__rosidl_typesupport_introspection_c.so" to ""
+[10.779s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/libla_msgs__rosidl_typesupport_c.so
+[10.779s] -- Set runtime path of "/home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/libla_msgs__rosidl_typesupport_c.so" to ""
+[10.780s] -- Up-to-date: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs
+[10.780s] -- Up-to-date: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/srv
+[10.780s] -- Up-to-date: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/srv/detail
+[10.780s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/srv/detail/ptps__builder.hpp
+[10.780s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/srv/detail/ptps__struct.hpp
+[10.780s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/srv/detail/ptps__traits.hpp
+[10.780s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/srv/ptps.hpp
+[10.780s] -- Up-to-date: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/action
+[10.780s] -- Up-to-date: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/action/detail
+[10.780s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/action/detail/move_base__struct.hpp
+[10.780s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/action/detail/move_base__builder.hpp
+[10.780s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/action/detail/move_base__traits.hpp
+[10.784s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/action/move_base.hpp
+[10.784s] -- Up-to-date: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs
+[10.784s] -- Up-to-date: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/srv
+[10.784s] -- Up-to-date: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/srv/detail
+[10.784s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/srv/detail/ptps__rosidl_typesupport_introspection_cpp.hpp
+[10.784s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/srv/detail/ptps__type_support.cpp
+[10.785s] -- Up-to-date: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/action
+[10.785s] -- Up-to-date: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/action/detail
+[10.785s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/action/detail/move_base__type_support.cpp
+[10.785s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/include/la_msgs/action/detail/move_base__rosidl_typesupport_introspection_cpp.hpp
+[10.785s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/libla_msgs__rosidl_typesupport_introspection_cpp.so
+[10.785s] -- Set runtime path of "/home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/libla_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[10.785s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/libla_msgs__rosidl_typesupport_cpp.so
+[10.785s] -- Set runtime path of "/home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/libla_msgs__rosidl_typesupport_cpp.so" to ""
+[10.785s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/environment/pythonpath.sh
+[10.785s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/environment/pythonpath.dsv
+[10.785s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/python3.8/site-packages/la_msgs/__init__.py
+[10.817s] Compiling '/home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/python3.8/site-packages/la_msgs/__init__.py'...
+[10.820s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/python3.8/site-packages/la_msgs/action
+[10.820s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/python3.8/site-packages/la_msgs/action/__init__.py
+[10.820s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/python3.8/site-packages/la_msgs/action/_move_base_s.c
+[10.820s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/python3.8/site-packages/la_msgs/action/_move_base.py
+[10.820s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/python3.8/site-packages/la_msgs/srv
+[10.820s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/python3.8/site-packages/la_msgs/srv/__init__.py
+[10.820s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/python3.8/site-packages/la_msgs/srv/_ptps_s.c
+[10.820s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/python3.8/site-packages/la_msgs/srv/_ptps.py
+[10.821s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/python3.8/site-packages/la_msgs/la_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[10.821s] -- Set runtime path of "/home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/python3.8/site-packages/la_msgs/la_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so" to ""
+[10.821s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/python3.8/site-packages/la_msgs/la_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[10.822s] -- Set runtime path of "/home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/python3.8/site-packages/la_msgs/la_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so" to ""
+[10.822s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/python3.8/site-packages/la_msgs/la_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[10.822s] -- Set runtime path of "/home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/python3.8/site-packages/la_msgs/la_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so" to ""
+[10.822s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/libla_msgs__python.so
+[10.822s] -- Set runtime path of "/home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/lib/libla_msgs__python.so" to ""
+[10.823s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/action/MoveBase.idl
+[10.823s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/srv/Ptps.idl
+[10.823s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/action/MoveBase.action
+[10.823s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/srv/Ptps.srv
+[10.823s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/srv/Ptps_Request.msg
+[10.823s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/srv/Ptps_Response.msg
+[10.823s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/ament_index/resource_index/package_run_dependencies/la_msgs
+[10.823s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/ament_index/resource_index/parent_prefix_path/la_msgs
+[10.824s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/environment/ament_prefix_path.sh
+[10.824s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/environment/ament_prefix_path.dsv
+[10.824s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/environment/path.sh
+[10.824s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/environment/path.dsv
+[10.824s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/local_setup.bash
+[10.824s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/local_setup.sh
+[10.824s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/local_setup.zsh
+[10.824s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/local_setup.dsv
+[10.824s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/package.dsv
+[10.824s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/ament_index/resource_index/packages/la_msgs
+[10.824s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/cmake/la_msgs__rosidl_generator_cExport.cmake
+[10.824s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/cmake/la_msgs__rosidl_generator_cExport-noconfig.cmake
+[10.825s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/cmake/la_msgs__rosidl_typesupport_introspection_cExport.cmake
+[10.825s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/cmake/la_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[10.825s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/cmake/la_msgs__rosidl_typesupport_cExport.cmake
+[10.825s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/cmake/la_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[10.825s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/cmake/la_msgs__rosidl_generator_cppExport.cmake
+[10.825s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/cmake/la_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[10.825s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/cmake/la_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[10.825s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/cmake/la_msgs__rosidl_typesupport_cppExport.cmake
+[10.825s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/cmake/la_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[10.825s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/cmake/rosidl_cmake-extras.cmake
+[10.826s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[10.826s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[10.826s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[10.826s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[10.826s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[10.826s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[10.826s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/cmake/la_msgsConfig.cmake
+[10.826s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/cmake/la_msgsConfig-version.cmake
+[10.826s] -- Installing: /home/joshhlee/me326_ws/src/collab_robotics/install/la_msgs/share/la_msgs/package.xml
+[10.828s] Invoked command in '/home/joshhlee/me326_ws/src/collab_robotics/build/la_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/joshhlee/me326_ws/install/opencv_tests:/home/joshhlee/interbotix_ws/install/interbotix_xs_modules:/home/joshhlee/interbotix_ws/install/interbotix_perception_modules:/home/joshhlee/interbotix_ws/install/interbotix_common_modules:/opt/ros/galactic /usr/bin/cmake --install /home/joshhlee/me326_ws/src/collab_robotics/build/la_msgs
