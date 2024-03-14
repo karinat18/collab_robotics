@@ -135,6 +135,14 @@ class MatchingPixToPtcld(Node):
                             pose.pose.orientation.y = self.cur_pos.pose.orientation.y
                             pose.pose.orientation.z = self.cur_pos.pose.orientation.z
                             pose.pose.orientation.w = self.cur_pos.pose.orientation.w
+                        else:
+                            pose.pose.position.x -= self.cur_pos.pose.position.x
+                            pose.pose.position.y -= self.cur_pos.pose.position.y
+                            pose.pose.position.z -= self.cur_pos.pose.position.z
+                            pose.pose.orientation.x = self.cur_pos.pose.orientation.x
+                            pose.pose.orientation.y = self.cur_pos.pose.orientation.y
+                            pose.pose.orientation.z = self.cur_pos.pose.orientation.z
+                            pose.pose.orientation.w = self.cur_pos.pose.orientation.w
 
                         self.pose = pose  # Update self.pose with the received pose
                         self.pose_updated = True
