@@ -114,7 +114,7 @@ class MatchingPixToPtcld(Node):
                     
                 if len(points) == 0:
                     self.get_logger().info(f'No points of the given color are found, trying to tilt camera')
-                    self.camera_tilt(i)
+                    # self.camera_tilt(i)
                 else:
                     for p in points:
                         pose = PoseStamped()
