@@ -14,6 +14,7 @@ from std_msgs.msg import String
 from visualization_msgs import msg
 from geometry_msgs.msg import PoseStamped
 from geometry_msgs.msg import PointStamped
+from nav_msgs.msg import Odometry
 import time
 from threading import Event
 
@@ -42,11 +43,19 @@ class MatchingPixToPtcld(Node):
             'pix_to_point_cpp',
             callback_group = self.callback_group
         )
+
+        self.odom = self.create_subscription(Odometry,'/odom',self.odom_callback, 10)
+
+        self.cur_pos = PoseStamped()
+
         while not self.vision_client.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('Service not available, waiting again...')
         self.req_pos = Ptps.Request()
         # self.req_pos.desired_frame = 'locobot/base_link'
         # self.req_pos.desired_frame = 
+
+    def odom_callback(self, msg):
+        self.cur_pos = msg.pose
 
     def set_block_color_callback(self, request, response):
         self.get_logger().info(f'Received, starting callback: {request.color}')
@@ -117,6 +126,16 @@ class MatchingPixToPtcld(Node):
                         pose.pose.orientation.y = 0.0
                         pose.pose.orientation.z = 0.0
                         pose.pose.orientation.w = 1.0
+
+                        if frame == 'locobot/base_link':
+                            pose.pose.position.x += self.cur_pos.position.x
+                            pose.pose.position.y += self.cur_pos.position.y
+                            pose.pose.position.z += self.cur_pos.position.z
+                            pose.pose.orientation.x = self.cur_pos.orientation.x
+                            pose.pose.orientation.y = self.cur_pos.orientation.y
+                            pose.pose.orientation.z = self.cur_pos.orientation.z
+                            pose.pose.orientation.w = self.cur_pos.orientation.w
+
                         self.pose = pose  # Update self.pose with the received pose
                         self.pose_updated = True
                         # self.get_logger().info(f"Pose: {self.pose}")  # Log the updated pose here
