@@ -12,8 +12,7 @@ from la_msgs.srv import Ptps
 from std_msgs.msg import Float64MultiArray
 from std_msgs.msg import String
 from visualization_msgs import msg
-from geometry_msgs.msg import PoseStamped
-from geometry_msgs.msg import PointStamped
+from geometry_msgs.msg import PoseStamped, PoseWithCovariance
 from nav_msgs.msg import Odometry
 import time
 from threading import Event
@@ -46,7 +45,7 @@ class MatchingPixToPtcld(Node):
 
         self.odom = self.create_subscription(Odometry,'/odom',self.odom_callback, 10)
 
-        self.cur_pos = PoseStamped()
+        self.cur_pos = PoseWithCovariance()
 
         while not self.vision_client.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('Service not available, waiting again...')
@@ -55,6 +54,7 @@ class MatchingPixToPtcld(Node):
         # self.req_pos.desired_frame = 
 
     def odom_callback(self, msg):
+        # time.sleep(3)
         self.cur_pos = msg.pose
 
     def set_block_color_callback(self, request, response):
@@ -128,13 +128,13 @@ class MatchingPixToPtcld(Node):
                         pose.pose.orientation.w = 1.0
 
                         if frame == 'locobot/base_link':
-                            pose.pose.position.x += self.cur_pos.position.x
-                            pose.pose.position.y += self.cur_pos.position.y
-                            pose.pose.position.z += self.cur_pos.position.z
-                            pose.pose.orientation.x = self.cur_pos.orientation.x
-                            pose.pose.orientation.y = self.cur_pos.orientation.y
-                            pose.pose.orientation.z = self.cur_pos.orientation.z
-                            pose.pose.orientation.w = self.cur_pos.orientation.w
+                            pose.pose.position.x += self.cur_pos.pose.position.x
+                            pose.pose.position.y += self.cur_pos.pose.position.y
+                            pose.pose.position.z += self.cur_pos.pose.position.z
+                            pose.pose.orientation.x = self.cur_pos.pose.orientation.x
+                            pose.pose.orientation.y = self.cur_pos.pose.orientation.y
+                            pose.pose.orientation.z = self.cur_pos.pose.orientation.z
+                            pose.pose.orientation.w = self.cur_pos.pose.orientation.w
 
                         self.pose = pose  # Update self.pose with the received pose
                         self.pose_updated = True
