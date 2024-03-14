@@ -2,7 +2,6 @@
 '''
 Written by: Joshua Lee, Date: 3/7/24
 
-
 '''
 
 import rclpy
@@ -15,8 +14,6 @@ from std_msgs.msg import String
 from visualization_msgs import msg
 from geometry_msgs.msg import PoseStamped
 from geometry_msgs.msg import PointStamped
-from functools import partial
-import asyncio
 import time
 from threading import Event
 
@@ -48,13 +45,16 @@ class MatchingPixToPtcld(Node):
         while not self.vision_client.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('Service not available, waiting again...')
         self.req_pos = Ptps.Request()
-        self.req_pos.desired_frame = 'locobot/base_link'
+        # self.req_pos.desired_frame = 'locobot/base_link'
+        # self.req_pos.desired_frame = 
 
     def set_block_color_callback(self, request, response):
         self.get_logger().info(f'Received, starting callback: {request.color}')
+        self.get_logger().info(f'Received, starting callback: {request.frame}')
         # self.call_ptp_service(request.colorf)
         # Update the response with the correct pose
         # response.pose = self.pose
+        self.req_pos.desired_frame = request.frame
         future = self.vision_client.call_async(self.req_pos)
         event = Event()
 
@@ -71,9 +71,9 @@ class MatchingPixToPtcld(Node):
             self.get_logger().error(f'Service call failed: {e}')
             return response
         
-        resp = self.everything(vision_response, request.color)
+        resp = self.everything(vision_response, request.color, request.frame)
         response.pose = resp
-        self.get_logger().info(f"Pose 123: {response}")
+        self.get_logger().info(f"Pose : {response}")
         return response
   
     def cam_tilt_callback(self, data):
@@ -84,7 +84,7 @@ class MatchingPixToPtcld(Node):
         else:
             self.get_logger().warn("Received empty or None data for camera tilt angle")
 
-    def everything(self, future, color):
+    def everything(self, future, color, frame):
         try:
             response = future.result()
         except Exception as e:
